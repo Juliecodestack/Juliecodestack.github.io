@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Juliecodestack</title>
+    <link>https://juliecodestack.github.io/tags/</link>
+    <description>Recent content in Tags on Juliecodestack</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Mar 2021 11:23:28 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jupyter Notebook</title>
+      <link>https://juliecodestack.github.io/tags/jupyter-notebook/</link>
+      <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/jupyter-notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NumPy</title>
+      <link>https://juliecodestack.github.io/tags/numpy/</link>
+      <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/numpy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://juliecodestack.github.io/tags/python/</link>
+      <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://juliecodestack.github.io/tags/anaconda/</link>
+      <pubDate>Sun, 07 Mar 2021 20:40:59 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>电脑</title>
+      <link>https://juliecodestack.github.io/tags/%E7%94%B5%E8%84%91/</link>
+      <pubDate>Mon, 14 Dec 2020 17:04:04 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/%E7%94%B5%E8%84%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://juliecodestack.github.io/tags/git/</link>
+      <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://juliecodestack.github.io/tags/github/</link>
+      <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件</title>
+      <link>https://juliecodestack.github.io/tags/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
