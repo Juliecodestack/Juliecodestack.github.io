@@ -69,11 +69,11 @@
   <select onchange="location = this.value;">
     <option value="">Navigate…</option>
       
-        <option value="https://www.google.com/">» Google</option>
+        <option value="https://juliecodestack.github.io/post">» Site&#39;s Home Page</option>
       
-        <option value="https://juliecodestack.github.io/">» Site&#39;s Home Page</option>
+        <option value="https://juliecodestack.github.io/page/contact.md">» Contact</option>
       
-        <option value="https://www.github.com/parsiya/hugo-octopress">» This theme on Github</option>
+        <option value="https://juliecodestack.github.io/page/about.md">» About</option>
       
   </select>
 </fieldset>
@@ -83,15 +83,15 @@
   
   
     
-      <li><a href="https://www.google.com/" title="Google"  target="_blank"  rel="noopener noreferrer">Google</a></li>
+      <li><a href="https://juliecodestack.github.io/post" title="Site&#39;s Home Page"  target="_blank"  rel="noopener noreferrer">Site&#39;s Home Page</a></li>
     
   
     
-      <li><a href="https://juliecodestack.github.io/" title="Site&#39;s Home Page">Site&#39;s Home Page</a></li>
+      <li><a href="https://juliecodestack.github.io/page/contact.md" title="Contact"  target="_blank"  rel="noopener noreferrer">Contact</a></li>
     
   
     
-      <li><a href="https://www.github.com/parsiya/hugo-octopress" title="This theme on Github"  target="_blank"  rel="noopener noreferrer">This theme on Github</a></li>
+      <li><a href="https://juliecodestack.github.io/page/about.md" title="About"  target="_blank"  rel="noopener noreferrer">About</a></li>
     
   
 </ul>
@@ -172,8 +172,8 @@
 <p>看到这里你可能要问，怎么没提到编辑器，Anaconda 搭配什么编辑器呢？哈哈，前面提到，Anaconda 是一个平台，需要什么在这个台子上搭建（安装）就可以了。Anaconda内置的 Jupyter Notebook就是一个很好的交互式编辑器。</p>
 <h4 id="anaconda使用">Anaconda使用</h4>
 <p>安装 Anaconda 之后，我们怎么打开这个平台上的软件，比如 Python, Jupyter Notebook ?</p>
-<p>我的电脑是 Windows 10 系统，打开电脑左下角的开始菜单（如下图中红色箭头所示），选择 Anaconda3 &gt; Anaconda Prompt (Anaconda3)（或者在图中蓝色箭头所示的搜索栏中输入 Anaconda Prompt 也可以找到），打开命令行模式：
-<img src="/imgs/Python%E5%AE%89%E8%A3%852021-01-25-10-30-04.png" alt="Anaconda命令行打开方式"></p>
+<p>我的电脑是 Windows 10 系统，打开电脑左下角的开始菜单（如下图中红色箭头所示），选择 Anaconda3 &gt; Anaconda Prompt (Anaconda3)（或者在图中蓝色箭头所示的搜索栏中输入 Anaconda Prompt 也可以找到），打开命令行模式：</p>
+<p><img src="/imgs/Python%E5%AE%89%E8%A3%852021-01-25-10-30-04.png" alt="Anaconda命令行打开方式"></p>
 <p>一、如果输入 <code>python</code>，就打开了 Python 运行环境。此时就和第一种安装方式的 Python 软件命令行模式一样，既可以直接输入 Python 语句，也可以运行程序（.py后缀的文件）。再次输入exit()，退出当前环境。</p>
 <p>二、如果输入 <code>jupyter notebook</code>，就打开 Jupyter Notebook 运行环境。</p>
 <p>这里有一个细节虽小但很重要，就是：<strong>我们在哪个文件夹上运行的 Anaconda Prompt 命令行，Jupyter Notebook 就只能在当前文件夹运行，默认初始环境是在 C 盘的用户文件夹运行。</strong></p>
@@ -181,11 +181,11 @@
 <code>jupyter notebook</code></p>
 <p>怎么没有看到刚才下载的文件？而且，此时也不能打开其它文件夹，就只能查看当前命令所在的 C 盘里的用户文件夹。</p>
 <p>怎么办呢？我们需要在命令行里改变路径，转移到目标文件夹。</p>
-<p>举例来说明，比如现在要运行的.ipynb文件在 E 盘的文件夹 folderA 中，打开 Anaconda Prompt 命令行，依次输入命令：
-<code>E:</code>
-<code>cd folderA</code>
-<code>jupyter notebook</code>
-这样，就改成了在 E 盘的文件夹 folderA 中运行 Jupyter Notebook，此时也就能找到我们要查看的文件。</p>
+<p>举例来说明，比如现在要运行的.ipynb文件在 E 盘的文件夹 folderA 中，打开 Anaconda Prompt 命令行，依次输入以下命令：</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>E:
+</span></span><span style="display:flex;"><span><span style="color:#b58900">cd</span> folderA
+</span></span><span style="display:flex;"><span>jupyter notebook
+</span></span></code></pre></div><p>这样，就改成了在 E 盘的文件夹 folderA 中运行 Jupyter Notebook，此时也就能找到我们要查看的文件。</p>
 <h4 id="工具包安装">工具包安装</h4>
 <p>我们运行Python程序时，可能会用到各种各样的工具包（或者说是库）。有的工具包在软件中已经安装，有的还没有安装，那么我们应该怎么安装呢？</p>
 <p>pip install 是常用的安装命令，在 Python 和 Anaconda 中都可以使用。而 Anaconda 中还可以使用 conda install 命令。</p>
@@ -198,12 +198,16 @@
 <li>显示当前 Anaconda 版本：<code>conda --version</code></li>
 <li>显示所有安装的工具包/库：<code>conda list</code></li>
 </ul>
-<p>注：Conda, pip, virtualenv 三种命令工具的对比：
-pip 是一种安装包管理工具(package manager)；
-virtualenv 是一种环境管理工具(environment manager)；
-Conda 这两种功能都有。</p>
-<p>参考教程：
-1.如何打开运行 Anaconda （GUI界面或命令行）：https://docs.anaconda.com/anaconda/user-guide/getting-started/#cli-hello</p>
+<blockquote>
+<p>注：conda, pip, virtualenv 三种命令工具的对比：</p>
+<ul>
+<li>pip 是一种安装包管理工具(package manager)；</li>
+<li>virtualenv 是一种环境管理工具(environment manager)；</li>
+<li>conda 这两种功能都有。</li>
+</ul>
+</blockquote>
+<p><strong>参考教程：</strong></p>
+<p>1.如何打开运行 Anaconda （GUI界面或命令行）：https://docs.anaconda.com/anaconda/user-guide/getting-started/#cli-hello</p>
 <p>2.conda 配置和更新：https://conda.io/projects/conda/en/latest/user-guide/getting-started.html</p>
 <p>3.Conda, pip, virtualenv 三种命令工具的对比：https://conda.io/projects/conda/en/latest/commands.html</p>
         </div>
@@ -245,17 +249,12 @@ Conda 这两种功能都有。</p>
   <section class="first odd">
 
     
-      <h1>Sidebar Header</h1>
+      <h1>Welcome to Juliecodestack</h1>
     
 
     <p>
       
-        <p>Here&rsquo;s a 
-<a href="https://www.google.com" target="_blank" rel="noopener">link to google</a></p>
-<p>New paragraph</p>
-<p>Another paragraph which has two spaces in the end to create a new line using markdown<br>
-New line but not a new paragraph</p>
-
+        For comments or discussions, please send me an email:
       
     </p>
   </section>
@@ -265,7 +264,7 @@ New line but not a new paragraph</p>
   
   <ul class="sidebar-nav">
     <li class="sidebar-nav-item">
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/parsiya/Hugo-Octopress" title="https://github.com/parsiya/Hugo-Octopress"><i class="fa fa-github fa-3x"></i></a>
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Juliecodestack" title="https://github.com/Juliecodestack"><i class="fa fa-github fa-3x"></i></a>
       
       
       

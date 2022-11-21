@@ -6,15 +6,24 @@
     <description>Recent content in Pages on Juliecodestack</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 14 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 20:55:45 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Single Page</title>
-      <link>https://juliecodestack.github.io/about/</link>
-      <pubDate>Sun, 14 Feb 2021 00:00:00 +0000</pubDate>
+      <title>Contact</title>
+      <link>https://juliecodestack.github.io/page/contact/</link>
+      <pubDate>Sun, 20 Nov 2022 20:55:45 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/about/</guid>
-      <description>This is a single page. To create a page similar to this:
-Create a new markdown file in contents/page/about.md. Alternatively, create a page bundle contents/page/about/index.md. In the frontmatter of the page, set the value of url to your desired relative path. E.g., for this page we have url = &amp;quot;/about/&amp;quot;. Now you can access the website at baseurl/about and you can link to it from the main menu or sidebar using the relative path.</description>
+      <guid>https://juliecodestack.github.io/page/contact/</guid>
+      <description>Feel free to send me an email: Juliecodestack@126.com </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://juliecodestack.github.io/page/about/</link>
+      <pubDate>Sun, 20 Nov 2022 20:55:33 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/page/about/</guid>
+      <description>Hello, I’m Julie. I’m learning Python and Machine Learning, and I also like:
+reading, such as sci-fi, non-fiction, biography… listening to audiobooks. I may recommend some books later. learning new things. </description>
     </item>
     
   </channel>
