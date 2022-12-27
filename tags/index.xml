@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Juliecodestack</title>
+    <title>Tags on Julie</title>
     <link>https://juliecodestack.github.io/tags/</link>
-    <description>Recent content in Tags on Juliecodestack</description>
+    <description>Recent content in Tags on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Mar 2021 11:23:28 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
