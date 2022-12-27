@@ -26,10 +26,8 @@ Email: Juliecodestack@126.com</description>
       
       <guid>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
       <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
-
-&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python · numpy · axis&lt;/a&gt;
-和 
-&lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
+和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
 感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。&lt;/p&gt;</description>
     </item>
     
@@ -42,8 +40,7 @@ Email: Juliecodestack@126.com</description>
       <description>&lt;blockquote&gt;
 &lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;接着
-&lt;a href=&#34;https://juliecodestack.github.io/2021/02/15/21003anaconda/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;上一篇文章&lt;/a&gt;，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。&lt;/p&gt;</description>
+&lt;p&gt;接着&lt;a href=&#34;https://juliecodestack.github.io/2021/02/15/21003anaconda/&#34;&gt;上一篇文章&lt;/a&gt;，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -79,8 +76,7 @@ Email: Juliecodestack@126.com</description>
       <pubDate>Fri, 24 Jul 2020 11:41:31 +0000</pubDate>
       
       <guid>https://juliecodestack.github.io/2020/07/24/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
-      <description>&lt;p&gt;在上一篇 
-&lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8Markdown/#more&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
+      <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8Markdown/#more&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
     </item>
     
     <item>

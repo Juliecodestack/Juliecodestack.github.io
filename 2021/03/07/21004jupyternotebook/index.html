@@ -1,147 +1,61 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-
-  
-  <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
-
-  
-    
-    
-      <link href="/css/fonts.css" rel="stylesheet" type="text/css">
-    
-  
-
-  
-  <title>Jupyter Notebook使用</title>
-
-  
-  
-  <link rel="stylesheet" href="/css/hugo-octopress.css">
-
-  
-  
-
-  
-    <link rel="stylesheet" href="/css/fork-awesome.min.css">
-  
-
-  
-  <link href="https://juliecodestack.github.io/favicon.png" rel="icon">
-
-  
-  
-
-  <meta name="description" content="" />
-  <meta name="keywords" content="">
-  <meta name="author" content="Julie">
-
-  
   <meta name="generator" content="Hugo 0.105.0">
 
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jupyter Notebook使用 &middot; Juliecodestack</title>
+  <meta name="description" content="" />
+
   
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
 
   
   
-
-  
-  
-
-
-
 </head>
-<body>
 
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://juliecodestack.github.io/"><h1>Juliecodestack</h1></a>
+      <p class="lead">
+       python, programming, machine learning 
+      </p>
+    </div>
 
-<header role="banner">
-<hgroup>
-  
-  <h1><a href="https://juliecodestack.github.io/">Juliecodestack</a></h1>
-    <h2>Notes on Programming and Machine Learning</h2>
-</hgroup></header>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
+        <li><a href="/post"> Archive </a></li><li><a href="/page/about/"> About </a></li>
+      </ul>
+    </nav>
 
+    <p>&copy; 2022. All rights reserved. </p>
+  </div>
+</aside>
 
-<nav role="navigation">
-<fieldset class="mobile-nav">
-  
-  <select onchange="location = this.value;">
-    <option value="">Navigate…</option>
-      
-        <option value="https://juliecodestack.github.io/post">» Archive</option>
-      
-        <option value="https://juliecodestack.github.io/page/about/">» About</option>
-      
-  </select>
-</fieldset>
-
-
-<ul class="main-navigation">
-  
-  
-    
-      <li><a href="https://juliecodestack.github.io/post" title="Archive"  target="_blank"  rel="noopener noreferrer">Archive</a></li>
-    
-  
-    
-      <li><a href="https://juliecodestack.github.io/page/about/" title="About"  target="_blank"  rel="noopener noreferrer">About</a></li>
-    
-  
-</ul>
-
-<ul class="subscription">
-  
-    
-        <a href="https://juliecodestack.github.io/index.xml" target="_blank" type="application/rss+xml" title="RSS" rel="noopener noreferrer"><i class="fa fa-rss-square fa-lg"></i></a>
-    
-  
-</ul>
-
-
-  <form action="https://www.google.com/search" method="get" target="_blank" rel="noopener noreferrer">
-    <fieldset role="search">
-      <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-      <input type="hidden" name="q" value="site:https://juliecodestack.github.io/" />
-    </fieldset>
-  </form>
-
-</nav>
-
-
-<div id="main">
-  <div id="content">
-    <div>
-      <article class="hentry" role="article">
-
-        
-        
-
-<header>
-  <p class="meta">Mar 7, 2021
-    
-    
-
-    
-    
-      - <a class="label" href="https://juliecodestack.github.io/categories/%e6%9c%ba%e5%99%a8%e5%ad%a6%e4%b9%a0%e7%ac%94%e8%ae%b0/">机器学习笔记 </a>
-    
-  </p>
-  <h1 class="entry-title">
-     Jupyter Notebook使用 
-  </h1>
-</header>
-
-
-        <div class="entry-content">
-          
-          
-          
-          <blockquote>
+    <main class="content container">
+    <div class="post">
+  <h1>Jupyter Notebook使用</h1>
+  <time datetime=2021-03-07T20:40:59Z class="post-date">Sun, Mar 7, 2021</time>
+  <blockquote>
 <p>注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。</p>
 </blockquote>
-<p>接着
-<a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/" target="_blank" rel="noopener">上一篇文章</a>，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。</p>
+<p>接着<a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/">上一篇文章</a>，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。</p>
 <p><img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-05-11-35-28.png" alt="JupyterNotebook文件夹页面"></p>
 <p>点击图中箭头指示的【New】按钮，新建一个空白文档。</p>
 <h4 id="基本功能">基本功能</h4>
@@ -205,140 +119,13 @@ l2=3
 </ul>
 <h4 id="参考教程">参考教程</h4>
 <p>Python for Data Analysis by Wes Mckinney</p>
-        </div>
-        
-
-<footer>
-  <p class="meta">
-    <span class="byline author vcard">Posted by <span class="fn">Julie</span></span>
-    
-    <time>Mar 7, 2021</time>
-    
-      <span class="categories">
-        Tags:
-        
-          <a class="category" href="https://juliecodestack.github.io/tags/python">Python</a>  <a class="category" href="https://juliecodestack.github.io/tags/anaconda">Anaconda</a>  <a class="category" href="https://juliecodestack.github.io/tags/jupyter-notebook">Jupyter Notebook</a>  
-    
-    </span>
-  </p>
-
-  
-
-  <p class="meta">
-    
-        <a class="basic-alignment left" href="https://juliecodestack.github.io/2021/02/15/21003anaconda/" title="Python入门：安装 Python 软件，Anaconda">Python入门：安装 Python 软件，Anaconda</a>
-    
-
-    
-      <a class="basic-alignment right" href="https://juliecodestack.github.io/2021/03/24/21005numpy_axis/" title="Numpy运算中的axis参数">Numpy运算中的axis参数</a>
-    
-  </p>
-  
-</footer>
-
-      </article>
-    </div>
-    
-
-<aside class="sidebar thirds">
-  <section class="first odd">
-
-    
-      <h1>Welcome to Juliecodestack!</h1>
-    
-
-    <p>
-      
-        For comments or discussions, please send me an [ 
-<a href="https://juliecodestack.github.io/page/about/" target="_blank" rel="noopener">email</a> ].
-      
-    </p>
-  </section>
-
-
-
-  
-  <ul class="sidebar-nav">
-    <li class="sidebar-nav-item">
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/Juliecodestack" title="https://github.com/Juliecodestack"><i class="fa fa-github fa-3x"></i></a>
-      
-      
-      
-      
-      
-         
-      
-      
-      
-      
-      
-      
-      
-
-    
-    
-    </li>
-  </ul>
-
-  
-
-  
-
-  
-  
-  
-    
-      <section class="even">
-        <h1>Recent Posts</h1>
-        <ul id="recent_posts">
-          
-          
-            
-              <li class="post">
-                <a href="/2021/03/24/21005numpy_axis/">Numpy运算中的axis参数</a>
-              </li>
-            
-          
-            
-          
-            
-              <li class="post">
-                <a href="/2021/03/07/21004jupyternotebook/">Jupyter Notebook使用</a>
-              </li>
-            
-          
-            
-              <li class="post">
-                <a href="/2021/02/15/21003anaconda/">Python入门：安装 Python 软件，Anaconda</a>
-              </li>
-            
-          
-        </ul>
-      </section>
-    
-  
-</aside>
-
-  </div>
 </div>
 
-    <footer role="contentinfo">
-      <p>Copyright &copy; 2022 Julie - <a href="https://juliecodestack.github.io/license/">License</a> -
-        <span class="credit">Powered by <a target="_blank" href="https://gohugo.io" rel="noopener noreferrer">Hugo</a> and <a target="_blank" href="https://github.com/parsiya/hugo-octopress/" rel="noopener noreferrer">Hugo-Octopress</a> theme.
-      </p>
-    </footer>
+
+    </main>
 
     
-    
-    
-
-   
-
-    
-    
-    
-
+      
     
   </body>
 </html>
-
