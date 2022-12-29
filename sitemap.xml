@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://juliecodestack.github.io/page/about/</loc>
-    <lastmod>2022-11-20T20:55:33+08:00</lastmod>
-  </url><url>
     <loc>https://juliecodestack.github.io/</loc>
     <lastmod>2022-11-20T20:55:33+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/page/</loc>
+    <lastmod>2022-11-20T20:55:33+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/page/about/</loc>
     <lastmod>2022-11-20T20:55:33+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/categories/</loc>
