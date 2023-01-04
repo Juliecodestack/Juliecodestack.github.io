@@ -13,8 +13,9 @@
       <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
-      <description>&lt;p&gt;I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  &lt;code&gt;cd&lt;/code&gt; command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, &lt;code&gt;cd&lt;/code&gt; stands for “change directory”, so we can figure out the command by thinking of the operation.&lt;/p&gt;
-&lt;p&gt;Here I will list some commands I’ve learned. I’ll add more as I learned.&lt;/p&gt;</description>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: In this article I’ll introduce some terminal/shell commands, with examples.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>

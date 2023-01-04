@@ -52,45 +52,107 @@
     <div class="post">
   <h1>Terminal/Shell Commands Cheatsheet</h1>
   <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Wed, Jan 4, 2023</time>
-  <p>I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  <code>cd</code> command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, <code>cd</code> stands for “change directory”, so we can figure out the command by thinking of the operation.</p>
-<p>Here I will list some commands I’ve learned. I’ll add more as I learned.</p>
+  <blockquote>
+<p><strong>Summary</strong>: In this article I’ll introduce some terminal/shell commands, with examples.</p>
+</blockquote>
+<p>I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  <code>cd</code> command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, <code>cd</code> stands for “change directory”, so we can figure out the command by thinking of the operation.</p>
+<p>Here I list some commands I’ve learned. I’ll update as I learn more.</p>
 <h4 id="1-directories-or-folders-in-windows">1. Directories (or Folders in Windows)</h4>
-<p><code>ls</code> : list all the files in the current directory.</p>
-<p><code>pwd</code>: (present working directory) show the current directory.</p>
-<p><code>cd folder1</code>: change directory to folder1.</p>
+<p><code>ls</code> : to list all the directoris/files in the current directory(folder).</p>
+<p><code>pwd</code>: (present working directory) to show the current file path.</p>
+<p><code>cd folder_name</code>: to change directory to the directory(folder).</p>
+<p>For example, <code>cd folder1</code>  changes the directory to the subfolder “folder1” in the current folder.</p>
 <blockquote>
 <p>Three special signs for directory:</p>
 <p><code>.</code>: current directory</p>
 <p><code>..</code>: parent directory, thus <code>cd ..</code> means changing to the parent directory.</p>
-<p><code>~</code>: home directory, thus <code>cd ~</code> means changing to the home directory, and we can also type <code>cd</code> for the same result.</p>
+<p><code>~</code>: home directory, thus <code>cd ~</code> means changing to the home directory. We can also type <code>cd</code> for the same result.</p>
 </blockquote>
-<p><code>mkdir folder_name</code> : make a new directory (folder).</p>
-<p><code>rm -r folder_name </code> : remove the whole directory (folder) ( -r means recursively).</p>
+<p><code>mkdir folder_name</code> : to make a new directory (folder).</p>
+<p><code>rm -r folder_name </code> : to remove the whole directory (folder) ( “-r” means recursively).</p>
 <blockquote>
 <p><strong>Warning</strong>:  In UNIX, when you <code>rm</code> a file, it&rsquo;s gone. There is no Recycle bin or Trash for you to &ldquo;undo&rdquo; <code>rm</code>, so think twice before you use it.</p>
 </blockquote>
 <h4 id="2-files">2. Files</h4>
-<p><code>cat filename.filetype</code> : display the contents of the file on the screen.</p>
-<p><code>touch filename.filetype</code>: create a new empty file.</p>
-<p><code>mv source_path dest_path</code> ：move the file/directory from the source_path to the dest_path.</p>
+<p><code>echo</code>: similar to print function.</p>
+<blockquote>
+<p><code>echo content</code> : to print the content on the screen.</p>
+<p><code>echo content&gt;&gt;filename.filetype</code>: to write the content to the file.</p>
+</blockquote>
+<p><code>cat filename.filetype</code> : to display the content of the file.</p>
+<p><code>touch filename.filetype</code>: to create a new empty file.</p>
+<p>The following example use these three commands. First we use echo to print “hello” on the screen :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;echo <span style="color:#2aa198">&#34;hello!&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello!
+</span></span></code></pre></div><p>Then we create a new directory named “example”, and create a new txt file named “ex01” in it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;mkdir example
+</span></span><span style="display:flex;"><span>&gt;cd example
+</span></span><span style="display:flex;"><span>/example&gt; touch ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><p>When we type <code>cat ex01.txt</code>, the output is nothing, because “ex01.txt” is an empty file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><p>We can use <code>echo</code>  command to write something into “ex01.txt” :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;hello&#34;</span>&gt;&gt;ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span></code></pre></div><p>We can also write many times, the content will be added to the file :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;Let&#39;s learn Python.&#34;</span>&gt;&gt;ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p><code>mv source_path dest_path</code> ：to move the file/directory from the source_path to the dest_path.</p>
 <blockquote>
 <p>There are two ways of using <code>mv</code>:</p>
-<p>1.<code>mv source_file/directory dest_directory</code> : <strong>move</strong> the source file/directory to the dest_directory</p>
-<p>2.<code>mv source_file dest_file</code> : <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already exist, it will be overwritten as the content of the source file.</p>
+<p>1.<code>mv source_file/directory dest_directory</code> : to <strong>move</strong> the source file/directory to the dest_directory</p>
+<p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already exist, it will be overwritten as the content of the source file.</p>
 </blockquote>
-<p><code>cp file/directory dest_directory</code>: copy the file/directory to the dest_directory.</p>
+<p>Let’s see an example of <code>mv</code>. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.</p>
+<pre tabindex="0"><code>/example&gt; ls
+</code></pre><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><p>First we create a new folder named “sub_example” as the dest_directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mkdir sub_example
+</span></span><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt  sub_example/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls sub_example
+</span></span></code></pre></div><p>(1) use <code>mv source_file/directory dest_directory</code> to move a file :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mv ex01.txt sub_example
+</span></span><span style="display:flex;"><span>/example&gt; ls sub_example
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sub_example/
+</span></span></code></pre></div><p>After using the <code>mv</code> command, the file “ex01.txt” is moved to the subfolder “sub_example”.</p>
+<p>(2) use <code>mv source_file dest_file</code> to rename a file :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">cd</span> sub_example
+</span></span><span style="display:flex;"><span>.../sub_example&gt; mv ex01.txt ex02.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex02.txt
+</span></span></code></pre></div><p>Here the file name is changed from “ex01” to “ex02”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; cat ex02.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p>What will happen if the dest_file has already existed?</p>
+<p>We create a file “ex03.txt” with the content “another txt file”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; touch ex03.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;another txt file&#34;</span>&gt;&gt;ex03.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>another txt file
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; mv ex02.txt ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>mv: overwrite &#39;ex03.txt&#39;? y
+</span></span></code></pre></div><p>After typing <code>mv ex02.txt ex03.txt</code>, there will be a prompt to check if you really want to overwrite dest_file “ex03.txt”. If you type “y”, “ex03.txt” will be overwritten as the  content of “ex02.txt”.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p><code>cp file/directory dest_directory</code>: to copy the file/directory to the dest_directory.</p>
 <blockquote>
 <p>For <code>mv</code>/ <code>cp</code> command, if the dest_directory is the current directory,  we can write <code>.</code>  instead.</p>
 </blockquote>
-<p><code>rm file_name</code>: remove a single file. Here only a file is removed, so <code>-r</code> isn’t needed.</p>
-<p><code>unzip file_name.zip</code> : unzip the .zip file.</p>
+<p><code>rm file_name</code>: to remove a single file. Here only a file is removed, so <code>-r</code> is not needed.</p>
+<p><code>unzip file_name.zip</code> : to unzip the .zip file.</p>
 <h4 id="3-miscellaneous">3. Miscellaneous</h4>
-<p><code>echo</code>: similar to print function</p>
-<blockquote>
-<p><code>echo content</code> : print the content on the screen.</p>
-<p><code>echo content&gt;&gt;filename.filetype</code>: write the content to the file.</p>
-</blockquote>
-<p><code>man command_name</code>: display manual pages for the command.</p>
+<p><code>man command_name</code>: to display manual pages for the command.</p>
 <h4 id="reference">Reference</h4>
 <p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab00/">Lab 0: Getting Started | CS 61A Fall 2020</a></p>
 <p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html">UNIX tutorial | CS 61A Fall 2020</a></p>
