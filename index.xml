@@ -6,17 +6,27 @@
     <description>Recent content on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Nov 2022 20:55:33 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 12:58:19 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Welcome to Juliecodestack!</title>
+      <title>Terminal/Shell Commands Cheatsheet</title>
+      <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
+      <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
+      <description>&lt;p&gt;I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  &lt;code&gt;cd&lt;/code&gt; command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, &lt;code&gt;cd&lt;/code&gt; stands for “change directory”, so we can figure out the command by thinking of the operation.&lt;/p&gt;
+&lt;p&gt;Here I will list some commands I’ve learned. I’ll add more as I learned.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
       <link>https://juliecodestack.github.io/page/about/</link>
       <pubDate>Sun, 20 Nov 2022 20:55:33 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/page/about/</guid>
-      <description>Hello, I’m Julie. I’m interested in Python and Machine Learning. Here I write down what I learned, or how to solve the problems I met.
+      <description>Welcome to Juliecodestack!
+I’m Julie. I’m interested in Python and Machine Learning. Here I write down what I learned, or how to solve the problems I met.
 I also like:
-reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. Contact me:
-Email: Juliecodestack@126.com</description>
+reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. For comments or discussions, please send me an email: Juliecodestack@126.com .</description>
     </item>
     
     <item>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.105.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Terminal/Shell Commands Cheatsheet &middot; Julie</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
+      <p class="lead">
+       Notes on Programming and Machine Learning 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
+        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="">  </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2023. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Terminal/Shell Commands Cheatsheet</h1>
+  <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Wed, Jan 4, 2023</time>
+  <p>I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  <code>cd</code> command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, <code>cd</code> stands for “change directory”, so we can figure out the command by thinking of the operation.</p>
+<p>Here I will list some commands I’ve learned. I’ll add more as I learned.</p>
+<h4 id="1-directories-or-folders-in-windows">1. Directories (or Folders in Windows)</h4>
+<p><code>ls</code> : list all the files in the current directory.</p>
+<p><code>pwd</code>: (present working directory) show the current directory.</p>
+<p><code>cd folder1</code>: change directory to folder1.</p>
+<blockquote>
+<p>Three special signs for directory:</p>
+<p><code>.</code>: current directory</p>
+<p><code>..</code>: parent directory, thus <code>cd ..</code> means changing to the parent directory.</p>
+<p><code>~</code>: home directory, thus <code>cd ~</code> means changing to the home directory, and we can also type <code>cd</code> for the same result.</p>
+</blockquote>
+<p><code>mkdir folder_name</code> : make a new directory (folder).</p>
+<p><code>rm -r folder_name </code> : remove the whole directory (folder) ( -r means recursively).</p>
+<blockquote>
+<p><strong>Warning</strong>:  In UNIX, when you <code>rm</code> a file, it&rsquo;s gone. There is no Recycle bin or Trash for you to &ldquo;undo&rdquo; <code>rm</code>, so think twice before you use it.</p>
+</blockquote>
+<h4 id="2-files">2. Files</h4>
+<p><code>cat filename.filetype</code> : display the contents of the file on the screen.</p>
+<p><code>touch filename.filetype</code>: create a new empty file.</p>
+<p><code>mv source_path dest_path</code> ：move the file/directory from the source_path to the dest_path.</p>
+<blockquote>
+<p>There are two ways of using <code>mv</code>:</p>
+<p>1.<code>mv source_file/directory dest_directory</code> : <strong>move</strong> the source file/directory to the dest_directory</p>
+<p>2.<code>mv source_file dest_file</code> : <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already exist, it will be overwritten as the content of the source file.</p>
+</blockquote>
+<p><code>cp file/directory dest_directory</code>: copy the file/directory to the dest_directory.</p>
+<blockquote>
+<p>For <code>mv</code>/ <code>cp</code> command, if the dest_directory is the current directory,  we can write <code>.</code>  instead.</p>
+</blockquote>
+<p><code>rm file_name</code>: remove a single file. Here only a file is removed, so <code>-r</code> isn’t needed.</p>
+<p><code>unzip file_name.zip</code> : unzip the .zip file.</p>
+<h4 id="3-miscellaneous">3. Miscellaneous</h4>
+<p><code>echo</code>: similar to print function</p>
+<blockquote>
+<p><code>echo content</code> : print the content on the screen.</p>
+<p><code>echo content&gt;&gt;filename.filetype</code>: write the content to the file.</p>
+</blockquote>
+<p><code>man command_name</code>: display manual pages for the command.</p>
+<h4 id="reference">Reference</h4>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab00/">Lab 0: Getting Started | CS 61A Fall 2020</a></p>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html">UNIX tutorial | CS 61A Fall 2020</a></p>
+<p><a href="https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/">touch command in Linux with Examples - GeeksforGeeks</a></p>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
