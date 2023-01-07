@@ -2,25 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://juliecodestack.github.io/tags/bool-expression/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
     <loc>https://juliecodestack.github.io/categories/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/2023/01/07/bool-expression/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/post/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/categories/programming/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/python/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/</loc>
+    <lastmod>2023-01-07T20:54:13+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/tags/linux/</loc>
     <lastmod>2023-01-04T12:58:19+08:00</lastmod>
   </url><url>
-    <loc>https://juliecodestack.github.io/post/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/categories/programming/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
-  </url><url>
     <loc>https://juliecodestack.github.io/tags/shell-command/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/tags/</loc>
     <lastmod>2023-01-04T12:58:19+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/2023/01/04/shell_command/</loc>
@@ -39,9 +48,6 @@
     <lastmod>2021-03-24T11:23:28+00:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</loc>
-    <lastmod>2021-03-24T11:23:28+00:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/tags/python/</loc>
     <lastmod>2021-03-24T11:23:28+00:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>

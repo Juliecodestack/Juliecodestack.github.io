@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Terminal/Shell Commands Cheatsheet &middot; Julie</title>
+  <title>Terminal/Shell Commands &middot; Julie</title>
   <meta name="description" content="" />
 
   
@@ -50,7 +50,7 @@
 
     <main class="content container">
     <div class="post">
-  <h1>Terminal/Shell Commands Cheatsheet</h1>
+  <h1>Terminal/Shell Commands</h1>
   <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Wed, Jan 4, 2023</time>
   <blockquote>
 <p><strong>Summary</strong>: In this article I’ll introduce some terminal/shell commands, with examples.</p>
@@ -77,11 +77,11 @@
 <p><code>echo</code>: similar to print function.</p>
 <blockquote>
 <p><code>echo content</code> : to print the content on the screen.</p>
-<p><code>echo content&gt;&gt;filename.filetype</code>: to write the content to the file.</p>
+<p><code>echo content&gt;&gt;filename.filetype</code>: to write to the file.</p>
 </blockquote>
 <p><code>cat filename.filetype</code> : to display the content of the file.</p>
 <p><code>touch filename.filetype</code>: to create a new empty file.</p>
-<p>The following example use these three commands. First we use echo to print “hello” on the screen :</p>
+<p>The following example uses these three commands. First we use <code>echo</code> to print “hello” on the screen :</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;echo <span style="color:#2aa198">&#34;hello!&#34;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello!
 </span></span></code></pre></div><p>Then we create a new directory named “example”, and create a new txt file named “ex01” in it.</p>
@@ -105,7 +105,7 @@
 <blockquote>
 <p>There are two ways of using <code>mv</code>:</p>
 <p>1.<code>mv source_file/directory dest_directory</code> : to <strong>move</strong> the source file/directory to the dest_directory</p>
-<p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already exist, it will be overwritten as the content of the source file.</p>
+<p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already existed, it will be overwritten as the content of the source file.</p>
 </blockquote>
 <p>Let’s see an example of <code>mv</code>. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.</p>
 <pre tabindex="0"><code>/example&gt; ls
