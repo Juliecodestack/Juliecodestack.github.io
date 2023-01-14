@@ -307,15 +307,15 @@
 </h5>
 <p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
 <p>在 Git Bash 客户端，输入：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
 </span></span><span style="display:flex;"><span>git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
 </span></span></code></pre></div><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
 <p>同样在 Git Bash 客户端，先后输入：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd ~/.ssh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd ~/.ssh
 </span></span></code></pre></div><p>和</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls
 </span></span></code></pre></div><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
 </span></span></code></pre></div><p>如果没有 SSH Key，就要输入以下命令行生成：</p>
 <p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
 <p>生成后再输入上面的 <code>cd ~/.ssh</code> 和 <code>ls</code> 命令，就可以看到 SSH Key 了。</p>
@@ -340,7 +340,7 @@
 <p>在 Git Bash 客户端运行命令：</p>
 <p><code>$ ssh -T git@github.com</code></p>
 <p>出现类似下面的提示，表示安装成功：</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
 </span></span></code></pre></div><h5 id="2我的第一个-github-项目如何新建上传仓库">
   2.我的第一个 GitHub 项目：如何新建上传仓库
   <a class="heading-link" href="#2%e6%88%91%e7%9a%84%e7%ac%ac%e4%b8%80%e4%b8%aa-github-%e9%a1%b9%e7%9b%ae%e5%a6%82%e4%bd%95%e6%96%b0%e5%bb%ba%e4%b8%8a%e4%bc%a0%e4%bb%93%e5%ba%93">
