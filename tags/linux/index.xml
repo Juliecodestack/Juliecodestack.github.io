@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 04 Jan 2023 12:58:19 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Terminal/Shell Commands</title>
-      <link>https://juliecodestack.github.io/post/shell_command/</link>
+      <link>https://juliecodestack.github.io/posts/shell_command/</link>
       <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/shell_command/</guid>
+      <guid>https://juliecodestack.github.io/posts/shell_command/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: In this article I’ll introduce some terminal/shell commands, with examples.&lt;/p&gt;
 &lt;/blockquote&gt;</description>

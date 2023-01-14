@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Julie">
+    <meta name="description" content="
+Summary: Do you know a bool expression may not return True or False ?
+">
+    <meta name="keywords" content="blog, programming, machine learning">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to evaluate a bool expression?"/>
+<meta name="twitter:description" content="
+Summary: Do you know a bool expression may not return True or False ?
+"/>
+
+    <meta property="og:title" content="How to evaluate a bool expression?" />
+<meta property="og:description" content="
+Summary: Do you know a bool expression may not return True or False ?
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/posts/bool-expression/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-07T20:54:13+08:00" />
+<meta property="article:modified_time" content="2023-01-07T20:54:13+08:00" />
+
+
+
+    <title>
+  How to evaluate a bool expression? · Juliecodestack
+</title>
+
+    
+      <link rel="canonical" href="https://juliecodestack.github.io/posts/bool-expression/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.105.0">
+  </head>
+
+  
+  
+  <body class="preload-transitions colorscheme-light">
+    
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Juliecodestack
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://juliecodestack.github.io/posts/bool-expression/">
+              How to evaluate a bool expression?
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2023-01-07T20:54:13&#43;08:00'>
+                January 7, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/programming/">programming</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/python/">Python</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/bool-expression/">bool expression</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <blockquote>
+<p><strong>Summary</strong>: Do you know a bool expression may not return True or False ?</p>
+</blockquote>
+<p>We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What is the result of expression <code>True and 3</code> ?</p>
+<p>Let’s find out the answer.</p>
+<p>Here is a question I came across while I was doing <a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab01/">a lab of Berkeley CS61A Course</a> . What would Python print?</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; positive = 28 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; <span style="font-weight:bold">while</span> positive: 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...     print(<span style="font-style:italic">&#34;positive?&#34;</span>) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>...     positive -= 3
+</span></span></code></pre></div><p>I thought that after printing “positive?” 10 times , the variable “positive” would become negative, so the program would stop. But my answer didn’t pass the test, so I ran it locally to see what happened. To my surprise, the program didn’t stop! It’s an infinite loop. Why?</p>
+<p>Because the boolean value of a negative number is True. <strong>Only the boolean value of 0 is False, while the boolean value of a positive or negative number is True</strong>, so bool(-2) is True.</p>
+<blockquote>
+<p>In Python, the boolean value of False (or 0, or ‘’, or None) is False. The boolean value of others is True.</p>
+</blockquote>
+<p>Then how to evaluate the bool expression?</p>
+<p>A bool expression usually contains logic operators such as <code>and</code>, <code>or</code>, <code>not</code>.</p>
+<p>(1)<code>and</code> : The result of <code>False and True</code> is False, so for expression <code>value1 and value2</code> , only when the first element <code>value1</code> is True do we need to check the second element <code>value2</code> . For example, the value of expression <code>True and 0</code> is 0.</p>
+<p>That is, <strong><code>and</code> stops evaluating at the first falsy value.</strong> For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; 0 and 2
+</span></span><span style="display:flex;"><span>0
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; False and -2
+</span></span><span style="display:flex;"><span>False
+</span></span></code></pre></div><p>If all values evaluate to be True, the last value is returned. So the value of expression <code>True and 3</code> is 3, while the expression <code>3 and True</code> returns True.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; 2 and -3
+</span></span><span style="display:flex;"><span>-3
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; -3 and 2
+</span></span><span style="display:flex;"><span>2
+</span></span></code></pre></div><p>(2)<code>or</code>: uses an evaluating order like <code>and</code>. The result of <code>True or False</code> is True, so for expression <code>value1 or value2</code> , only when the first element <code>value1</code> is False do we need to check the second element <code>value2</code> .</p>
+<p>That is, <strong><code>or</code> stops evaluating at the first truthy value.</strong> For example:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; 0 or -1
+</span></span><span style="display:flex;"><span>-1
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; 2 or -1
+</span></span><span style="display:flex;"><span>2
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt;True or 2
+</span></span><span style="display:flex;"><span>True
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt;0 or False or -3 or 1 / 0
+</span></span><span style="display:flex;"><span>-3
+</span></span></code></pre></div><p>Here the last element <code>1/0 </code> in the last expression won’t be evaluated, otherwise it’ll produce an error.</p>
+<p>If all values evaluate to be False, the last value is returned.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; False or 0
+</span></span><span style="display:flex;"><span>0
+</span></span><span style="display:flex;"><span>&gt;&gt;&gt; 0 or False
+</span></span><span style="display:flex;"><span>False
+</span></span></code></pre></div><p>Here we need to pay attention to one thing, <strong>the return value of a bool expression like <code>value1 and value2</code> is not always True or False</strong>. It returns value1 or value2, not the boolean value of value1/value2, so it may be a number.</p>
+<p>(3)<code>not</code>: Unlike <code>and</code> and <code>or</code>, <code>not</code> expression returns the opposite boolean value of the element, so the result is either True or False.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;&gt;&gt; not 10
+</span></span><span style="display:flex;"><span>False
+</span></span></code></pre></div><p><strong>Reference</strong>:</p>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab01/">Lab 1: Variables &amp; Functions, Control | CS 61A Fall 2020</a></p>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/disc/disc01.pdf">disc01| CS 61A Fall 2020</a></p>
+<p><strong>For comments or discussions, please send me an <a href="https://juliecodestack.github.io/page/about/">email</a> .</strong></p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>For comments or discussions, please send me an [email](https://juliecodestack.github.io/about/) .</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2023
+         Julie 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js" integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to evaluate a bool expression?</title>
-      <link>https://juliecodestack.github.io/post/bool-expression/</link>
+      <link>https://juliecodestack.github.io/posts/bool-expression/</link>
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/bool-expression/</guid>
+      <guid>https://juliecodestack.github.io/posts/bool-expression/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: Do you know a bool expression may not return True or False ?&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Terminal/Shell Commands</title>
-      <link>https://juliecodestack.github.io/post/shell_command/</link>
+      <link>https://juliecodestack.github.io/posts/shell_command/</link>
       <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/shell_command/</guid>
+      <guid>https://juliecodestack.github.io/posts/shell_command/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;: In this article I’ll introduce some terminal/shell commands, with examples.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -31,10 +31,10 @@
     
     <item>
       <title>About</title>
-      <link>https://juliecodestack.github.io/page/about/</link>
+      <link>https://juliecodestack.github.io/about/</link>
       <pubDate>Sun, 20 Nov 2022 20:55:33 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/page/about/</guid>
+      <guid>https://juliecodestack.github.io/about/</guid>
       <description>Welcome to Juliecodestack!
 I’m Julie. I’m interested in Python and Machine Learning. Here I write down what I learned, or how to solve the problems I met.
 I also like:
@@ -44,10 +44,10 @@ email: Juliecodestack@126.com .</description>
     
     <item>
       <title>Numpy运算中的axis参数</title>
-      <link>https://juliecodestack.github.io/post/21005numpy_axis/</link>
+      <link>https://juliecodestack.github.io/posts/21005numpy_axis/</link>
       <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/21005numpy_axis/</guid>
+      <guid>https://juliecodestack.github.io/posts/21005numpy_axis/</guid>
       <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
 和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
@@ -56,10 +56,10 @@ email: Juliecodestack@126.com .</description>
     
     <item>
       <title>Jupyter Notebook使用</title>
-      <link>https://juliecodestack.github.io/post/21004jupyternotebook/</link>
+      <link>https://juliecodestack.github.io/posts/21004jupyternotebook/</link>
       <pubDate>Sun, 07 Mar 2021 20:40:59 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/21004jupyternotebook/</guid>
+      <guid>https://juliecodestack.github.io/posts/21004jupyternotebook/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -68,46 +68,46 @@ email: Juliecodestack@126.com .</description>
     
     <item>
       <title>Python入门：安装 Python 软件，Anaconda</title>
-      <link>https://juliecodestack.github.io/post/21003anaconda/</link>
+      <link>https://juliecodestack.github.io/posts/21003anaconda/</link>
       <pubDate>Mon, 15 Feb 2021 09:45:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/21003anaconda/</guid>
+      <guid>https://juliecodestack.github.io/posts/21003anaconda/</guid>
       <description>&lt;p&gt;“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>双显示器扩展显示时怎么移动鼠标到另一块屏？</title>
-      <link>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
+      <link>https://juliecodestack.github.io/posts/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
       <pubDate>Mon, 14 Dec 2020 17:04:04 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
+      <guid>https://juliecodestack.github.io/posts/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
       <description>&lt;p&gt;最近为小笔记本加了一个大点的显示器，虽然设置为大屏显示，但有时开机会出现设置为扩展显示器的情况，不知怎的，鼠标点半天，光标都移动不到另一块屏幕中，上网查找了一下答案，把解决方法记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GitHub入门指南</title>
-      <link>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</link>
+      <link>https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown进阶</title>
-      <link>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <link>https://juliecodestack.github.io/posts/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://juliecodestack.github.io/posts/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
       <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>一篇文章带你入门Markdown</title>
-      <link>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
+      <link>https://juliecodestack.github.io/posts/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:03 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
+      <guid>https://juliecodestack.github.io/posts/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
       <description>&lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;
@@ -132,35 +132,6 @@ email: Juliecodestack@126.com .</description>
 &lt;li&gt;在插入网址链接时，显示出一长串网址，不够简洁美观。要是能够把链接显示为简要文字说明，点击文字就可以到达网址就好了。&lt;/li&gt;
 &lt;li&gt;对于程序员来说，文档中经常需要插入代码，可是 Word 中没有能直接突出显示代码的效果。如果能像代码编辑器里一样，对函数、部分语句等突出标识，看着就清晰多了。&lt;/li&gt;
 &lt;/ul&gt;</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://juliecodestack.github.io/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://juliecodestack.github.io/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://juliecodestack.github.io/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://juliecodestack.github.io/contact/</guid>
-      <description>Follow me, @johndoe.</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://juliecodestack.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://juliecodestack.github.io/projects/</guid>
-      <description>Nothing to see here&amp;hellip; Move along!</description>
     </item>
     
   </channel>

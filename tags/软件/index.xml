@@ -9,28 +9,28 @@
     <lastBuildDate>Sun, 13 Dec 2020 10:46:25 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitHub入门指南</title>
-      <link>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</link>
+      <link>https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown进阶</title>
-      <link>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <link>https://juliecodestack.github.io/posts/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://juliecodestack.github.io/posts/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
       <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>一篇文章带你入门Markdown</title>
-      <link>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
+      <link>https://juliecodestack.github.io/posts/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:03 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
+      <guid>https://juliecodestack.github.io/posts/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
       <description>&lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;

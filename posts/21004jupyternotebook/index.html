@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Julie">
+    <meta name="description" content="
+注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
+
+接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。">
+    <meta name="keywords" content="blog, programming, machine learning">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Jupyter Notebook使用"/>
+<meta name="twitter:description" content="
+注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
+
+接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。"/>
+
+    <meta property="og:title" content="Jupyter Notebook使用" />
+<meta property="og:description" content="
+注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
+
+接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/posts/21004jupyternotebook/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-07T20:40:59+00:00" />
+<meta property="article:modified_time" content="2021-03-07T20:40:59+00:00" />
+
+
+
+    <title>
+  Jupyter Notebook使用 · Juliecodestack
+</title>
+
+    
+      <link rel="canonical" href="https://juliecodestack.github.io/posts/21004jupyternotebook/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.105.0">
+  </head>
+
+  
+  
+  <body class="preload-transitions colorscheme-light">
+    
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Juliecodestack
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://juliecodestack.github.io/posts/21004jupyternotebook/">
+              Jupyter Notebook使用
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-03-07T20:40:59Z'>
+                March 7, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">机器学习笔记</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/python/">Python</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/anaconda/">Anaconda</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/jupyter-notebook/">Jupyter Notebook</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <blockquote>
+<p>注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。</p>
+</blockquote>
+<p>接着<a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/">上一篇文章</a>，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。</p>
+<p><img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-05-11-35-28.png" alt="JupyterNotebook文件夹页面"></p>
+<p>点击图中箭头指示的【New】按钮，新建一个空白文档。</p>
+<h4 id="基本功能">
+  基本功能
+  <a class="heading-link" href="#%e5%9f%ba%e6%9c%ac%e5%8a%9f%e8%83%bd">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>打开新文档，我们看到如下界面:
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-05-11-45-49.png" alt="JupyterNotebook文档页面"></p>
+<p>图中标识了一些功能。其中，核心部分是编辑单元 (Cell)，Jupyter Notebook 最大的特点就是交互式编程。那么，这是什么样的交互式呢？我们在一个单元里编写一小段代码，按【Ctrl】+【Enter】键就可以运行看到效果，而不是像之前一样要把整个程序写完、调试运行。在 Jupyter Notebook 中 ，每一段单元程序都可以马上看到效果和反馈，这一特点也让很多老师都采用它来编写教材、程序示例。就我自己的学习体会而言，这样更容易练习、同时也让学习更有趣。我们在图中所示的下拉列表中可以选择单元是代码还是标记（Markdown文档），标记（md 格式）可以用于写一些代码说明。</p>
+<h4 id="快捷键">
+  快捷键
+  <a class="heading-link" href="#%e5%bf%ab%e6%8d%b7%e9%94%ae">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>
+<p>按【Ctrl】+【Enter】键：运行当前单元，编辑单元不变。</p>
+</li>
+<li>
+<p>按【Shift】+【Enter】键：运行当前单元，编辑单元跳转到下一单元（如果下方没有单元，会新建一个空白单元）。</p>
+</li>
+<li>
+<p>按【Alt】+【Enter】键：运行当前单元，同时在下方插入一个空白单元，编辑单元变为这个新单元。</p>
+</li>
+</ul>
+<h4 id="运行-python-文件">
+  运行 Python 文件
+  <a class="heading-link" href="#%e8%bf%90%e8%a1%8c-python-%e6%96%87%e4%bb%b6">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>%run file1.py 与 Anaconda Promt 命令行中运行 python file1.py 效果相同。需要注意的是，file1.py 需在 Jupyter Notebook 或者当前命令行运行的文件夹中，如果不是，要在文件前加上文件路径。</p>
+<h4 id="输入自动完成tab键">
+  输入自动完成:【Tab】键
+  <a class="heading-link" href="#%e8%be%93%e5%85%a5%e8%87%aa%e5%8a%a8%e5%ae%8c%e6%88%90tab%e9%94%ae">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>对初学者来说，“输入就忘”真是令人头疼的一件事。因为刚学习，很多操作不太熟悉，想要输入一段代码，却想不起来关键函数，怎么办？
+别急，Jupyter Notebook 非常贴心地提供了自动完成功能。</p>
+<p>1.名字自动完成：输入头几个字母，按【Tab】键，会搜索之前输入过和系统自带的变量或函数的名字，并提供结果。
+例如，先定义函数变量 l1 和 l2：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>l1=1
+</span></span><span style="display:flex;"><span>l2=3
+</span></span></code></pre></div><p>再输入<code>l</code>，按【Tab】键，会弹出如下图所示的选择框，开始的两个就是刚才定义的变量 l1, l2，接下来的 lambda, len, list 等等是系统自带的函数或者对象名。
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-10-31-18.png" alt="变量名的输入自动完成"></p>
+<p>2.当我们定义了一个对象(object)，比如列表型，字典型数据等，可以通过【Tab】键搜索到这个对象的所有函数和属性。
+例如，定义一个字典型数据d1:
+<code>d1={'a':1,'b':2,'c':3}</code>
+再输入<code>d1.</code>（注意这里有个<code>.</code>），按【Tab】键，会弹出如下图所示的选择框，这就是可用于字典型数据的所有操作。有时我们不确定某个函数能不能应用于当前数据类型，就可以通过这种方式查询。
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-10-56-33.png" alt="object函数的输入自动完成"></p>
+<p>3.系统的工具库，可以用【Tab】键搜索到某个库的所有函数。
+例如：引用 NumPy 工具包，然后输入<code>np.</code>，按【Tab】键，如下图所示，会弹出一个选择框，里面有大量函数，这里只展示前面几个。
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-11-00-35.png" alt="工具包函数的输入自动完成"></p>
+<p>进一步地，在某个函数的变量定义时，输入变量名的头一个或几个字母，按【Tab】键，也会出现相应变量的列表，这在函数定义时很有帮助。比如有的函数定义的变量多，记不住，【Tab】键可以快速找到对应的变量。
+例如，定义函数：</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>def func1(aaa=1,aab=2,abc=3,ccd=4):
+</span></span><span style="display:flex;"><span>    return aaa,aab,abc,ccd
+</span></span></code></pre></div><p>在括号内按【Tab】键，会有一个下拉列表，如下图所示，其中就有函数的变量 aaa, aab, abc, 这里只列举了前几个。ccd 也在列表中。
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-09-59.png" alt="函数定义中变量名的输入自动完成1"></p>
+<p>如果我们想要快速找到ccd这个变量，可以在括号内输入c，再按【Tab】键，
+<img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-11-16.png" alt="函数定义中变量名的输入自动完成2"></p>
+<p>4.文件路径，比如输入路径 E:/fileA/，按【Tab】键，在列表框中，除了显示一些Python库的基本函数之外，还会显示文件夹的文件路径。如果在输入时不记得文件具体的路径，可以用这种方法快速找到。结合前面介绍的 %run 命令，可以运行文件路径下的文件。</p>
+<h4 id="magic-语法">
+  magic 语法
+  <a class="heading-link" href="#magic-%e8%af%ad%e6%b3%95">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<ul>
+<li>
+<p>?函数名：显示函数说明</p>
+</li>
+<li>
+<p>??函数名：显示函数说明和函数源代码</p>
+</li>
+<li>
+<p>%run 文件名：（前面介绍过）在Jupyter Notebook中运行Python文件</p>
+</li>
+<li>
+<p>%pwd ：显示当前运行文件夹路径</p>
+</li>
+</ul>
+<h4 id="参考教程">
+  参考教程
+  <a class="heading-link" href="#%e5%8f%82%e8%80%83%e6%95%99%e7%a8%8b">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p>Python for Data Analysis by Wes Mckinney</p>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
+    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
+    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
+    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>For comments or discussions, please send me an [email](https://juliecodestack.github.io/about/) .</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2023
+         Julie 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js" integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
