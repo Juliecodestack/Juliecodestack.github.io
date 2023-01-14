@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Julie</title>
+    <title>Pages on Juliecodestack</title>
     <link>https://juliecodestack.github.io/page/</link>
-    <description>Recent content in Pages on Julie</description>
+    <description>Recent content in Pages on Juliecodestack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 20 Nov 2022 20:55:33 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
@@ -16,7 +16,8 @@
       <description>Welcome to Juliecodestack!
 I’m Julie. I’m interested in Python and Machine Learning. Here I write down what I learned, or how to solve the problems I met.
 I also like:
-reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. For comments or discussions, please send me an email: Juliecodestack@126.com .</description>
+reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. Contact me:
+email: Juliecodestack@126.com .</description>
     </item>
     
   </channel>

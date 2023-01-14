@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>电脑 on Julie</title>
+    <title>电脑 on Juliecodestack</title>
     <link>https://juliecodestack.github.io/tags/%E7%94%B5%E8%84%91/</link>
-    <description>Recent content in 电脑 on Julie</description>
+    <description>Recent content in 电脑 on Juliecodestack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 14 Dec 2020 17:04:04 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/%E7%94%B5%E8%84%91/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>双显示器扩展显示时怎么移动鼠标到另一块屏？</title>
-      <link>https://juliecodestack.github.io/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
+      <link>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
       <pubDate>Mon, 14 Dec 2020 17:04:04 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
+      <guid>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
       <description>&lt;p&gt;最近为小笔记本加了一个大点的显示器，虽然设置为大屏显示，但有时开机会出现设置为扩展显示器的情况，不知怎的，鼠标点半天，光标都移动不到另一块屏幕中，上网查找了一下答案，把解决方法记录一下。&lt;/p&gt;</description>
     </item>
     

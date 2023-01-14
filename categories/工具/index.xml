@@ -1,76 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工具 on Julie</title>
+    <title>工具 on Juliecodestack</title>
     <link>https://juliecodestack.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-    <description>Recent content in 工具 on Julie</description>
+    <description>Recent content in 工具 on Juliecodestack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Mon, 14 Dec 2020 17:04:04 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>双显示器扩展显示时怎么移动鼠标到另一块屏？</title>
-      <link>https://juliecodestack.github.io/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
+      <link>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</link>
       <pubDate>Mon, 14 Dec 2020 17:04:04 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
+      <guid>https://juliecodestack.github.io/post/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/</guid>
       <description>&lt;p&gt;最近为小笔记本加了一个大点的显示器，虽然设置为大屏显示，但有时开机会出现设置为扩展显示器的情况，不知怎的，鼠标点半天，光标都移动不到另一块屏幕中，上网查找了一下答案，把解决方法记录一下。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GitHub入门指南</title>
-      <link>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</link>
+      <link>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sun, 13 Dec 2020 10:46:25 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</guid>
+      <guid>https://juliecodestack.github.io/post/github%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Markdown进阶</title>
-      <link>https://juliecodestack.github.io/2020/07/24/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <link>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/07/24/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <guid>https://juliecodestack.github.io/post/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
       <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>一篇文章带你入门Markdown</title>
-      <link>https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
+      <link>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</link>
       <pubDate>Fri, 24 Jul 2020 11:41:03 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
+      <guid>https://juliecodestack.github.io/post/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
       <description>&lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
     &lt;li&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#21-标题&#34;&gt;2.1 标题&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#22-加粗斜体&#34;&gt;2.2 加粗、斜体&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#23-下划线删除线&#34;&gt;2.3 下划线、删除线&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#24-引用代码&#34;&gt;2.4 引用、代码&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#25-列表&#34;&gt;2.5 列表&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#26-公式&#34;&gt;2.6 公式&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#27-表格&#34;&gt;2.7 表格&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#28-插入网址链接和图片&#34;&gt;2.8 插入网址链接和图片&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#29-排版规范&#34;&gt;2.9 排版规范&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#31-即写即显示typora&#34;&gt;3.1 即写即显示：Typora&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#32-对照显示atom-vscode&#34;&gt;3.2 对照显示：Atom, VSCode&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#33-多平台协作印象笔记&#34;&gt;3.3 多平台协作：印象笔记&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 
-&lt;h3 id=&#34;1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/h3&gt;
+&lt;h3 id=&#34;1-为什么选择-markdown&#34;&gt;
+  1. 为什么选择 Markdown？
+  &lt;a class=&#34;heading-link&#34; href=&#34;#1-%e4%b8%ba%e4%bb%80%e4%b9%88%e9%80%89%e6%8b%a9-markdown&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
 &lt;p&gt;正在看这篇文章的您很可能还没有使用过 Markdown 编辑器，平时写文档、排版编辑以 Word 为主吧，那么，您是否遇到过以下问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;写好文章后设定文档标题、字号、间距、加粗等排版工作，要花费大量时间。&lt;/li&gt;

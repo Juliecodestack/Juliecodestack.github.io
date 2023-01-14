@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+
+    
+
+    <meta name="author" content="Julie">
+    <meta name="description" content="
+Summary: In this article I’ll introduce some terminal/shell commands, with examples.
+">
+    <meta name="keywords" content="blog, programming, machine learning">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Terminal/Shell Commands"/>
+<meta name="twitter:description" content="
+Summary: In this article I’ll introduce some terminal/shell commands, with examples.
+"/>
+
+    <meta property="og:title" content="Terminal/Shell Commands" />
+<meta property="og:description" content="
+Summary: In this article I’ll introduce some terminal/shell commands, with examples.
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/post/shell_command/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-01-04T12:58:19+08:00" />
+<meta property="article:modified_time" content="2023-01-04T12:58:19+08:00" />
+
+
+
+    <title>
+  Terminal/Shell Commands · Juliecodestack
+</title>
+
+    
+      <link rel="canonical" href="https://juliecodestack.github.io/post/shell_command/">
+    
+
+    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+    <meta name="generator" content="Hugo 0.105.0">
+  </head>
+
+  
+  
+  <body class="preload-transitions colorscheme-light">
+    
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Juliecodestack
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://juliecodestack.github.io/pt-br/">🇧🇷</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="https://juliecodestack.github.io/post/shell_command/">
+          Terminal/Shell Commands
+        </a>
+      </h1>
+    </header>
+
+    <blockquote>
+<p><strong>Summary</strong>: In this article I’ll introduce some terminal/shell commands, with examples.</p>
+</blockquote>
+<p>I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  <code>cd</code> command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, <code>cd</code> stands for “change directory”, so we can figure out the command by thinking of the operation.</p>
+<p>Here I list some commands I’ve learned. I’ll update as I learn more.</p>
+<h4 id="1-directories-or-folders-in-windows">
+  1. Directories (or Folders in Windows)
+  <a class="heading-link" href="#1-directories-or-folders-in-windows">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><code>ls</code> : to list all the directoris/files in the current directory(folder).</p>
+<p><code>pwd</code>: (present working directory) to show the current file path.</p>
+<p><code>cd folder_name</code>: to change directory to the directory(folder).</p>
+<p>For example, <code>cd folder1</code>  changes the directory to the subfolder “folder1” in the current folder.</p>
+<blockquote>
+<p>Three special signs for directory:</p>
+<p><code>.</code>: current directory</p>
+<p><code>..</code>: parent directory, thus <code>cd ..</code> means changing to the parent directory.</p>
+<p><code>~</code>: home directory, thus <code>cd ~</code> means changing to the home directory. We can also type <code>cd</code> for the same result.</p>
+</blockquote>
+<p><code>mkdir folder_name</code> : to make a new directory (folder).</p>
+<p><code>rm -r folder_name </code> : to remove the whole directory (folder) ( “-r” means recursively).</p>
+<blockquote>
+<p><strong>Warning</strong>:  In UNIX, when you <code>rm</code> a file, it&rsquo;s gone. There is no Recycle bin or Trash for you to &ldquo;undo&rdquo; <code>rm</code>, so think twice before you use it.</p>
+</blockquote>
+<h4 id="2-files">
+  2. Files
+  <a class="heading-link" href="#2-files">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><code>echo</code>: similar to print function.</p>
+<blockquote>
+<p><code>echo content</code> : to print the content on the screen.</p>
+<p><code>echo content&gt;&gt;filename.filetype</code>: to write to the file.</p>
+</blockquote>
+<p><code>cat filename.filetype</code> : to display the content of the file.</p>
+<p><code>touch filename.filetype</code>: to create a new empty file.</p>
+<p>The following example uses these three commands. First we use <code>echo</code> to print “hello” on the screen :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;echo <span style="font-style:italic">&#34;hello!&#34;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello!
+</span></span></code></pre></div><p>Then we create a new directory named “example”, and create a new txt file named “ex01” in it.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;mkdir example
+</span></span><span style="display:flex;"><span>&gt;cd example
+</span></span><span style="display:flex;"><span>/example&gt; touch ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><p>When we type <code>cat ex01.txt</code>, the output is nothing, because “ex01.txt” is an empty file.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><p>We can use <code>echo</code>  command to write something into “ex01.txt” :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; echo <span style="font-style:italic">&#34;hello&#34;</span>&gt;&gt;ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span></code></pre></div><p>We can also write many times, the content will be added to the file :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; echo <span style="font-style:italic">&#34;Let&#39;s learn Python.&#34;</span>&gt;&gt;ex01.txt
+</span></span><span style="display:flex;"><span>/example&gt; cat ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p><code>mv source_path dest_path</code> ：to move the file/directory from the source_path to the dest_path.</p>
+<blockquote>
+<p>There are two ways of using <code>mv</code>:</p>
+<p>1.<code>mv source_file/directory dest_directory</code> : to <strong>move</strong> the source file/directory to the dest_directory</p>
+<p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already existed, it will be overwritten as the content of the source file.</p>
+</blockquote>
+<p>Let’s see an example of <code>mv</code>. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><p>First we create a new folder named “sub_example” as the dest_directory.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mkdir sub_example
+</span></span><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt  sub_example/
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls sub_example
+</span></span></code></pre></div><p>(1) use <code>mv source_file/directory dest_directory</code> to move a file :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mv ex01.txt sub_example
+</span></span><span style="display:flex;"><span>/example&gt; ls sub_example
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sub_example/
+</span></span></code></pre></div><p>After using the <code>mv</code> command, the file “ex01.txt” is moved to the subfolder “sub_example”.</p>
+<p>(2) use <code>mv source_file dest_file</code> to rename a file :</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; cd sub_example
+</span></span><span style="display:flex;"><span>.../sub_example&gt; mv ex01.txt ex02.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex02.txt
+</span></span></code></pre></div><p>Here the file name is changed from “ex01” to “ex02”.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; cat ex02.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p>What will happen if the dest_file has already existed?</p>
+<p>We create a file “ex03.txt” with the content “another txt file”.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; touch ex03.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; echo <span style="font-style:italic">&#34;another txt file&#34;</span>&gt;&gt;ex03.txt
+</span></span><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>another txt file
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; mv ex02.txt ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>mv: overwrite &#39;ex03.txt&#39;? y
+</span></span></code></pre></div><p>After typing <code>mv ex02.txt ex03.txt</code>, there will be a prompt to check if you really want to overwrite dest_file “ex03.txt”. If you type “y”, “ex03.txt” will be overwritten as the  content of “ex02.txt”.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; ls
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
+</span></span><span style="display:flex;"><span>Let&#39;s learn Python.
+</span></span></code></pre></div><p><code>cp file/directory dest_directory</code>: to copy the file/directory to the dest_directory.</p>
+<blockquote>
+<p>For <code>mv</code>/ <code>cp</code> command, if the dest_directory is the current directory,  we can write <code>.</code>  instead.</p>
+</blockquote>
+<p><code>rm file_name</code>: to remove a single file. Here only a file is removed, so <code>-r</code> is not needed.</p>
+<p><code>unzip file_name.zip</code> : to unzip the .zip file.</p>
+<h4 id="3-miscellaneous">
+  3. Miscellaneous
+  <a class="heading-link" href="#3-miscellaneous">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><code>man command_name</code>: to display manual pages for the command.</p>
+<h4 id="reference">
+  Reference
+  <a class="heading-link" href="#reference">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h4>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab00/">Lab 0: Getting Started | CS 61A Fall 2020</a></p>
+<p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html">UNIX tutorial | CS 61A Fall 2020</a></p>
+<p><a href="https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/">touch command in Linux with Examples - GeeksforGeeks</a></p>
+<p><strong>For comments or discussions, please send me an <a href="https://juliecodestack.github.io/page/about/">email</a> .</strong></p>
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>Enter a text here.</p>
+      
+      
+        ©
+        
+          2020 -
+        
+        2023
+         Julie 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js" integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

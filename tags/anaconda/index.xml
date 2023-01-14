@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anaconda on Julie</title>
+    <title>Anaconda on Juliecodestack</title>
     <link>https://juliecodestack.github.io/tags/anaconda/</link>
-    <description>Recent content in Anaconda on Julie</description>
+    <description>Recent content in Anaconda on Juliecodestack</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Sun, 07 Mar 2021 20:40:59 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jupyter Notebook使用</title>
-      <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>
+      <link>https://juliecodestack.github.io/post/21004jupyternotebook/</link>
       <pubDate>Sun, 07 Mar 2021 20:40:59 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</guid>
+      <guid>https://juliecodestack.github.io/post/21004jupyternotebook/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -21,10 +21,10 @@
     
     <item>
       <title>Python入门：安装 Python 软件，Anaconda</title>
-      <link>https://juliecodestack.github.io/2021/02/15/21003anaconda/</link>
+      <link>https://juliecodestack.github.io/post/21003anaconda/</link>
       <pubDate>Mon, 15 Feb 2021 09:45:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2021/02/15/21003anaconda/</guid>
+      <guid>https://juliecodestack.github.io/post/21003anaconda/</guid>
       <description>&lt;p&gt;“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？&lt;/p&gt;</description>
     </item>
     
