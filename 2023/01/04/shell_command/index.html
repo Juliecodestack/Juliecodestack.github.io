@@ -25,6 +25,29 @@
 
   
   
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        });
+    });
+</script>
 </head>
 
   <body class="theme-base-0d ">
@@ -40,7 +63,7 @@
     <nav>
       <ul class="sidebar-nav">
         <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="">  </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li>
+        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
       </ul>
     </nav>
 
@@ -51,9 +74,9 @@
     <main class="content container">
     <div class="post">
   <h1>Terminal/Shell Commands</h1>
-  <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Wed, Jan 4, 2023</time>
+  <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Jan 4, 2023</time>
   <blockquote>
-<p><strong>Summary</strong>: In this article I’ll introduce some terminal/shell commands, with examples.</p>
+<p><strong>Abstract</strong>: In this article I’ll introduce some terminal/shell commands, with examples.</p>
 </blockquote>
 <p>I used to think that terminal/shell commands are for Linux users and it looks hard to memorize lots of commands. Now I find I was wrong. These commands are useful and convenient. For example, when runing a Python program in Terminal/Shell, with a  <code>cd</code> command we can easily jump to certain directory. Besides, many commands are acronym of the corresponding words, for example, <code>cd</code> stands for “change directory”, so we can figure out the command by thinking of the operation.</p>
 <p>Here I list some commands I’ve learned. I’ll update as I learn more.</p>
@@ -102,11 +125,9 @@
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>hello
 </span></span><span style="display:flex;"><span>Let&#39;s learn Python.
 </span></span></code></pre></div><p><code>mv source_path dest_path</code> ：to move the file/directory from the source_path to the dest_path.</p>
-<blockquote>
 <p>There are two ways of using <code>mv</code>:</p>
 <p>1.<code>mv source_file/directory dest_directory</code> : to <strong>move</strong> the source file/directory to the dest_directory</p>
 <p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already existed, it will be overwritten as the content of the source file.</p>
-</blockquote>
 <p>Let’s see an example of <code>mv</code>. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.</p>
 <pre tabindex="0"><code>/example&gt; ls
 </code></pre><div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ex01.txt
@@ -157,6 +178,9 @@
 <p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab00/">Lab 0: Getting Started | CS 61A Fall 2020</a></p>
 <p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html">UNIX tutorial | CS 61A Fall 2020</a></p>
 <p><a href="https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/">touch command in Linux with Examples - GeeksforGeeks</a></p>
+<blockquote>
+<p><strong>For comments or discussions, please send me an <a href="https://juliecodestack.github.io/about/">email</a> .</strong></p>
+</blockquote>
 </div>
 
 

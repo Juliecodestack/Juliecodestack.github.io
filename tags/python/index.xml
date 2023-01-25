@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to evaluate a bool expression?</title>
-      <link>https://juliecodestack.github.io/posts/bool-expression/</link>
+      <link>https://juliecodestack.github.io/2023/01/07/bool-expression/</link>
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/bool-expression/</guid>
+      <guid>https://juliecodestack.github.io/2023/01/07/bool-expression/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: Do you know a bool expression may not return True or False ?&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Numpy运算中的axis参数</title>
-      <link>https://juliecodestack.github.io/posts/21005numpy_axis/</link>
+      <link>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</link>
       <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/21005numpy_axis/</guid>
+      <guid>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
       <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
 和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
@@ -32,10 +32,10 @@
     
     <item>
       <title>Jupyter Notebook使用</title>
-      <link>https://juliecodestack.github.io/posts/21004jupyternotebook/</link>
+      <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>
       <pubDate>Sun, 07 Mar 2021 20:40:59 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/21004jupyternotebook/</guid>
+      <guid>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Python入门：安装 Python 软件，Anaconda</title>
-      <link>https://juliecodestack.github.io/posts/21003anaconda/</link>
+      <link>https://juliecodestack.github.io/2021/02/15/21003anaconda/</link>
       <pubDate>Mon, 15 Feb 2021 09:45:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/21003anaconda/</guid>
+      <guid>https://juliecodestack.github.io/2021/02/15/21003anaconda/</guid>
       <description>&lt;p&gt;“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？&lt;/p&gt;</description>
     </item>
     

@@ -25,6 +25,29 @@
 
   
   
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        });
+    });
+</script>
 </head>
 
   <body class="theme-base-0d ">
@@ -40,7 +63,7 @@
     <nav>
       <ul class="sidebar-nav">
         <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="">  </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li>
+        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
       </ul>
     </nav>
 
@@ -51,7 +74,7 @@
     <main class="content container">
     <div class="post">
   <h1>Python入门：安装 Python 软件，Anaconda</h1>
-  <time datetime=2021-02-15T09:45:31Z class="post-date">Mon, Feb 15, 2021</time>
+  <time datetime=2021-02-15T09:45:31Z class="post-date">Feb 15, 2021</time>
   <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
 <h4 id="python安装方式">Python安装方式</h4>
 <p>我在学 Python 时用过两种安装方式：</p>

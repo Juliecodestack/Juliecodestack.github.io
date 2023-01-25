@@ -25,6 +25,29 @@
 
   
   
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        });
+    });
+</script>
 </head>
 
   <body class="theme-base-0d ">
@@ -40,7 +63,7 @@
     <nav>
       <ul class="sidebar-nav">
         <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="">  </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li>
+        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
       </ul>
     </nav>
 
@@ -51,7 +74,7 @@
     <main class="content container">
     <div class="post">
   <h1>GitHub入门指南</h1>
-  <time datetime=2020-12-13T10:46:25Z class="post-date">Sun, Dec 13, 2020</time>
+  <time datetime=2020-12-13T10:46:25Z class="post-date">Dec 13, 2020</time>
   <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
 <p>因为我也是初级水平，文中介绍的知识基于我自己的学习理解，如果有疏漏错误之处，欢迎您留言指正，谢谢！</p>
 <p>新手小白可能会对 GitHub 有以下困惑：</p>
@@ -70,25 +93,9 @@
       <ul>
         <li>
           <ul>
-            <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a>
-              <ul>
-                <li><a href="#1注册账号">1.注册账号</a></li>
-                <li><a href="#2登录-github浏览页面">2.登录 GitHub，浏览页面</a></li>
-              </ul>
-            </li>
-            <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a>
-              <ul>
-                <li><a href="#1-git">1. Git</a></li>
-                <li><a href="#2git-基本命令">2.Git 基本命令</a></li>
-              </ul>
-            </li>
-            <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a>
-              <ul>
-                <li><a href="#1配置ssh-key">1.配置SSH Key</a></li>
-                <li><a href="#2我的第一个-github-项目如何新建上传仓库">2.我的第一个 GitHub 项目：如何新建上传仓库</a></li>
-                <li><a href="#3和别人一起做项目fork-和-pull-request">3.和别人一起做项目：Fork 和 Pull request</a></li>
-              </ul>
-            </li>
+            <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a></li>
+            <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a></li>
+            <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a></li>
             <li><a href="#四总结">四、总结</a></li>
           </ul>
         </li>

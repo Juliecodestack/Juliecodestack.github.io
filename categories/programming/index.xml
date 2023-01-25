@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to evaluate a bool expression?</title>
-      <link>https://juliecodestack.github.io/posts/bool-expression/</link>
+      <link>https://juliecodestack.github.io/2023/01/07/bool-expression/</link>
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/bool-expression/</guid>
+      <guid>https://juliecodestack.github.io/2023/01/07/bool-expression/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: Do you know a bool expression may not return True or False ?&lt;/p&gt;
 &lt;/blockquote&gt;</description>
@@ -20,10 +20,10 @@
     
     <item>
       <title>Terminal/Shell Commands</title>
-      <link>https://juliecodestack.github.io/posts/shell_command/</link>
+      <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
       <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/posts/shell_command/</guid>
+      <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;: In this article I’ll introduce some terminal/shell commands, with examples.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
