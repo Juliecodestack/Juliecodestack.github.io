@@ -1,157 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.105.0">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="color-scheme" content="light dark">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+  <title>GitHub入门指南 &middot; Julie</title>
+  <meta name="description" content="" />
 
-    <meta name="author" content="Julie">
-    <meta name="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。">
-    <meta name="keywords" content="blog, programming, machine learning">
-
-    <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GitHub入门指南"/>
-<meta name="twitter:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"/>
-
-    <meta property="og:title" content="GitHub入门指南" />
-<meta property="og:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-12-13T10:46:25+00:00" />
-<meta property="article:modified_time" content="2020-12-13T10:46:25+00:00" />
+  
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
-
-    <title>
-  GitHub入门指南 · Juliecodestack
-</title>
-
-    
-      <link rel="canonical" href="https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/">
-    
-
-    <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-    
-      
-      
-      <link rel="stylesheet" href="/css/coder.min.728f45c9eaff821acb9cccdb60c81cf16be81bd890ee22cc5b5f4dbf276a082f.css" integrity="sha256-co9Fyer/ghrLnMzbYMgc8WvoG9iQ7iLMW19NvydqCC8=" crossorigin="anonymous" media="screen" />
-    
-
-    
-
-    
-
-    
-
-    
-
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-    <meta name="generator" content="Hugo 0.105.0">
-  </head>
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
 
   
   
-  <body class="preload-transitions colorscheme-light">
-    
 
-    <main class="wrapper">
-      <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/">
-      Juliecodestack
-    </a>
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
-        
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/posts/">Archive</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/categories/">Category</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/tags/">Tags</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
-            </li>
-          
-        
-        
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        });
+    });
+</script>
+</head>
+
+  <body class="theme-base-0d ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
+      <p class="lead">
+       Notes on Programming and Machine Learning 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
+        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> tags </a></li><li><a href="">  </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li>
       </ul>
-    
-  </section>
-</nav>
+    </nav>
 
+    <p>&copy; 2023. All rights reserved. </p>
+  </div>
+</aside>
 
-      <div class="content">
-        
-  <section class="container post">
-    <article>
-      <header>
-        <div class="post-title">
-          <h1 class="title">
-            <a class="title-link" href="https://juliecodestack.github.io/posts/github%E5%85%A5%E9%97%A8/">
-              GitHub入门指南
-            </a>
-          </h1>
-        </div>
-        <div class="post-meta">
-          <div class="date">
-            <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
-              <time datetime='2020-12-13T10:46:25Z'>
-                December 13, 2020
-              </time>
-            </span>
-            <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
-              3-minute read
-            </span>
-          </div>
-          
-          <div class="categories">
-  <i class="fa fa-folder" aria-hidden="true"></i>
-    <a href="/categories/%E5%B7%A5%E5%85%B7/">工具</a></div>
-
-          <div class="tags">
-  <i class="fa fa-tag" aria-hidden="true"></i>
-    <span class="tag">
-      <a href="/tags/github/">GitHub</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/git/">Git</a>
-    </span>
-      <span class="separator">•</span>
-    <span class="tag">
-      <a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
-    </span></div>
-
-        </div>
-      </header>
-
-      <div>
-        
-        <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
+    <main class="content container">
+    <div class="post">
+  <h1>GitHub入门指南</h1>
+  <time datetime=2020-12-13T10:46:25Z class="post-date">Dec 13, 2020</time>
+  <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
 <p>因为我也是初级水平，文中介绍的知识基于我自己的学习理解，如果有疏漏错误之处，欢迎您留言指正，谢谢！</p>
 <p>新手小白可能会对 GitHub 有以下困惑：</p>
 <p>1.GitHub 是个什么网站？</p>
@@ -167,24 +91,21 @@
   <ul>
     <li>
       <ul>
-        <li></li>
+        <li>
+          <ul>
+            <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a></li>
+            <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a></li>
+            <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a></li>
+            <li><a href="#四总结">四、总结</a></li>
+          </ul>
+        </li>
       </ul>
     </li>
   </ul>
 </nav>
 
-<h4 id="一带你浏览-github-网站看看都有些什么">
-  一、带你浏览 GitHub 网站，看看都有些什么？
-  <a class="heading-link" href="#%e4%b8%80%e5%b8%a6%e4%bd%a0%e6%b5%8f%e8%a7%88-github-%e7%bd%91%e7%ab%99%e7%9c%8b%e7%9c%8b%e9%83%bd%e6%9c%89%e4%ba%9b%e4%bb%80%e4%b9%88">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h4>
-<h5 id="1注册账号">
-  1.注册账号
-  <a class="heading-link" href="#1%e6%b3%a8%e5%86%8c%e8%b4%a6%e5%8f%b7">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h4 id="一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</h4>
+<h5 id="1注册账号">1.注册账号</h5>
 <p>打开 <a href="https://github.com/">GitHub网站</a>，首页如下图所示，点击右上角<code>Sign up</code>按钮，进入注册页面。使用电子邮件注册，设置好用户名和密码，即可生成账号。完成注册后，点击旁边的<code>Sign in</code>按钮登录。</p>
 
 
@@ -197,12 +118,7 @@
 </span>
 
 <!-- raw HTML omitted -->
-<h5 id="2登录-github浏览页面">
-  2.登录 GitHub，浏览页面
-  <a class="heading-link" href="#2%e7%99%bb%e5%bd%95-github%e6%b5%8f%e8%a7%88%e9%a1%b5%e9%9d%a2">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h5 id="2登录-github浏览页面">2.登录 GitHub，浏览页面</h5>
 <p>登录进去后，我们见到的页面分成三大版块，如下图所示，从左至右依次为：自己的仓库(Repositories)、关注的人的动态、发现新的热门/有趣仓库。</p>
 
 
@@ -246,30 +162,15 @@
 <li>&ldquo;Pinned&quot;区域是自己的个人展示区，在自己的仓库中精选几个放到这里展示，让别人能很快发现你的闪光点。</li>
 <li>活跃度表格：上面的绿色格子越多，颜色越深，说明该用户在 GitHub 上提交次数越多，是活跃用户。</li>
 </ol>
-<h4 id="二github-是-git-软件用户的项目管理中心">
-  二、GitHub 是 Git 软件用户的项目管理中心
-  <a class="heading-link" href="#%e4%ba%8cgithub-%e6%98%af-git-%e8%bd%af%e4%bb%b6%e7%94%a8%e6%88%b7%e7%9a%84%e9%a1%b9%e7%9b%ae%e7%ae%a1%e7%90%86%e4%b8%ad%e5%bf%83">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h4>
-<h5 id="1-git">
-  1. Git
-  <a class="heading-link" href="#1-git">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h4 id="二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</h4>
+<h5 id="1-git">1. Git</h5>
 <p>GitHub 之所以得此名，与一款分布式版本控制软件 Git 是分不开的。通俗地讲，Git 软件记录了你每次修改时的文件状态。更妙的是，如果你改着改着，又觉得以前的版本更好，还可以回溯呢，也就是说，有“后悔药”可吃了！同时， Git 也是一款极佳的协作软件。打个简单的比方，我和小红、小蓝三个人一起修改一篇文章，每个人改的地方可能都不一样，那么合并修改稿就是个头疼的事。或者，我先修改、再给小红修改、最后小蓝修改？这样效率又降低了。怎么办？用 Git，我们三个人可以建立修改分支，同时进行修改工作，最后合并分支。你可能会问，如果你们三个人在同一个地方做了不同的修改，还能合并吗？放心吧，软件考虑了这种“冲突”情况，有相应的解决办法。</p>
 <p>既然 Git 可以协作，那总要有一个地方让使用的人们存放文件、修改等信息呀，就像控制中心一样，这样，GitHub 应运而生。这里多说一句，Git 的托管中心不是只有 GitHub 哦，GitHub 是方便个人用户、开源项目建立的网站。有的企业会自己搭建服务器和云盘构建托管中心，同样也是用 Git 软件进行协作管理。</p>
 <p>那么，怎么用 Git 软件呢？</p>
 <p>（1）先到 <a href="https://git-scm.com/">Git官网</a>下载安装 Git 软件。</p>
 <p>（2）安装成功后，选定一个文件夹，在右键菜单中选择<code>Git Bash Here</code>，会弹出一个黑色的命令行界面，输入语句，就可以在当前文件夹中运行 Git 命令。</p>
 <p>这里推荐学习一下<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰老师的Git教程</a>，讲解得明白易懂，从中我们可以了解 Git 的各种操作。然后，跟着教程的讲解，自己建个新文件夹动手练练。</p>
-<h5 id="2git-基本命令">
-  2.Git 基本命令
-  <a class="heading-link" href="#2git-%e5%9f%ba%e6%9c%ac%e5%91%bd%e4%bb%a4">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h5 id="2git-基本命令">2.Git 基本命令</h5>
 <p>Git 命令还是挺多的，但是<strong>对新手来说，我们可以先掌握几个在 GitHub 上常用的 Git 基本命令</strong>：</p>
 <p><strong>（1）提交修改：<code>git add</code>和 <code>git commit</code></strong></p>
 
@@ -301,29 +202,19 @@
 <blockquote>
 <p>注：写这篇文章时，我也出现了一个困惑：不知道是否因为我已经用 SSH 验证了，我用<code>git clone HTTPS 地址</code>下载时，也没有要求输入账户名和密码验证。小伙伴们请把你们实践的结果告诉我一下呀，谢谢！</p>
 </blockquote>
-<h4 id="三新手必备的github基本操作">
-  三、新手必备的GitHub基本操作
-  <a class="heading-link" href="#%e4%b8%89%e6%96%b0%e6%89%8b%e5%bf%85%e5%a4%87%e7%9a%84github%e5%9f%ba%e6%9c%ac%e6%93%8d%e4%bd%9c">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h4>
-<h5 id="1配置ssh-key">
-  1.配置SSH Key
-  <a class="heading-link" href="#1%e9%85%8d%e7%bd%aessh-key">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h4 id="三新手必备的github基本操作">三、新手必备的GitHub基本操作</h4>
+<h5 id="1配置ssh-key">1.配置SSH Key</h5>
 <p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
 <p>在 Git Bash 客户端，输入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
-</span></span><span style="display:flex;"><span>git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
-</span></span></code></pre></div><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
+<pre tabindex="0"><code>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
+git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
+</code></pre><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
 <p>同样在 Git Bash 客户端，先后输入：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>cd ~/.ssh
-</span></span></code></pre></div><p>和</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ls
-</span></span></code></pre></div><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
+<pre tabindex="0"><code>cd ~/.ssh
+</code></pre><p>和</p>
+<pre tabindex="0"><code>ls
+</code></pre><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
 </span></span></code></pre></div><p>如果没有 SSH Key，就要输入以下命令行生成：</p>
 <p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
 <p>生成后再输入上面的 <code>cd ~/.ssh</code> 和 <code>ls</code> 命令，就可以看到 SSH Key 了。</p>
@@ -348,13 +239,8 @@
 <p>在 Git Bash 客户端运行命令：</p>
 <p><code>$ ssh -T git@github.com</code></p>
 <p>出现类似下面的提示，表示安装成功：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</span></span></code></pre></div><h5 id="2我的第一个-github-项目如何新建上传仓库">
-  2.我的第一个 GitHub 项目：如何新建上传仓库
-  <a class="heading-link" href="#2%e6%88%91%e7%9a%84%e7%ac%ac%e4%b8%80%e4%b8%aa-github-%e9%a1%b9%e7%9b%ae%e5%a6%82%e4%bd%95%e6%96%b0%e5%bb%ba%e4%b8%8a%e4%bc%a0%e4%bb%93%e5%ba%93">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<pre tabindex="0"><code>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><h5 id="2我的第一个-github-项目如何新建上传仓库">2.我的第一个 GitHub 项目：如何新建上传仓库</h5>
 <p>学了这么多基本功，我们终于要练手了，哈哈，先来建一个自己的仓库玩玩吧！</p>
 <p><strong>（1）在 GitHub 中新建仓库</strong></p>
 <p>如下图所示，点击个人主页的 Repositories 项，再点击右方的 <code>New</code> 按钮，新建一个仓库。</p>
@@ -413,12 +299,7 @@
   <span class="caption-text">仓库页面-改动后</span>
 </span>
 
-<h5 id="3和别人一起做项目fork-和-pull-request">
-  3.和别人一起做项目：Fork 和 Pull request
-  <a class="heading-link" href="#3%e5%92%8c%e5%88%ab%e4%ba%ba%e4%b8%80%e8%b5%b7%e5%81%9a%e9%a1%b9%e7%9b%aefork-%e5%92%8c-pull-request">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h5>
+<h5 id="3和别人一起做项目fork-和-pull-request">3.和别人一起做项目：Fork 和 Pull request</h5>
 <p>前面提到过，GitHub 是个开源社区，我们可以参加到开源项目之中，那么，具体是怎么操作呢？</p>
 <p>举个我自己的例子来说明一下这个过程吧。</p>
 <p><strong>（1）Fork 一个别人的仓库</strong></p>
@@ -475,75 +356,19 @@ Fork有“叉子”的意思，也就是从原仓库复制建一个我自己的�
   <span class="caption-text">接受Pull request后原仓库的变化 </span>
 </span>
 
-<h4 id="四总结">
-  四、总结
-  <a class="heading-link" href="#%e5%9b%9b%e6%80%bb%e7%bb%93">
-    <i class="fa fa-link" aria-hidden="true"></i>
-  </a>
-</h4>
+<h4 id="四总结">四、总结</h4>
 <p>完成以上学习，我们基本上就入门了，接下来，你可以自己在 GitHub 上探索一下，比如搜索发现一些有趣的项目，关注一些高手大牛，加入到开源项目中，等等。最重要的是，动手练习！一旦上手实践，慢慢熟悉之后，你会发现没有开始想象的那么难，一起加油吧！</p>
 <p>最后，推荐几个好的学习教程：</p>
 <p>1.<a href="https://docs.github.com/en/free-pro-team@latest/github">GitHub 帮助页面</a></p>
 <p>2.<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰老师的Git教程</a></p>
 <p>3.<a href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></p>
-      </div>
+</div>
 
-
-      <footer>
-        
-
-
-        
-        
-        
-      </footer>
-    </article>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"
-    integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
-  
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"
-    integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js"
-    integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
-    onload="renderMathInElement(document.body,
-      {
-        delimiters: [
-          {left: '$$', right: '$$', display:true},
-          {left: '$', right: '$', display:false},
-          {left: '\\(', right: '\\)', display: false},
-          {left: '\\[', right: '\\]', display: true}
-        ]
-      }
-    );"></script>
-  </section>
-
-      </div>
-
-      
 
     </main>
 
     
       
-      <script src="/js/coder.min.cb0c595e02234420f3ad3886bf4a9bd2874d0e1e78e090138a9ef158b35aaf17.js" integrity="sha256-ywxZXgIjRCDzrTiGv0qb0odNDh544JATip7xWLNarxc="></script>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
     
   </body>
-
 </html>

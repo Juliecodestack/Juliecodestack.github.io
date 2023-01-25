@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>工具 on Juliecodestack</title>
+    <title>工具 on Julie</title>
     <link>https://juliecodestack.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
-    <description>Recent content in 工具 on Juliecodestack</description>
+    <description>Recent content in 工具 on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 14 Dec 2020 17:04:04 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>双显示器扩展显示时怎么移动鼠标到另一块屏？</title>
@@ -45,19 +45,32 @@
     &lt;li&gt;
       &lt;ul&gt;
         &lt;li&gt;&lt;a href=&#34;#1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#21-标题&#34;&gt;2.1 标题&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#22-加粗斜体&#34;&gt;2.2 加粗、斜体&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#23-下划线删除线&#34;&gt;2.3 下划线、删除线&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#24-引用代码&#34;&gt;2.4 引用、代码&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#25-列表&#34;&gt;2.5 列表&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#26-公式&#34;&gt;2.6 公式&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#27-表格&#34;&gt;2.7 表格&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#28-插入网址链接和图片&#34;&gt;2.8 插入网址链接和图片&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#29-排版规范&#34;&gt;2.9 排版规范&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;
+          &lt;ul&gt;
+            &lt;li&gt;&lt;a href=&#34;#31-即写即显示typora&#34;&gt;3.1 即写即显示：Typora&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#32-对照显示atom-vscode&#34;&gt;3.2 对照显示：Atom, VSCode&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;#33-多平台协作印象笔记&#34;&gt;3.3 多平台协作：印象笔记&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/nav&gt;
 
-&lt;h3 id=&#34;1-为什么选择-markdown&#34;&gt;
-  1. 为什么选择 Markdown？
-  &lt;a class=&#34;heading-link&#34; href=&#34;#1-%e4%b8%ba%e4%bb%80%e4%b9%88%e9%80%89%e6%8b%a9-markdown&#34;&gt;
-    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-  &lt;/a&gt;
-&lt;/h3&gt;
+&lt;h3 id=&#34;1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/h3&gt;
 &lt;p&gt;正在看这篇文章的您很可能还没有使用过 Markdown 编辑器，平时写文档、排版编辑以 Word 为主吧，那么，您是否遇到过以下问题：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;写好文章后设定文档标题、字号、间距、加粗等排版工作，要花费大量时间。&lt;/li&gt;
