@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Juliecodestack</title>
+    <title>Categories on Julie</title>
     <link>https://juliecodestack.github.io/categories/</link>
-    <description>Recent content in Categories on Juliecodestack</description>
+    <description>Recent content in Categories on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
