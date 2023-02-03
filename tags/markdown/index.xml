@@ -6,14 +6,14 @@
     <description>Recent content in Markdown on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jul 2020 11:41:31 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 25 Jul 2020 11:41:31 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown进阶</title>
-      <link>https://juliecodestack.github.io/2020/07/24/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Fri, 24 Jul 2020 11:41:31 +0000</pubDate>
+      <link>https://juliecodestack.github.io/2020/07/25/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sat, 25 Jul 2020 11:41:31 +0000</pubDate>
       
-      <guid>https://juliecodestack.github.io/2020/07/24/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
-      <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/posts/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
+      <guid>https://juliecodestack.github.io/2020/07/25/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</guid>
+      <description>&lt;p&gt;在上一篇 &lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;Markdown 入门文章&lt;/a&gt; 里，我们对 Markdown 这个写作和编辑利器有了初步认识。接下来，我们一起来看看还有哪些进一步提高编辑效率的工具方法？&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -24,29 +24,25 @@
       <guid>https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
       <description>&lt;nav id=&#34;TableOfContents&#34;&gt;
   &lt;ul&gt;
-    &lt;li&gt;
+    &lt;li&gt;&lt;a href=&#34;#1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;
       &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#21-标题&#34;&gt;2.1 标题&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#22-加粗斜体&#34;&gt;2.2 加粗、斜体&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#23-下划线删除线&#34;&gt;2.3 下划线、删除线&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#24-引用代码&#34;&gt;2.4 引用、代码&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#25-列表&#34;&gt;2.5 列表&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#26-公式&#34;&gt;2.6 公式&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#27-表格&#34;&gt;2.7 表格&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#28-插入网址链接和图片&#34;&gt;2.8 插入网址链接和图片&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#29-排版规范&#34;&gt;2.9 排版规范&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;
-          &lt;ul&gt;
-            &lt;li&gt;&lt;a href=&#34;#31-即写即显示typora&#34;&gt;3.1 即写即显示：Typora&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#32-对照显示atom-vscode&#34;&gt;3.2 对照显示：Atom, VSCode&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&#34;#33-多平台协作印象笔记&#34;&gt;3.3 多平台协作：印象笔记&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#21-标题&#34;&gt;2.1 标题&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#22-加粗斜体&#34;&gt;2.2 加粗、斜体&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#23-下划线删除线&#34;&gt;2.3 下划线、删除线&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#24-引用代码&#34;&gt;2.4 引用、代码&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#25-列表&#34;&gt;2.5 列表&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#26-公式&#34;&gt;2.6 公式&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#27-表格&#34;&gt;2.7 表格&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#28-插入网址链接和图片&#34;&gt;2.8 插入网址链接和图片&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#29-排版规范&#34;&gt;2.9 排版规范&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&#34;#31-即写即显示typora&#34;&gt;3.1 即写即显示：Typora&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#32-对照显示atom-vscode&#34;&gt;3.2 对照显示：Atom, VSCode&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;#33-多平台协作印象笔记&#34;&gt;3.3 多平台协作：印象笔记&lt;/a&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
