@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>programming on Julie</title>
+    <title>Programming on Julie</title>
     <link>https://juliecodestack.github.io/categories/programming/</link>
-    <description>Recent content in programming on Julie</description>
+    <description>Recent content in Programming on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>What’s the return value of a bool expression ?</title>
-      <link>https://juliecodestack.github.io/2023/01/07/bool-expression/</link>
+      <title>What’s the Return Value of a Bool Expression ?</title>
+      <link>https://juliecodestack.github.io/2023/01/07/bool_expression/</link>
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/2023/01/07/bool-expression/</guid>
+      <guid>https://juliecodestack.github.io/2023/01/07/bool_expression/</guid>
       <description>&lt;p&gt;We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What‘s the result of the expression &lt;code&gt;True and 3&lt;/code&gt; ? Is it True or False, or other value? Let’s find it out.&lt;/p&gt;</description>
     </item>
     
@@ -22,7 +22,7 @@
       <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
-      <description>&lt;p&gt;Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheatsheet. Here’s what you’re looking for, a list of some basic commands with examples.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.&lt;/p&gt;</description>
     </item>
     
   </channel>
