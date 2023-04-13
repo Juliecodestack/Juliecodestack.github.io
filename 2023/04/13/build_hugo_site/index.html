@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.105.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How to Build a Personal Website Using GitHub Pages and Hugo? &middot; Julie</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
+crossorigin="anonymous"
+onload='renderMathInElement(document.body);'></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        });
+    });
+</script>
+</head>
+
+  <body class="theme-base-0e ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
+      <p class="lead">
+       Notes on Programming and Machine Learning 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
+        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2023. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>How to Build a Personal Website Using GitHub Pages and Hugo?</h1>
+  <time datetime=2023-04-13T18:30:08&#43;0800 class="post-date">Apr 13, 2023</time>
+  <p>A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site. ( Maybe you’d like to have a look at <a href="https://juliecodestack.github.io/">my site</a> first.)</p>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#site-building-pipeline">Site-Building Pipeline</a></li>
+    <li><a href="#step-0--preparation">Step 0 : Preparation</a></li>
+    <li><a href="#step-1--generate-pages-locally">Step 1 : Generate pages locally</a>
+      <ul>
+        <li><a href="#11-install-hugo">1.1 Install Hugo</a></li>
+        <li><a href="#12-create-a-hugo-site">1.2 Create a Hugo site</a></li>
+        <li><a href="#13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</a></li>
+        <li><a href="#14-write-posts">1.4 Write posts</a></li>
+        <li><a href="#15-how-to-display-images">1.5 How to display images?</a></li>
+      </ul>
+    </li>
+    <li><a href="#step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</a>
+      <ul>
+        <li><a href="#21-create-a-github-repository">2.1 Create a GitHub repository</a></li>
+        <li><a href="#22-build-your-site-and-push-it-to-the-repository-on-github">2.2 Build your site and push it to the repository on GitHub</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-work">Future Work</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+<h3 id="site-building-pipeline">Site-Building Pipeline</h3>
+<p>There are two kinds of sites: static sites and dynamic ones.</p>
+<ul>
+<li>
+<p>Static sites generate web pages locally, and put them on the server, so every user will get the same view when they click the link.</p>
+</li>
+<li>
+<p>Dynamic sites display different pages to different users on their requests, so it need things like databases.</p>
+</li>
+</ul>
+<p>As beginners, we choose the simpler one — static sites, and it’s easy to follow after you learn the pipeline.</p>
+<p><img src="/imgs/hugo_site_pipeline.jpg" alt="hugo_site_pipeline"></p>
+<p>Fig 1 The pipeline of building a static website</p>
+<p>As shown in the figure above, there are two main steps in building a static website:</p>
+<ol>
+<li>Generate pages locally. The popular static sites generators (or frameworks) are JekyII, Hugo, Hexo, etc. Here we’ll use <a href="https://gohugo.io/">Hugo</a> as an example. Many people (including me) like Hugo because it’s super fast to build a site.</li>
+<li>Deploy the site to the server. Here we’ll use GitHub as the server to store the pages.</li>
+</ol>
+<p>Not that hard, right ? Now let’s dive into the details.</p>
+<h3 id="step-0--preparation">Step 0 : Preparation</h3>
+<p>Install <a href="http://git-scm.com/">Git</a> . We will use Git Command to generate website, connect to GitHub and push web pages to it.</p>
+<h3 id="step-1--generate-pages-locally">Step 1 : Generate pages locally</h3>
+<h4 id="11-install-hugo">1.1 Install Hugo</h4>
+<p>Go to <a href="https://gohugo.io/installation/">Hugo Installation Page</a> , and find the corresponding installation for the operating system you’re using.</p>
+<p>I’m using Windows and I haven’t installed Chocolatey or Scoop, so I installed Hugo using binary files following <a href="https://www.brycewray.com/posts/2022/10/how-i-install-hugo">this installation tutorial</a> . If you’re in the same case as mine, you may follow the steps below to install Hugo.</p>
+<blockquote>
+<p>In the following steps, <code>YourUserName</code> refers to the user name of your Windows-system computer. More specifically, it’s the name displayed on the screen when you login in Windows.</p>
+</blockquote>
+<p>(1) Go to folder <code>C:\Users\YourUserName</code>, and create a <code>bin</code> folder in it if it doesn’t exist. The <code>bin</code> folder is the place to store the Hugo binary file.</p>
+<p>(2) Add the <code>bin</code> folder to <code>PATH</code>. In Windows Taskbar Search Box, enter <code>cmd</code> and select the Command Prompt result ( right click and choose the “Run as administrator” option ). In Command Prompt, enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>setx PATH <span style="color:#2aa198">&#34;C:\Users\YourUserName\bin;%PATH%&#34;</span>
+</span></span></code></pre></div><p>Then close and reopen the Command Prompt again, enter <code>echo %PATH% </code> to check if <code>bin</code> has been successfully added to <code>PATH</code>.</p>
+<p>(3) Download <code>.zip</code> file from <a href="https://github.com/gohugoio/hugo/releases">Hugo release page on GitHub</a> . Be Sure to choose the <strong>extended version</strong>, which will be found near the bottom of the list of archives.</p>
+<p>From the <code>.zip</code> extract the binary file <code>hugo.exe</code> and move it to the <code>bin</code> folder.  After that, open Command Prompt and enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
+</span></span></code></pre></div><p>If Hugo is successfully installed, you will see a series of characters about information including Hugo version, operating system, build date.</p>
+<h4 id="12-create-a-hugo-site">1.2 Create a Hugo site</h4>
+<p>Supposing you use <code>FolderA</code>  to store your site files. Right click <code>FolderA</code>, and select “Git Bash Here” in the menu to open the Git Bash Command. Now enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site MySite
+</span></span></code></pre></div><p>Then a new folder named <code>MySite</code> will be created in <code>FolderA</code>, that is your Hugo site.</p>
+<h4 id="13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</h4>
+<p>Since a new site has been created, maybe you’d like to see what your Hugo site looks like, but wait a minute, you have to choose a theme first.</p>
+<p>What is a theme?</p>
+<p>You can regard it as the design of your website. <a href="https://themes.gohugo.io/">Hugo Themes</a> site has many different themes. When you pick a theme, you can download it from its GitHub repository.</p>
+<p><strong>How to pick a theme?</strong></p>
+<p>Here I’d like to give you some advice to save your time on choosing themes, for I’ve spent a lot of time on Hugo themes, picking one, configuring it and then changing to another one.</p>
+<p>(1) A theme that has an <code>exampleSite</code> folder is easier to use. Different themes have different settings, for example, on choosing which folder to store the posts. The most important file in <code>exampleSite</code> is the <code>config.toml</code> ( or <code>config.yml</code>, or <code>config.json</code> ) file, which provides an example for your configuration, so you know which parameters to tweak to get the desired result. Without <code>exampleSite</code>, you’ll need much more time to configure it.</p>
+<p>(2) When previewing the theme, you need pay attention to some features that you’ll use. For example, if you write technical articles, you should check whether the theme displays Math equations and highlights code blocks well.</p>
+<p><strong>After I pick a theme, how to configure it?</strong></p>
+<p>Copy the theme folder you’ve downloaded into <code>MySite &gt; themes</code> folder.</p>
+<p>If the theme folder contains <code>exampleSite</code>, you can copy the files in <code>exampleSite</code> to <code>MySite</code> folder.</p>
+<blockquote>
+<p>Some themes don’t have <code>exampleSite</code>. If you’re a beginner, I don’t recommend you to use it now, because you’ll spend much more time to figure out how to set the parameters. Currently I use <a href="https://github.com/spf13/hyde">Hyde</a> as the theme of <a href="https://juliecodestack.github.io/">my site</a> . I like its simple design. It doesn’t have <code>exampleSite</code> . However, I have used several themes before, so I used <code>config</code> file of the previous themes and changed some parameters to set as the Hyde Theme.</p>
+</blockquote>
+<p>Then Open Git Bash Prompt on <code>MySite</code> folder, and enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>When it’s done, open the URL displayed in your terminal, and you’ll see the example site locally. If you change the parameters in <code>config.toml</code>, the page will make corresponding changes at the same time. In this way, you can configure your site.</p>
+<p>In the future, when you write a new post or make some revisions, you can still use <code>hugo server</code> to view your site locally before pushing to GitHub.</p>
+<h4 id="14-write-posts">1.4 Write posts</h4>
+<p>To create a new post, open Git Bash Command on <code>MySite</code> folder, and enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new new_post.md
+</span></span></code></pre></div><p>It will create a new markdown file named “new_post” in <code>MySite &gt; content</code> folder. But if you use <code>hugo server</code>, you may not see the new post. Why?</p>
+<p>(1) Depending on the theme you choose, you may need to put the <code>new_post.md</code> into <code>post</code> (or <code>posts</code> ) folder in the <code>content</code> folder to generate the web page.  In this case, you can also enter the following command to create a new post :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new post/new_post.md
+</span></span></code></pre></div><p>(2) Open the new post in your editor (Typora, VS Code, etc). In the header of the post , there are settings about the post (it’s also called front matter). Find <code>draft: true</code> , which means this post is a draft and you don’t want to publish it now. Change it to <code>draft: false</code> so that the post will be published on the site. The <code>title</code> in the header refers to the title of the post, and it is set to be the file name when created (for example, “new_post” here) . You can change it to whatever you want in your editor.</p>
+<h4 id="15-how-to-display-images">1.5 How to display images?</h4>
+<p>Although many tutorials didn’t mention how to insert and display images, I think for beginners it’s an important part in the building process. After all, you may add pictures to make your article easier to understand or look better. In Hugo, the images are stored in <code>MySite &gt; static</code> folder in order to be displayed. Supposing you have an image named <code>image1.jpg</code>, after putting it into the <code>static</code> folder, you can insert it in your post this way :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#268bd2">image1_title</span>](/image1.jpg)
+</span></span></code></pre></div><p>Or you may put all images in one folder :  <code>MySite &gt; static &gt; imgs</code>, then insert the image in your post by :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#268bd2">image1_title</span>](/imgs/image1.jpg)
+</span></span></code></pre></div><h3 id="step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</h3>
+<h4 id="21-create-a-github-repository">2.1 Create a GitHub repository</h4>
+<p>Log in <a href="https://github.com/">GitHub</a> and create a public repository named <code>YourGitHubName.github.io</code>, this is where you’re going to store your web pages on GitHub so that others can view your site. Here please make sure <code>YourGitHubName</code> is the same as your GitHub username.</p>
+<h4 id="22-build-your-site-and-push-it-to-the-repository-on-github">2.2 Build your site and push it to the repository on GitHub</h4>
+<blockquote>
+<p>I followed the steps introduced in <a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/">this tutorial</a> .</p>
+</blockquote>
+<p><strong>Things you need to do before deploying:</strong></p>
+<p>For the first time, you need to create a folder named <code>public</code> inside <code>MySite</code> if it doesn’t exist, and connect it to your GitHub repository.</p>
+<p>Open Git Bash Command on <code>MySite</code> folder, enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir public 
+</span></span></code></pre></div><p>Then <code>public</code> folder is created. It’s the place to store your site files after they are generated by Hugo.</p>
+<p>Connect <code>public</code> to your GitHub repository, so that the site files will be synchronized on GitHub.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#b58900">cd</span> public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add upstream https://github.com/YourGitHubName/YourGitHubName.github.io.git
+</span></span></code></pre></div><p>After that, set the parameter <code>baseurl</code> in <code>config.toml</code> to be your GitHub repository above :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>baseurl = <span style="color:#2aa198">&#34;https://YourGitHubName.github.io/&#34;</span>
+</span></span></code></pre></div><p><strong>The following is the things you do every time you push your site to GitHub:</strong></p>
+<p>First generate the site files:</p>
+<p>Open Git Bash Command on <code>MySite</code> folder, enter :</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
+</span></span></code></pre></div><p>When it’s done, Hugo will generate the site files and store it in the <code>public</code> folder.</p>
+<p>Then we’ll push these files to GitHub, continue to enter:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#b58900">cd</span> public
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m<span style="color:#2aa198">&#34;your_commit_message&#34;</span>
+</span></span><span style="display:flex;"><span>git push upstream master
+</span></span></code></pre></div><blockquote>
+<p>The above commands use <code>git remote add upstream</code> and <code>git push upstream master</code>, I also used these two commands. I saw <a href="https://zhiqiyu.github.io/post/git-setup-for-hugo-blog-with-github-pages/">a tutorial</a> use <code>origin</code> instead of <code>upstream</code>, i.e. <code>git remote add origin</code> and <code>git push origin master</code>, which also works. You may have a try.</p>
+</blockquote>
+<h3 id="future-work">Future Work</h3>
+<p>Some tutorials introduced GitHub Actions for automating the deployment, and next I’m going to learn it.</p>
+<blockquote>
+<p>Do you have a personal website? How did you build it? If you’d like to talk about your site, or give me some suggestions about my site, please send me an <a href="https://juliecodestack.github.io/about/">email</a> .</p>
+</blockquote>
+<h3 id="references">References</h3>
+<ol>
+<li>
+<p><a href="https://blog.hellohuigong.com/en/posts/how-to-build-personal-blog-with-github-pages-and-hugo/">Hui Gong: How to build personal blog using GitHub Pages and Hugo</a></p>
+</li>
+<li>
+<p><a href="https://flaviocopes.com/start-blog-with-hugo/">Flavio Copes: How to start a blog using Hugo</a></p>
+</li>
+<li>
+<p>Hugo installation : <a href="https://www.brycewray.com/posts/2022/10/how-i-install-hugo/">https://www.brycewray.com/posts/2022/10/how-i-install-hugo/</a></p>
+</li>
+<li>
+<p>Deploy Hugo site to GitHub: <a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/">https://jdhao.github.io/2018/10/10/hexo_to_hugo/</a></p>
+</li>
+<li>
+<p>Deploy Hugo site to GitHub: <a href="https://zhiqiyu.github.io/post/git-setup-for-hugo-blog-with-github-pages/">https://zhiqiyu.github.io/post/git-setup-for-hugo-blog-with-github-pages/</a></p>
+</li>
+</ol>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
