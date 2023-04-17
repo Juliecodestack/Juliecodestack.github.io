@@ -1,81 +1,164 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html lang="en">
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.105.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python入门：安装 Python 软件，Anaconda - Julie&#39;s website</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <title>Python入门：安装 Python 软件，Anaconda &middot; Julie</title>
-  <meta name="description" content="" />
-
-  
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
-
-  
-  
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<meta name="author" content="Julie" /><meta name="description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？
+" /><meta name="keywords" content="Programming, Python, Machine Learning, Data Science" />
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
-crossorigin="anonymous"
-onload='renderMathInElement(document.body);'></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false}
-            ]
-        });
-    });
-</script>
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="https://juliecodestack.github.io/2021/02/15/21003anaconda/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.cb68f97bc9cece255d217346d970e3c62623408634e500c330a62fadabbbe77c.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="Python入门：安装 Python 软件，Anaconda" />
+<meta property="og:description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/2021/02/15/21003anaconda/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-02-15T09:45:31+00:00" />
+<meta property="article:modified_time" content="2021-02-15T09:45:31+00:00" />
+
+<meta itemprop="name" content="Python入门：安装 Python 软件，Anaconda">
+<meta itemprop="description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？"><meta itemprop="datePublished" content="2021-02-15T09:45:31+00:00" />
+<meta itemprop="dateModified" content="2021-02-15T09:45:31+00:00" />
+<meta itemprop="wordCount" content="1590">
+<meta itemprop="keywords" content="Python,Anaconda,Jupyter Notebook," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python入门：安装 Python 软件，Anaconda"/>
+<meta name="twitter:description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
-
-  <body class="theme-base-0e ">
-  <aside class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
-      <p class="lead">
-       Notes on Programming and Machine Learning 
-      </p>
-    </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; 2023. All rights reserved. </p>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Julie&#39;s website</a>
   </div>
-</aside>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
 
-    <main class="content container">
-    <div class="post">
-  <h1>Python入门：安装 Python 软件，Anaconda</h1>
-  <time datetime=2021-02-15T09:45:31Z class="post-date">Feb 15, 2021</time>
-  <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Julie&#39;s website</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python入门：安装 Python 软件，Anaconda</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-02-15 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 机器学习笔记 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#python安装方式">Python安装方式</a></li>
+        <li><a href="#anaconda使用">Anaconda使用</a></li>
+        <li><a href="#工具包安装">工具包安装</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
 <h4 id="python安装方式">Python安装方式</h4>
 <p>我在学 Python 时用过两种安装方式：</p>
 <p>第一种是安装 Python 软件(下载地址：<a href="https://www.python.org/">Python 官网</a>) + Atom 编辑器（也可以是VSCode 编辑器）。用 Atom 编辑器编写程序后，在 Python 的命令行运行该程序。如果您有过学习 C 语言的经历，那么这种 Python 软件的编程体验与之类似，都是要先调试文件、然后整体运行。</p>
@@ -96,9 +179,9 @@ onload='renderMathInElement(document.body);'></script>
 <p>怎么没有看到刚才下载的文件？而且，此时也不能打开其它文件夹，就只能查看当前命令所在的 C 盘里的用户文件夹。</p>
 <p>怎么办呢？我们需要在命令行里改变路径，转移到目标文件夹。</p>
 <p>举例来说明，比如现在要运行的.ipynb文件在 E 盘的文件夹 folderA 中，打开 Anaconda Prompt 命令行，依次输入以下命令：</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>E:
-</span></span><span style="display:flex;"><span><span style="color:#b58900">cd</span> folderA
-</span></span><span style="display:flex;"><span>jupyter notebook
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">E:
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> folderA
+</span></span><span class="line"><span class="cl">jupyter notebook
 </span></span></code></pre></div><p>这样，就改成了在 E 盘的文件夹 folderA 中运行 Jupyter Notebook，此时也就能找到我们要查看的文件。</p>
 <h4 id="工具包安装">工具包安装</h4>
 <p>我们运行Python程序时，可能会用到各种各样的工具包（或者说是库）。有的工具包在软件中已经安装，有的还没有安装，那么我们应该怎么安装呢？</p>
@@ -124,13 +207,112 @@ onload='renderMathInElement(document.body);'></script>
 <p>1.如何打开运行 Anaconda （GUI界面或命令行）：https://docs.anaconda.com/anaconda/user-guide/getting-started/#cli-hello</p>
 <p>2.conda 配置和更新：https://conda.io/projects/conda/en/latest/user-guide/getting-started.html</p>
 <p>3.Conda, pip, virtualenv 三种命令工具的对比：https://conda.io/projects/conda/en/latest/commands.html</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Julie</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2021-02-15
+        
+    </span>
+  </p>
+  
+  
 </div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/python/">Python</a>
+          <a href="/tags/anaconda/">Anaconda</a>
+          <a href="/tags/jupyter-notebook/">Jupyter Notebook</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/2021/03/07/21004jupyternotebook/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Jupyter Notebook使用</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/">
+            <span class="next-text nav-default">双显示器扩展显示时怎么移动鼠标到另一块屏？</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
 
+  
 
+  
+
+      </div>
     </main>
 
-    
-      
-    
-  </body>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
+  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Julie</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
 </html>

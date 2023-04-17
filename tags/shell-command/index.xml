@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shell Command on Julie</title>
+    <title>Shell Command on Julie&#39;s website</title>
     <link>https://juliecodestack.github.io/tags/shell-command/</link>
-    <description>Recent content in Shell Command on Julie</description>
+    <description>Recent content in Shell Command on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Wed, 04 Jan 2023 12:58:19 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/shell-command/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginner’s Guide to Terminal/Shell Commands</title>

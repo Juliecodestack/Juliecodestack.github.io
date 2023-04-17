@@ -1,81 +1,177 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html lang="en">
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.105.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>GitHub入门指南 - Julie&#39;s website</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <title>GitHub入门指南 &middot; Julie</title>
-  <meta name="description" content="" />
-
-  
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
-
-  
-  
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<meta name="author" content="Julie" /><meta name="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。
+" /><meta name="keywords" content="Programming, Python, Machine Learning, Data Science" />
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
-crossorigin="anonymous"
-onload='renderMathInElement(document.body);'></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false}
-            ]
-        });
-    });
-</script>
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.cb68f97bc9cece255d217346d970e3c62623408634e500c330a62fadabbbe77c.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="GitHub入门指南" />
+<meta property="og:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-12-13T10:46:25+00:00" />
+<meta property="article:modified_time" content="2020-12-13T10:46:25+00:00" />
+
+<meta itemprop="name" content="GitHub入门指南">
+<meta itemprop="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"><meta itemprop="datePublished" content="2020-12-13T10:46:25+00:00" />
+<meta itemprop="dateModified" content="2020-12-13T10:46:25+00:00" />
+<meta itemprop="wordCount" content="5173">
+<meta itemprop="keywords" content="GitHub,Git,软件," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GitHub入门指南"/>
+<meta name="twitter:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
-
-  <body class="theme-base-0e ">
-  <aside class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
-      <p class="lead">
-       Notes on Programming and Machine Learning 
-      </p>
-    </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; 2023. All rights reserved. </p>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Julie&#39;s website</a>
   </div>
-</aside>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
 
-    <main class="content container">
-    <div class="post">
-  <h1>GitHub入门指南</h1>
-  <time datetime=2020-12-13T10:46:25Z class="post-date">Dec 13, 2020</time>
-  <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Julie&#39;s website</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">GitHub入门指南</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-12-13 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a>
+      <ul>
+        <li><a href="#1-注册账号">1. 注册账号</a></li>
+        <li><a href="#2-登录-github浏览页面">2. 登录 GitHub，浏览页面</a></li>
+      </ul>
+    </li>
+    <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a>
+      <ul>
+        <li><a href="#1-git">1. Git</a></li>
+        <li><a href="#2-git-基本命令">2. Git 基本命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a>
+      <ul>
+        <li><a href="#1-配置ssh-key">1. 配置SSH Key</a></li>
+        <li><a href="#2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</a></li>
+        <li><a href="#3-和别人一起做项目fork-和-pull-request">3. 和别人一起做项目：Fork 和 Pull request</a></li>
+      </ul>
+    </li>
+    <li><a href="#四总结">四、总结</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
 <p>因为我也是初级水平，文中介绍的知识基于我自己的学习理解，如果有疏漏错误之处，欢迎您留言指正，谢谢！</p>
 <p>新手小白可能会对 GitHub 有以下困惑：</p>
 <p>1.GitHub 是个什么网站？</p>
@@ -89,128 +185,109 @@ onload='renderMathInElement(document.body);'></script>
 
 <nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a>
       <ul>
-        <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a></li>
-        <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a></li>
-        <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a></li>
-        <li><a href="#四总结">四、总结</a></li>
+        <li><a href="#1-注册账号">1. 注册账号</a></li>
+        <li><a href="#2-登录-github浏览页面">2. 登录 GitHub，浏览页面</a></li>
       </ul>
     </li>
+    <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a>
+      <ul>
+        <li><a href="#1-git">1. Git</a></li>
+        <li><a href="#2-git-基本命令">2. Git 基本命令</a></li>
+      </ul>
+    </li>
+    <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a>
+      <ul>
+        <li><a href="#1-配置ssh-key">1. 配置SSH Key</a></li>
+        <li><a href="#2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</a></li>
+        <li><a href="#3-和别人一起做项目fork-和-pull-request">3. 和别人一起做项目：Fork 和 Pull request</a></li>
+      </ul>
+    </li>
+    <li><a href="#四总结">四、总结</a></li>
   </ul>
 </nav>
 
-<h4 id="一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</h4>
-<h5 id="1注册账号">1.注册账号</h5>
+<h3 id="一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</h3>
+<h4 id="1-注册账号">1. 注册账号</h4>
 <p>打开 <a href="https://github.com/">GitHub网站</a>，首页如下图所示，点击右上角<code>Sign up</code>按钮，进入注册页面。使用电子邮件注册，设置好用户名和密码，即可生成账号。完成注册后，点击旁边的<code>Sign in</code>按钮登录。</p>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-10-46-55.png"/><figcaption>
+            <h4>注册/登录页面 </h4>
+        </figcaption>
+</figure>
 
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-10-46-55.png" title="注册/登录页面 " alt="注册/登录页面 ">
-  <span class="caption-text">注册/登录页面 </span>
-</span>
-
-<!-- raw HTML omitted -->
-<h5 id="2登录-github浏览页面">2.登录 GitHub，浏览页面</h5>
+<h4 id="2-登录-github浏览页面">2. 登录 GitHub，浏览页面</h4>
 <p>登录进去后，我们见到的页面分成三大版块，如下图所示，从左至右依次为：自己的仓库(Repositories)、关注的人的动态、发现新的热门/有趣仓库。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-11-44-23.png" title="登录后首页示例 " alt="登录后首页示例 ">
-  <span class="caption-text">登录后首页示例 </span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-11-44-23.png"/><figcaption>
+            <h4>登录后首页示例 </h4>
+        </figcaption>
+</figure>
 
 <p><strong>可能的疑问</strong>：Repository? 仓库？是不是有点不好理解？</p>
 <p>我在初学时也遇到这一困惑。&ldquo;repository&quot;有“仓库”的意思，我们可以理解成存放项目所需的各类文件的仓库。等熟悉了之后，你会发现 GitHub 上各种仓库都有，不是只包含程序代码，还有学习课程文档等等，难怪会叫仓库，哈哈。Repository（仓库）在 GitHub 上有重要作用，我们以后的很多操作都是在 Repository（仓库）中进行。</p>
 <p>点击右上角的个人头像，在下拉列表中选择 <code>Your profile</code> 项，到达个人主页。下图所示为我的个人主页。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-12-49-14.png" title="个人主页示例" alt="个人主页示例">
-  <span class="caption-text">个人主页示例</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-12-49-14.png"/><figcaption>
+            <h4>个人主页示例</h4>
+        </figcaption>
+</figure>
 
 <p>你如果打开另一个人的主页，看到的界面风格也大致如此。我在图中简要注明了页面中的各项功能，此外：</p>
 <ol>
 <li>点击账户名下方的<code>Edit profile</code>按钮，可以修改自己的个人信息，比如这里的一句话简介，公司、地址、联系方式等。而如果是别人的个人主页，这里我们看到的就是<code>Follow</code>（关注）按钮。</li>
 <li>粉丝和关注的人数右边有个星星图标，这就是传说中的 Star。我们看技术文章可能常会遇到如“程序员必看！GitHub 上 Star 数过万的项目！”，“该项目在 GitHub 上迅速收获上千 Star 数” 类似的介绍，看来 Star 数是个很重要的标识哦！那么，Star 是什么意思呢？比如，我们觉得一个仓库不错，在右上角点个 Star，就相当于是收藏+点赞了，之后还可以在自己的主页中点击星星图标查看。</li>
 </ol>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-13-06-34.png" title="仓库页面-Star" alt="仓库页面-Star">
-  <span class="caption-text">仓库页面-Star</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-13-13-06-34.png"/><figcaption>
+            <h4>仓库页面-Star</h4>
+        </figcaption>
+</figure>
 
 <ol start="3">
 <li>&ldquo;Pinned&quot;区域是自己的个人展示区，在自己的仓库中精选几个放到这里展示，让别人能很快发现你的闪光点。</li>
 <li>活跃度表格：上面的绿色格子越多，颜色越深，说明该用户在 GitHub 上提交次数越多，是活跃用户。</li>
 </ol>
-<h4 id="二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</h4>
-<h5 id="1-git">1. Git</h5>
+<h3 id="二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</h3>
+<h4 id="1-git">1. Git</h4>
 <p>GitHub 之所以得此名，与一款分布式版本控制软件 Git 是分不开的。通俗地讲，Git 软件记录了你每次修改时的文件状态。更妙的是，如果你改着改着，又觉得以前的版本更好，还可以回溯呢，也就是说，有“后悔药”可吃了！同时， Git 也是一款极佳的协作软件。打个简单的比方，我和小红、小蓝三个人一起修改一篇文章，每个人改的地方可能都不一样，那么合并修改稿就是个头疼的事。或者，我先修改、再给小红修改、最后小蓝修改？这样效率又降低了。怎么办？用 Git，我们三个人可以建立修改分支，同时进行修改工作，最后合并分支。你可能会问，如果你们三个人在同一个地方做了不同的修改，还能合并吗？放心吧，软件考虑了这种“冲突”情况，有相应的解决办法。</p>
 <p>既然 Git 可以协作，那总要有一个地方让使用的人们存放文件、修改等信息呀，就像控制中心一样，这样，GitHub 应运而生。这里多说一句，Git 的托管中心不是只有 GitHub 哦，GitHub 是方便个人用户、开源项目建立的网站。有的企业会自己搭建服务器和云盘构建托管中心，同样也是用 Git 软件进行协作管理。</p>
 <p>那么，怎么用 Git 软件呢？</p>
 <p>（1）先到 <a href="https://git-scm.com/">Git官网</a>下载安装 Git 软件。</p>
 <p>（2）安装成功后，选定一个文件夹，在右键菜单中选择<code>Git Bash Here</code>，会弹出一个黑色的命令行界面，输入语句，就可以在当前文件夹中运行 Git 命令。</p>
 <p>这里推荐学习一下<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰老师的Git教程</a>，讲解得明白易懂，从中我们可以了解 Git 的各种操作。然后，跟着教程的讲解，自己建个新文件夹动手练练。</p>
-<h5 id="2git-基本命令">2.Git 基本命令</h5>
+<h4 id="2-git-基本命令">2. Git 基本命令</h4>
 <p>Git 命令还是挺多的，但是<strong>对新手来说，我们可以先掌握几个在 GitHub 上常用的 Git 基本命令</strong>：</p>
 <p><strong>（1）提交修改：<code>git add</code>和 <code>git commit</code></strong></p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-14-15-14-31.png" title="git操作示意图，图片来自Git官网" alt="git操作示意图，图片来自Git官网">
-  <span class="caption-text">git操作示意图，图片来自Git官网</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-14-15-14-31.png"/><figcaption>
+            <h4>git操作示意图，图片来自Git官网</h4>
+        </figcaption>
+</figure>
 
 <p>上面的示意图来自 Git 官网，说明了 Git 中最重要的操作 &ldquo;git add&rdquo; 和 &ldquo;git commit&rdquo; 的工作流程。 Git 软件的核心是保存修改。working directory 是工作区，就是我们的电脑上当前工作的文件夹。staging area 可以理解成暂存区或者中转站，<code>git add .</code>（注意：这里 add 和<code>.</code>中间有个空格）提交了修改，放在 staging area 暂存，再通过 <code>git commit -m&quot;修改说明文字&quot;</code> 确定最终提交版。不要小看这个缓冲的暂存区，它为我们修改时提供了“后悔药”。这个效果就有点类似于我们平时在电脑上删除文件，文件不会直接删除，而是放到回收站中转一下。如果我们过后发现手抖误删了，还可以到回收站里把文件“还原”回去，或者确定都不需要了，就点击“清空回收站”，把这些文件都删除。</p>
 <p><strong>（2）与远程仓库同步：<code>git pull</code> 和 <code>git push</code></strong></p>
 <p>在多人协作的情况下，比如前面提到的我和小红、小蓝一起写文章的例子，可能每个人的修改不一致，要保持同步。而我们要从远程仓库获取更新和推送自己的修改，就要用<code>git pull</code> 和 <code>git push</code>。前面提到的 <code>git commit</code> 是确定我自己最终的修改结果，<code>git push</code> 则是将这一修改结果提交到远程（比如 GitHub上）的 repository（仓库）保存。我始终记得廖雪峰老师教程里提的要点：每天开始工作的第一件事是 <code>git pull</code>，跟上项目最新的修改进度。结束一天工作、提交修改时，先 <code>git pull</code> 再 <code>git push</code>。</p>
 <p><strong>（3）下载 repository（仓库）： <code>git clone</code></strong></p>
 <p>打开一个仓库，我们会看到<code>Code</code>按钮，点击后，下面出现 HTTPS 地址和 SSH 地址。我们只要复制了这个地址，然后在电脑上右键点击存放文件夹，打开 Git Bash 客户端，输入命令行：<code>git clone 复制的地址</code>，就能下载这个仓库到本地电脑。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-16-20-33-57.png" title="下载仓库示意图" alt="下载仓库示意图">
-  <span class="caption-text">下载仓库示意图</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-16-20-33-57.png"/><figcaption>
+            <h4>下载仓库示意图</h4>
+        </figcaption>
+</figure>
 
 <p>需要注意的是，用 HTTPS 地址需要账户验证。使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，接下来就会介绍如何配置 SSH Key。</p>
 <blockquote>
 <p>注：写这篇文章时，我也出现了一个困惑：不知道是否因为我已经用 SSH 验证了，我用<code>git clone HTTPS 地址</code>下载时，也没有要求输入账户名和密码验证。小伙伴们请把你们实践的结果告诉我一下呀，谢谢！</p>
 </blockquote>
-<h4 id="三新手必备的github基本操作">三、新手必备的GitHub基本操作</h4>
-<h5 id="1配置ssh-key">1.配置SSH Key</h5>
+<h3 id="三新手必备的github基本操作">三、新手必备的GitHub基本操作</h3>
+<h4 id="1-配置ssh-key">1. 配置SSH Key</h4>
 <p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
 <p>在 Git Bash 客户端，输入：</p>
-<pre tabindex="0"><code>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
-git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
-</code></pre><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
+</span></span><span class="line"><span class="cl">git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
+</span></span></code></pre></div><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
 <p>同样在 Git Bash 客户端，先后输入：</p>
-<pre tabindex="0"><code>cd ~/.ssh
-</code></pre><p>和</p>
-<pre tabindex="0"><code>ls
-</code></pre><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/.ssh
+</span></span></code></pre></div><p>和</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ls
+</span></span></code></pre></div><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">id_rsa  id_rsa.pub  known_hosts
 </span></span></code></pre></div><p>如果没有 SSH Key，就要输入以下命令行生成：</p>
 <p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
 <p>生成后再输入上面的 <code>cd ~/.ssh</code> 和 <code>ls</code> 命令，就可以看到 SSH Key 了。</p>
@@ -220,57 +297,37 @@ git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#
 <p>这样会显示公钥文件内容，我们把它复制到剪贴板。</p>
 <p><strong>（4）把复制的公钥添加到 GitHub 账户安装。</strong></p>
 <p>登录 GitHub 账户，点击右上角个人头像的下拉菜单，如下图所示：</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-48-27.png" title="个人头像的菜单项" alt="个人头像的菜单项">
-  <span class="caption-text">个人头像的菜单项</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-48-27.png"/><figcaption>
+            <h4>个人头像的菜单项</h4>
+        </figcaption>
+</figure>
 
 <p>依次点击 Settings &gt; SSH and GPG Keys，在 SSH Keys 页面右上角有个 <code>New SSH Key</code> 按钮，点击该按钮后，粘贴上刚才复制的公钥内容。里面的 “title” 项就是为自己的 SSH Key 命个名，可根据个人喜好随意。</p>
 <p><strong>（5）最后，检查一下 SSH Key 是否安装成功。</strong></p>
 <p>在 Git Bash 客户端运行命令：</p>
 <p><code>$ ssh -T git@github.com</code></p>
 <p>出现类似下面的提示，表示安装成功：</p>
-<pre tabindex="0"><code>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</code></pre><h5 id="2我的第一个-github-项目如何新建上传仓库">2.我的第一个 GitHub 项目：如何新建上传仓库</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</span></span></code></pre></div><h4 id="2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</h4>
 <p>学了这么多基本功，我们终于要练手了，哈哈，先来建一个自己的仓库玩玩吧！</p>
 <p><strong>（1）在 GitHub 中新建仓库</strong></p>
 <p>如下图所示，点击个人主页的 Repositories 项，再点击右方的 <code>New</code> 按钮，新建一个仓库。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-51-07.png" title="仓库页面-新建按钮" alt="仓库页面-新建按钮">
-  <span class="caption-text">仓库页面-新建按钮</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-51-07.png"/><figcaption>
+            <h4>仓库页面-新建按钮</h4>
+        </figcaption>
+</figure>
 
 <p>我这里做了一个简单的示范，如下图所示，你可以照着我的模板填，最后点击最下方的 <code>Create repository</code> 按钮，即可创建一个新的仓库。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-30-31.png" title="新建仓库填写页面" alt="新建仓库填写页面">
-  <span class="caption-text">新建仓库填写页面</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-30-31.png"/><figcaption>
+            <h4>新建仓库填写页面</h4>
+        </figcaption>
+</figure>
 
 <p>打开新建的仓库，如下图所示，这个仓库的 Readme 文档的内容就是刚才填入的仓库名和说明。我们点击<code>Code</code> 按钮，复制 SSH 地址。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-34-00.png" title="仓库页面-testexample2020" alt="仓库页面-testexample2020">
-  <span class="caption-text">仓库页面-testexample2020</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-34-00.png"/><figcaption>
+            <h4>仓库页面-testexample2020</h4>
+        </figcaption>
+</figure>
 
 <p><strong>（2）把仓库文件下载到电脑。</strong></p>
 <p>假设我们要下载到电脑上的目标文件夹（为了描述方便，这里简称为文件夹 A），那么我们就右键点击文件夹 A ，在右键菜单中选择 “Git Bash”，在 Git Bash 客户端输入命令行：</p>
@@ -285,86 +342,160 @@ git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#
 <p>这样修改就推送到了 GitHub 上的仓库中。</p>
 <p><strong>（4）登录 GitHub，查看一下仓库的变化。</strong></p>
 <p>登录 GitHub 后我们发现，刚才做的改动都同步到了 GitHub 仓库中，如下图中标示：</p>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-58-52.png"/><figcaption>
+            <h4>仓库页面-改动后</h4>
+        </figcaption>
+</figure>
 
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-58-52.png" title="仓库页面-改动后" alt="仓库页面-改动后">
-  <span class="caption-text">仓库页面-改动后</span>
-</span>
-
-<h5 id="3和别人一起做项目fork-和-pull-request">3.和别人一起做项目：Fork 和 Pull request</h5>
+<h4 id="3-和别人一起做项目fork-和-pull-request">3. 和别人一起做项目：Fork 和 Pull request</h4>
 <p>前面提到过，GitHub 是个开源社区，我们可以参加到开源项目之中，那么，具体是怎么操作呢？</p>
 <p>举个我自己的例子来说明一下这个过程吧。</p>
 <p><strong>（1）Fork 一个别人的仓库</strong></p>
 <p>我在学习 API 接口时，网上的微博 API 工具包很多是基于 Python2 写的，我在 Github 找到了一个 Python3 的版本 <a href="https://github.com/olwolf/sinaweibopy3">sinaweibopy3</a>，如下图所示。我用了一下，觉得很好，看到作者没有写 Readme，我就想添加一个 Readme 说明文档，让别人能更快地了解这个仓库的功能和使用方法，也就是说，我想对这个仓库做一些修改。这种情况下，我就要先 Fork 一下这个仓库到我自己那儿。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-45-16.png" title="sinaweibopy3仓库页面" alt="sinaweibopy3仓库页面">
-  <span class="caption-text">sinaweibopy3仓库页面</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-45-16.png"/><figcaption>
+            <h4>sinaweibopy3仓库页面</h4>
+        </figcaption>
+</figure>
 
 <blockquote>
 <p><strong>为什么要 Fork 呢？</strong>
 Fork有“叉子”的意思，也就是从原仓库复制建一个我自己的分支（分叉），这样，我做的改动只是在我自己的分支上，不会影响到原仓库，除非我提交的 Pull request 被接受后。</p>
 </blockquote>
 <p>Fork 之后，在我的仓库里就出现了一个相同的仓库 sinaweibopy3，如下图所示。不同之处在于，仓库名下方有个备注：&ldquo;Forked from olwolf/sinaweibopy3&rdquo;。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-50-50.png" title="Fork的仓库" alt="Fork的仓库">
-  <span class="caption-text">Fork的仓库</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-50-50.png"/><figcaption>
+            <h4>Fork的仓库</h4>
+        </figcaption>
+</figure>
 
 <p><strong>（2）对自己 Fork 的仓库做修改</strong></p>
 <p>接下来，我就对 Fork 的 sinaweibopy3 仓库做修改，添加了一个 Readme 文档。具体方法请参考上一步 “2.我的第一个 GitHub 项目：如何新建上传仓库” 的示例，可以先 <code>git clone</code> 下载到本地文件夹，修改后再 <code>git push</code> 推送到 GitHub。</p>
 <p><strong>（3）提交 Pull request</strong></p>
 <p>如下图所示，点击 Pull request，在弹出的界面填写一些信息，告诉原仓库的作者你做了什么修改、为什么要修改等，方便作者了解你对仓库的改动，然后提交，Pull request 请求就会发送至原仓库的作者。</p>
-
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-56-15.png" title="Pull request示例" alt="Pull request示例">
-  <span class="caption-text">Pull request示例</span>
-</span>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-56-15.png"/><figcaption>
+            <h4>Pull request示例</h4>
+        </figcaption>
+</figure>
 
 <p><strong>（4）等待原仓库的作者查看和决定是否接受修改。</strong></p>
 <p>提交了 Pull request 后，我们就等待一段时间，原仓库的作者会决定是否接受修改。</p>
 <p>这里，仓库 sinaweibopy3 的原作者 olwolf 合并了我的修改，如图所示，这样原仓库中也增加了Readme文件。同时，我也因此成为了仓库贡献者 (Contributors) 之一。</p>
+<figure><img src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-17-04-19.png"/><figcaption>
+            <h4>接受Pull request后原仓库的变化 </h4>
+        </figcaption>
+</figure>
 
-
-
-
-
-<span class="caption-wrapper">
-  <img class="caption" src="/imgs/github%e5%85%a5%e9%97%a82020-12-17-17-04-19.png" title="接受Pull request后原仓库的变化 " alt="接受Pull request后原仓库的变化 ">
-  <span class="caption-text">接受Pull request后原仓库的变化 </span>
-</span>
-
-<h4 id="四总结">四、总结</h4>
+<h3 id="四总结">四、总结</h3>
 <p>完成以上学习，我们基本上就入门了，接下来，你可以自己在 GitHub 上探索一下，比如搜索发现一些有趣的项目，关注一些高手大牛，加入到开源项目中，等等。最重要的是，动手练习！一旦上手实践，慢慢熟悉之后，你会发现没有开始想象的那么难，一起加油吧！</p>
 <p>最后，推荐几个好的学习教程：</p>
 <p>1.<a href="https://docs.github.com/en/free-pro-team@latest/github">GitHub 帮助页面</a></p>
 <p>2.<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰老师的Git教程</a></p>
 <p>3.<a href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Julie</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-12-13
+        
+    </span>
+  </p>
+  
+  
 </div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/github/">GitHub</a>
+          <a href="/tags/git/">Git</a>
+          <a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/2020/12/14/%E5%8F%8C%E6%98%BE%E7%A4%BA%E5%99%A8%E6%89%A9%E5%B1%95%E6%98%BE%E7%A4%BA%E6%97%B6%E7%A7%BB%E5%8A%A8%E9%BC%A0%E6%A0%87/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">双显示器扩展显示时怎么移动鼠标到另一块屏？</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/2020/07/25/markdown%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/">
+            <span class="next-text nav-default">Markdown的效率工具</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
 
+  
 
+  
+
+      </div>
     </main>
 
-    
-      
-    
-  </body>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
+  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Julie</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
 </html>

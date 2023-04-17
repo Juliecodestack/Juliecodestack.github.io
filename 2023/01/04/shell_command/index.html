@@ -1,81 +1,178 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<html lang="en">
 <head>
-  <link href="https://gmpg.org/xfn/11" rel="profile">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.105.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Beginner’s Guide to Terminal/Shell Commands - Julie&#39;s website</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-  <title>Beginner’s Guide to Terminal/Shell Commands &middot; Julie</title>
-  <meta name="description" content="" />
-
-  
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-  
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
-  <link rel="shortcut icon" href="/favicon.png">
-
-  
-  
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+<meta name="author" content="Julie" /><meta name="description" content="Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.
+" /><meta name="keywords" content="Programming, Python, Machine Learning, Data Science" />
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
 
 
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI"
-crossorigin="anonymous"
-onload='renderMathInElement(document.body);'></script>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "\\[", right: "\\]", display: true},
-                {left: "$", right: "$", display: false},
-                {left: "\\(", right: "\\)", display: false}
-            ]
-        });
-    });
-</script>
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="https://juliecodestack.github.io/2023/01/04/shell_command/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.cb68f97bc9cece255d217346d970e3c62623408634e500c330a62fadabbbe77c.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="Beginner’s Guide to Terminal/Shell Commands" />
+<meta property="og:description" content="Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/2023/01/04/shell_command/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-01-04T12:58:19+08:00" />
+<meta property="article:modified_time" content="2023-01-04T12:58:19+08:00" />
+
+<meta itemprop="name" content="Beginner’s Guide to Terminal/Shell Commands">
+<meta itemprop="description" content="Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples."><meta itemprop="datePublished" content="2023-01-04T12:58:19+08:00" />
+<meta itemprop="dateModified" content="2023-01-04T12:58:19+08:00" />
+<meta itemprop="wordCount" content="827">
+<meta itemprop="keywords" content="Shell Command,Linux," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Beginner’s Guide to Terminal/Shell Commands"/>
+<meta name="twitter:description" content="Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
 </head>
-
-  <body class="theme-base-0e ">
-  <aside class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
-      <p class="lead">
-       Notes on Programming and Machine Learning 
-      </p>
-    </div>
-
-    <nav>
-      <ul class="sidebar-nav">
-        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
-        <li><a href="/post"> Archive </a></li><li><a href="/categories/"> Categories </a></li><li><a href="/tags/"> Tags </a></li><li><a href="/page/about"> About </a></li><li><a href="https://github.com/Juliecodestack"> GitHub </a></li><li><a href="">  </a></li>
-      </ul>
-    </nav>
-
-    <p>&copy; 2023. All rights reserved. </p>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Julie&#39;s website</a>
   </div>
-</aside>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
 
-    <main class="content container">
-    <div class="post">
-  <h1>Beginner’s Guide to Terminal/Shell Commands</h1>
-  <time datetime=2023-01-04T12:58:19&#43;0800 class="post-date">Jan 4, 2023</time>
-  <p>Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.</p>
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Julie&#39;s website</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Beginner’s Guide to Terminal/Shell Commands</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-01-04 </span>
+        <div class="post-category">
+            <a href="/categories/programming/"> Programming </a>
+            </div>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> times read </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-work-on-directories-or-folders-in-windows">1. Work on Directories (or Folders in Windows)</a>
+      <ul>
+        <li><a href="#ls--list">ls : list</a></li>
+        <li><a href="#pwd--present-working-directory">pwd : present working directory</a></li>
+        <li><a href="#cd--change-directory">cd : change directory</a></li>
+        <li><a href="#mkdir--make-a-directory">mkdir : make a directory</a></li>
+        <li><a href="#rm--r--remove">rm -r : remove</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-work-on-files">2. Work on Files</a>
+      <ul>
+        <li><a href="#echo--similar-to-print">echo : similar to “print”</a></li>
+        <li><a href="#cat--display">cat : display</a></li>
+        <li><a href="#touch--create-a-file">touch : create a file</a></li>
+        <li><a href="#mv--move">mv : move</a></li>
+        <li><a href="#cp--copy">cp : copy</a></li>
+        <li><a href="#rm--remove">rm : remove</a></li>
+        <li><a href="#unzip">unzip</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-miscellaneous">3. Miscellaneous</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.</p>
 <nav id="TableOfContents">
   <ul>
     <li><a href="#1-work-on-directories-or-folders-in-windows">1. Work on Directories (or Folders in Windows)</a>
@@ -138,71 +235,71 @@ onload='renderMathInElement(document.body);'></script>
 <h4 id="touch--create-a-file">touch : create a file</h4>
 <p><code>touch filename.filetype</code>: to create a new empty file.</p>
 <p>The following example uses these three commands. First we use <code>echo</code> to print “hello” on the screen :</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;echo <span style="color:#2aa198">&#34;hello!&#34;</span>
-</span></span><span style="display:flex;"><span>hello!
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&gt;echo <span class="s2">&#34;hello!&#34;</span>
+</span></span><span class="line"><span class="cl">hello!
 </span></span></code></pre></div><p>Then we create a new directory named “example”, and use <code>touch</code> to create a new txt file named “ex01” in it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>&gt;mkdir example
-</span></span><span style="display:flex;"><span>&gt;cd example
-</span></span><span style="display:flex;"><span>/example&gt; touch ex01.txt
-</span></span><span style="display:flex;"><span>/example&gt; ls
-</span></span><span style="display:flex;"><span>ex01.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">&gt;mkdir example
+</span></span><span class="line"><span class="cl">&gt;cd example
+</span></span><span class="line"><span class="cl">/example&gt; touch ex01.txt
+</span></span><span class="line"><span class="cl">/example&gt; ls
+</span></span><span class="line"><span class="cl">ex01.txt
 </span></span></code></pre></div><p>When we type <code>cat ex01.txt</code>, the output is nothing, because “ex01.txt” is an empty file.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; cat ex01.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; cat ex01.txt
 </span></span></code></pre></div><p>We can use <code>echo</code>  command to write something into “ex01.txt” :</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;hello&#34;</span>&gt;&gt;ex01.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; <span class="nb">echo</span> <span class="s2">&#34;hello&#34;</span>&gt;&gt;ex01.txt
 </span></span></code></pre></div><p>Now using <code>cat </code> command, we’ll see the content of “ex01.txt”:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; cat ex01.txt
-</span></span><span style="display:flex;"><span>hello
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; cat ex01.txt
+</span></span><span class="line"><span class="cl">hello
 </span></span></code></pre></div><p>We can also write many times, the content will be added to the file :</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;Let us learn Python.&#34;</span>&gt;&gt;ex01.txt
-</span></span><span style="display:flex;"><span>/example&gt; cat ex01.txt
-</span></span><span style="display:flex;"><span>hello
-</span></span><span style="display:flex;"><span>Let us learn Python.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; <span class="nb">echo</span> <span class="s2">&#34;Let us learn Python.&#34;</span>&gt;&gt;ex01.txt
+</span></span><span class="line"><span class="cl">/example&gt; cat ex01.txt
+</span></span><span class="line"><span class="cl">hello
+</span></span><span class="line"><span class="cl">Let us learn Python.
 </span></span></code></pre></div><h4 id="mv--move">mv : move</h4>
 <p><code>mv source_path dest_path</code> ：to move the file/directory from the source_path to the dest_path.</p>
 <p>There are two ways of using <code>mv</code>:</p>
 <p>1.<code>mv source_file/directory dest_directory</code> : to <strong>move</strong> the source file/directory to the dest_directory</p>
 <p>2.<code>mv source_file dest_file</code> : to <strong>rename</strong> the source_file,  now the file name is dest_file. If dest_file has already existed, it will be overwritten as the content of the source file.</p>
 <p>Let’s see an example. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls
-</span></span><span style="display:flex;"><span>ex01.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; ls
+</span></span><span class="line"><span class="cl">ex01.txt
 </span></span></code></pre></div><p>First we create a new folder named “sub_example” as the dest_directory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mkdir sub_example
-</span></span><span style="display:flex;"><span>/example&gt; ls
-</span></span><span style="display:flex;"><span>ex01.txt  sub_example/
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; mkdir sub_example
+</span></span><span class="line"><span class="cl">/example&gt; ls
+</span></span><span class="line"><span class="cl">ex01.txt  sub_example/
 </span></span></code></pre></div><p>The folder “sub_example” is empty now:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls sub_example
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; ls sub_example
 </span></span></code></pre></div><p>(1) use <code>mv source_file/directory dest_directory</code> to move a file :</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; mv ex01.txt sub_example
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; mv ex01.txt sub_example
 </span></span></code></pre></div><p>Now the file “ex01.txt” is in the subfolder “sub_example”, not in the folder “example”:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; ls
-</span></span><span style="display:flex;"><span>sub_example/
-</span></span><span style="display:flex;"><span>/example&gt; ls sub_example
-</span></span><span style="display:flex;"><span>ex01.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; ls
+</span></span><span class="line"><span class="cl">sub_example/
+</span></span><span class="line"><span class="cl">/example&gt; ls sub_example
+</span></span><span class="line"><span class="cl">ex01.txt
 </span></span></code></pre></div><p>(2) use <code>mv source_file dest_file</code> to rename a file :</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>/example&gt; <span style="color:#b58900">cd</span> sub_example
-</span></span><span style="display:flex;"><span>.../sub_example&gt; mv ex01.txt ex02.txt
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/example&gt; <span class="nb">cd</span> sub_example
+</span></span><span class="line"><span class="cl">.../sub_example&gt; mv ex01.txt ex02.txt
 </span></span></code></pre></div><p>Here the file name is changed from “ex01” to “ex02”.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; ls
-</span></span><span style="display:flex;"><span>ex02.txt
-</span></span><span style="display:flex;"><span>.../sub_example&gt; cat ex02.txt
-</span></span><span style="display:flex;"><span>hello
-</span></span><span style="display:flex;"><span>Let us learn Python.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.../sub_example&gt; ls
+</span></span><span class="line"><span class="cl">ex02.txt
+</span></span><span class="line"><span class="cl">.../sub_example&gt; cat ex02.txt
+</span></span><span class="line"><span class="cl">hello
+</span></span><span class="line"><span class="cl">Let us learn Python.
 </span></span></code></pre></div><p>You may wonder: what will happen if the dest_file has already existed?</p>
 <p>We create a file “ex03.txt” with the content “another txt file”.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; touch ex03.txt
-</span></span><span style="display:flex;"><span>.../sub_example&gt; <span style="color:#b58900">echo</span> <span style="color:#2aa198">&#34;another txt file&#34;</span>&gt;&gt;ex03.txt
-</span></span><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
-</span></span><span style="display:flex;"><span>another txt file
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.../sub_example&gt; touch ex03.txt
+</span></span><span class="line"><span class="cl">.../sub_example&gt; <span class="nb">echo</span> <span class="s2">&#34;another txt file&#34;</span>&gt;&gt;ex03.txt
+</span></span><span class="line"><span class="cl">.../sub_example&gt; cat ex03.txt
+</span></span><span class="line"><span class="cl">another txt file
 </span></span></code></pre></div><p>After typing <code>mv ex02.txt ex03.txt</code>, there will be a prompt to check if you really want to overwrite dest_file “ex03.txt”.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; mv ex02.txt ex03.txt
-</span></span><span style="display:flex;"><span>mv: overwrite <span style="color:#2aa198">&#39;ex03.txt&#39;</span>? y
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.../sub_example&gt; mv ex02.txt ex03.txt
+</span></span><span class="line"><span class="cl">mv: overwrite <span class="s1">&#39;ex03.txt&#39;</span>? y
 </span></span></code></pre></div><p>If you type “y”, “ex03.txt” will be overwritten as the  content of “ex02.txt”.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>.../sub_example&gt; ls
-</span></span><span style="display:flex;"><span>ex03.txt
-</span></span><span style="display:flex;"><span>.../sub_example&gt; cat ex03.txt
-</span></span><span style="display:flex;"><span>hello
-</span></span><span style="display:flex;"><span>Let us learn Python.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.../sub_example&gt; ls
+</span></span><span class="line"><span class="cl">ex03.txt
+</span></span><span class="line"><span class="cl">.../sub_example&gt; cat ex03.txt
+</span></span><span class="line"><span class="cl">hello
+</span></span><span class="line"><span class="cl">Let us learn Python.
 </span></span></code></pre></div><h4 id="cp--copy">cp : copy</h4>
 <p><code>cp file/directory dest_directory</code>: to copy the file/directory to the dest_directory.</p>
 <blockquote>
@@ -219,15 +316,113 @@ onload='renderMathInElement(document.body);'></script>
 <p><a href="https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html">UNIX tutorial | CS 61A Fall 2020</a></p>
 <p><a href="https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/">touch command in Linux with Examples - GeeksforGeeks</a></p>
 <blockquote>
-<p>**For comments or discussions, please send me an <a href="https://juliecodestack.github.io/page/about/">email</a> . **</p>
+<p><strong>For comments or discussions, please send me an <a href="https://juliecodestack.github.io/page/about/">email</a> .</strong></p>
 </blockquote>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Julie</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2023-01-04
+        
+    </span>
+  </p>
+  
+  
 </div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/shell-command/">Shell Command</a>
+          <a href="/tags/linux/">Linux</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/2023/01/07/bool_expression/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">What’s the Return Value of a Bool Expression in Python?</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/2021/03/24/21005numpy_axis/">
+            <span class="next-text nav-default">Numpy运算中的axis参数</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
 
+  
 
+  
+
+      </div>
     </main>
 
-    
-      
-    
-  </body>
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
+  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> site pv: <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> site uv: <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2020 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Julie</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
 </html>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Julie</title>
+    <title>Julie&#39;s website</title>
     <link>https://juliecodestack.github.io/</link>
-    <description>Recent content on Julie</description>
+    <description>Recent content on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>en</language>
     <lastBuildDate>Thu, 13 Apr 2023 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Build a Personal Website Using GitHub Pages and Hugo?</title>
@@ -13,7 +13,7 @@
       <pubDate>Thu, 13 Apr 2023 18:30:08 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</guid>
-      <description>&lt;p&gt;A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site. ( Maybe you’d like to have a look at &lt;a href=&#34;https://juliecodestack.github.io/&#34;&gt;my site&lt;/a&gt; first.)&lt;/p&gt;</description>
+      <description>&lt;p&gt;A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
     </item>
     
     <item>
-      <title>What’s the Return Value of a Bool Expression ?</title>
+      <title>What’s the Return Value of a Bool Expression in Python?</title>
       <link>https://juliecodestack.github.io/2023/01/07/bool_expression/</link>
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
@@ -45,10 +45,10 @@
     
     <item>
       <title>About</title>
-      <link>https://juliecodestack.github.io/page/about/</link>
+      <link>https://juliecodestack.github.io/about/</link>
       <pubDate>Sun, 20 Nov 2022 20:55:33 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/page/about/</guid>
+      <guid>https://juliecodestack.github.io/about/</guid>
       <description>Hello, I’m Julie. I’m interested in Python, Programming and Machine Learning. Here I write down what I’ve learned, or how to solve the problems I met.
 I also like:
 reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. Contact me:
@@ -121,39 +121,7 @@ Email: Juliecodestack@126.com .</description>
       <pubDate>Fri, 24 Jul 2020 11:41:03 +0000</pubDate>
       
       <guid>https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/</guid>
-      <description>&lt;nav id=&#34;TableOfContents&#34;&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href=&#34;#1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#2-怎么用-markdown&#34;&gt;2. 怎么用 Markdown？&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#21-标题&#34;&gt;2.1 标题&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#22-加粗斜体&#34;&gt;2.2 加粗、斜体&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#23-下划线删除线&#34;&gt;2.3 下划线、删除线&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#24-引用代码&#34;&gt;2.4 引用、代码&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#25-列表&#34;&gt;2.5 列表&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#26-公式&#34;&gt;2.6 公式&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#27-表格&#34;&gt;2.7 表格&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#28-插入网址链接和图片&#34;&gt;2.8 插入网址链接和图片&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#29-排版规范&#34;&gt;2.9 排版规范&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;&lt;a href=&#34;#3-在哪用markdown&#34;&gt;3. 在哪用Markdown？&lt;/a&gt;
-      &lt;ul&gt;
-        &lt;li&gt;&lt;a href=&#34;#31-即写即显示typora&#34;&gt;3.1 即写即显示：Typora&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#32-对照显示atom-vscode&#34;&gt;3.2 对照显示：Atom, VSCode&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href=&#34;#33-多平台协作印象笔记&#34;&gt;3.3 多平台协作：印象笔记&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;
-
-&lt;h3 id=&#34;1-为什么选择-markdown&#34;&gt;1. 为什么选择 Markdown？&lt;/h3&gt;
-&lt;p&gt;正在看这篇文章的您很可能还没有使用过 Markdown 编辑器，平时写文档、排版编辑以 Word 为主吧，那么，您是否遇到过以下问题：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;写好文章后设定文档标题、字号、间距、加粗等排版工作，要花费大量时间。&lt;/li&gt;
-&lt;li&gt;在插入网址链接时，显示出一长串网址，不够简洁美观。要是能够把链接显示为简要文字说明，点击文字就可以到达网址就好了。&lt;/li&gt;
-&lt;li&gt;对于程序员来说，文档中经常需要插入代码，可是 Word 中没有能直接突出显示代码的效果。如果能像代码编辑器里一样，对函数、部分语句等突出标识，看着就清晰多了。&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <description>&lt;p&gt;Markdown 是什么？怎么用？本文为您介绍 Markdown 基本使用方法，带您快速上手、开始用 Markdown 编辑文档。&lt;/p&gt;</description>
     </item>
     
   </channel>
