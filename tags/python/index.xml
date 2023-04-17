@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Julie&#39;s website</title>
-    <link>https://juliecodestack.github.io/tags/python/</link>
+    <link>https://juliecodestack.github.io/tags/Python/</link>
     <description>Recent content in Python on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Jan 2023 20:54:13 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/Python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>What’s the Return Value of a Bool Expression in Python?</title>
       <link>https://juliecodestack.github.io/2023/01/07/bool_expression/</link>
