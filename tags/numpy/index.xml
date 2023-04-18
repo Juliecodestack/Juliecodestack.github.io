@@ -6,11 +6,11 @@
     <description>Recent content in NumPy on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 24 Mar 2021 11:23:28 +0000</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/NumPy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/NumPy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Numpy运算中的axis参数</title>
       <link>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</link>
-      <pubDate>Wed, 24 Mar 2021 11:23:28 +0000</pubDate>
+      <pubDate>Wed, 24 Mar 2021 18:30:08 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
       <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：

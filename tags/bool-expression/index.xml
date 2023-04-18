@@ -13,7 +13,7 @@
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/01/07/bool_expression/</guid>
-      <description>&lt;p&gt;We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What‘s the result of the expression &lt;code&gt;True and 3&lt;/code&gt; ? Is it True or False, or other value? Let’s find it out.&lt;/p&gt;</description>
+      <description>&lt;p&gt;We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What’s the result of the expression &lt;code&gt;True and 3&lt;/code&gt; in Python? Is it True or False, or other value? Let’s find it out.&lt;/p&gt;</description>
     </item>
     
   </channel>
