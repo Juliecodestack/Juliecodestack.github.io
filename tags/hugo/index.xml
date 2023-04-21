@@ -6,7 +6,16 @@
     <description>Recent content in Hugo on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Apr 2023 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Apr 2023 18:23:29 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/Hugo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo: How to Add a Table of Contents to Your Post?</title>
+      <link>https://juliecodestack.github.io/2023/04/21/hugo-toc/</link>
+      <pubDate>Fri, 21 Apr 2023 18:23:29 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/21/hugo-toc/</guid>
+      <description>&lt;p&gt;Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Build a Personal Website Using GitHub Pages and Hugo?</title>
       <link>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</link>
