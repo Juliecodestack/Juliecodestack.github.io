@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anaconda on Julie&#39;s website</title>
-    <link>https://juliecodestack.github.io/tags/Anaconda/</link>
+    <link>https://juliecodestack.github.io/tags/anaconda/</link>
     <description>Recent content in Anaconda on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Mar 2021 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/Anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Jupyter Notebook使用</title>
       <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>

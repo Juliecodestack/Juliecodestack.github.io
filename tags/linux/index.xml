@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on Julie&#39;s website</title>
-    <link>https://juliecodestack.github.io/tags/Linux/</link>
+    <link>https://juliecodestack.github.io/tags/linux/</link>
     <description>Recent content in Linux on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Jan 2023 12:58:19 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 12:58:19 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Beginner’s Guide to Shell Commands</title>
       <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
