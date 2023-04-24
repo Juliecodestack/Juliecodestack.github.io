@@ -50,7 +50,7 @@
 <meta itemprop="name" content="How to Build a Personal Website Using GitHub Pages and Hugo?">
 <meta itemprop="description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site."><meta itemprop="datePublished" content="2023-04-13T18:30:08+08:00" />
 <meta itemprop="dateModified" content="2023-04-13T18:30:08+08:00" />
-<meta itemprop="wordCount" content="1794">
+<meta itemprop="wordCount" content="1847">
 <meta itemprop="keywords" content="Hugo,Blog,GitHub,Git," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to Build a Personal Website Using GitHub Pages and Hugo?"/>
 <meta name="twitter:description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site."/>
@@ -156,6 +156,7 @@
         <li><a href="#13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</a></li>
         <li><a href="#14-write-posts">1.4 Write posts</a></li>
         <li><a href="#15-how-to-display-images">1.5 How to display images?</a></li>
+        <li><a href="#add-0424">Add-0424</a></li>
       </ul>
     </li>
     <li><a href="#step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</a>
@@ -183,6 +184,7 @@
         <li><a href="#13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</a></li>
         <li><a href="#14-write-posts">1.4 Write posts</a></li>
         <li><a href="#15-how-to-display-images">1.5 How to display images?</a></li>
+        <li><a href="#add-0424">Add-0424</a></li>
       </ul>
     </li>
     <li><a href="#step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</a>
@@ -273,6 +275,34 @@
 <p><img src="/imgs/image-20230416211605682.png" alt="image-20230416211605682"></p>
 <p>Here please notice the space between the angle brackets ( <code>&lt;</code> and <code>&gt;</code> ) and the content.</p>
 <p>The pipeline figure you’ve seen in “Site-Building Pipeline” Section was inserted in this way.</p>
+<h4 id="add-0424">Add-0424</h4>
+<p>If your images are stored on the web,and you insert the images using the web link,</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Way-1: show the image without the title
+</span></span><span class="line"><span class="cl">![image2_title](image_weblink)
+</span></span><span class="line"><span class="cl">Way-2: show the image with the title
+</span></span><span class="line"><span class="cl"><figure><img src="image_weblink"/><figcaption>
+            <h4>image_name</h4>
+        </figcaption>
+</figure>
+
+</span></span><span class="line"><span class="cl">Way-3: show the image without the title
+</span></span><span class="line"><span class="cl">&lt;img src=image_weblink alt=image_name align=center /&gt;
+</span></span></code></pre></div><p>For example:</p>
+<p>way-1</p>
+<p><img src="https://www.python.org/static/img/python-logo@2x.png" alt="Python-logo"></p>
+<p>way-2</p>
+<figure><img src="#ZgotmplZ"/><figcaption>
+            <h4>”Python-logo”</h4>
+        </figcaption>
+</figure>
+
+<figure><img src="https://www.python.org/static/img/python-logo@2x.png"/><figcaption>
+            <h4>Python-logo</h4>
+        </figcaption>
+</figure>
+
+<p>way-3</p>
+<img src=https://www.python.org/static/img/python-logo@2x.png alt=Python-logo />
 <h3 id="step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</h3>
 <h4 id="21-create-a-github-repository">2.1 Create a GitHub repository</h4>
 <p>Log in <a href="https://github.com/">GitHub</a> and create a public repository named <code>YourGitHubName.github.io</code>, this is where you’re going to store your web pages on GitHub so that others can view your site. Here please make sure <code>YourGitHubName</code> is the same as your GitHub username.</p>
