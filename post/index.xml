@@ -6,9 +6,18 @@
     <description>Recent content in Posts on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Apr 2023 18:23:29 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hugo: How to Add a Table of Contents to Your Post?</title>
+      <title>Switching from Hexo to Hugo</title>
+      <link>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</link>
+      <pubDate>Tue, 25 Apr 2023 18:39:37 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</guid>
+      <description>&lt;p&gt;Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo: How to Add a Table of Contents (TOC) to Your Post?</title>
       <link>https://juliecodestack.github.io/2023/04/21/hugo-toc/</link>
       <pubDate>Fri, 21 Apr 2023 18:23:29 +0800</pubDate>
       
@@ -28,7 +37,7 @@
     <item>
       <title>How to Write a Popular Article?</title>
       <link>https://juliecodestack.github.io/2023/02/01/valuable_writing/</link>
-      <pubDate>Wed, 01 Feb 2023 12:16:07 +0800</pubDate>
+      <pubDate>Wed, 01 Feb 2023 18:16:07 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/02/01/valuable_writing/</guid>
       <description>&lt;p&gt;Whenever you write something, an article, a blog post or a paper, you may have a question: “how to write it so that my readers will like it”? In his lecture “Writing Beyond the Academy”, &lt;a href=&#34;https://news.uchicago.edu/story/how-one-scholar-shaped-writing-generations-students&#34;&gt;Professor Larry McEnerney from The University of Chicago&lt;/a&gt;  gave his advice.&lt;/p&gt;</description>
@@ -46,7 +55,7 @@
     <item>
       <title>Beginner’s Guide to Shell Commands</title>
       <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
-      <pubDate>Wed, 04 Jan 2023 12:58:19 +0800</pubDate>
+      <pubDate>Wed, 04 Jan 2023 18:58:19 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
       <description>&lt;p&gt;Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.&lt;/p&gt;</description>

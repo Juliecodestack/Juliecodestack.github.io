@@ -214,7 +214,7 @@
 
 <p>As shown in the figure above, there are two main steps in building a static website:</p>
 <ol>
-<li>Generate pages locally. The popular static sites generators (or frameworks) are JekyII, Hugo, Hexo, etc. Here we’ll use <a href="https://gohugo.io/">Hugo</a> as an example. Many people (including me) like Hugo because it’s super fast to build a site.</li>
+<li>Generate pages locally. The popular static site generators (or frameworks) are JekyII, Hugo, Hexo, etc. Here we’ll use <a href="https://gohugo.io/">Hugo</a> as an example. Many people (including me) like Hugo because it’s super fast to build a site.</li>
 <li>Deploy the site to the server. Here we’ll use GitHub as the server to store the pages.</li>
 </ol>
 <p>Not that hard, right ? Now let’s dive into the details.</p>
@@ -263,9 +263,9 @@
 </span></span></code></pre></div><p>It will create a new markdown file named “new_post” in <code>MySite &gt; content</code> folder. But if you use <code>hugo server</code>, you may not see the new post. Why?</p>
 <p>(1) Depending on the theme you choose, you may need to put the <code>new_post.md</code> into <code>post</code> (or <code>posts</code> ) folder in the <code>content</code> folder to generate the web page.  In this case, you can also enter the following command to create a new post :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new post/new_post.md
-</span></span></code></pre></div><p>(2) Open the new post in your editor (Typora, VS Code, etc). In the header of the post , there are settings about the post (it’s also called front matter). Find <code>draft: true</code> , which means this post is a draft and you don’t want to publish it now. Change it to <code>draft: false</code> so that the post will be published on the site. The <code>title</code> in the header refers to the title of the post, and it is set to be the file name when created (for example, “new_post” here) . You can change it to whatever you want in your editor.</p>
+</span></span></code></pre></div><p>(2) Open the new post in your editor (Typora, VS Code, etc). In the header of the post , there are settings about the post (it’s also called front matter). Find <code>draft: true</code> , which means this post is a draft and you don’t want to publish it now. Change it to <code>draft: false</code> so that the post will be published on the site. Besides, the <code>title</code> in the header refers to the title of the post, and it is set to be the file name when created (for example, “new_post” here) . You can change it to whatever you want in your editor.</p>
 <h4 id="15-how-to-display-images">1.5 How to display images?</h4>
-<p>Although many tutorials didn’t mention how to insert and display images, I think for beginners it’s an important part in the building process. After all, you may add pictures to make your article easier to understand or look better.</p>
+<p>Although many tutorials didn’t mention how to insert and display images, I think for beginners it’s an important part in the building process, for you may add pictures to make your article easier to understand or look better.</p>
 <h5 id="1-for-local-images">1. For local images</h5>
 <p>In Hugo, the local images are stored in <code>MySite &gt; static</code> folder in order to be displayed. Supposing you have an image named <code>image1.jpg</code>, after putting it into the <code>static</code> folder, you can insert it in your post this way :</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">image1_title</span>](<span class="na">/image1.jpg</span>)
@@ -281,7 +281,7 @@
 <blockquote>
 <p>In way-2 and way-3,  there are no double quotes around <code>image2_weblink</code> or <code>image2_title</code>, i.e. write <code>image2_weblink</code>, not <code>“image2_weblink”</code>.</p>
 </blockquote>
-<p>Take the Python Logo from the python.org as an example. Insert the image using the three ways:</p>
+<p>Take the Python Logo from the <a href="https://www.python.org/">python.org</a> as an example. Insert the image using the three ways:</p>
 <p>Way-1:</p>
 <p><img src="https://www.python.org/static/img/python-logo@2x.png" alt="Python-logo"></p>
 <p>Way-2:</p>
@@ -356,7 +356,7 @@
       <nav class="post-nav">
         <a class="prev" href="/2023/04/21/hugo-toc/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hugo: How to Add a Table of Contents to Your Post?</span>
+            <span class="prev-text nav-default">Hugo: How to Add a Table of Contents (TOC) to Your Post?</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         <a class="next" href="/2023/02/01/valuable_writing/">

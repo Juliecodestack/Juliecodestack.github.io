@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Hugo: How to Add a Table of Contents to Your Post? - Julie&#39;s website</title>
+  <title>Hugo: How to Add a Table of Contents (TOC) to Your Post? - Julie&#39;s website</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -40,19 +40,19 @@
 
 
 
-<meta property="og:title" content="Hugo: How to Add a Table of Contents to Your Post?" />
+<meta property="og:title" content="Hugo: How to Add a Table of Contents (TOC) to Your Post?" />
 <meta property="og:description" content="Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://juliecodestack.github.io/2023/04/21/hugo-toc/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2023-04-21T18:23:29+08:00" />
 <meta property="article:modified_time" content="2023-04-21T18:23:29+08:00" />
 
-<meta itemprop="name" content="Hugo: How to Add a Table of Contents to Your Post?">
+<meta itemprop="name" content="Hugo: How to Add a Table of Contents (TOC) to Your Post?">
 <meta itemprop="description" content="Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you."><meta itemprop="datePublished" content="2023-04-21T18:23:29+08:00" />
 <meta itemprop="dateModified" content="2023-04-21T18:23:29+08:00" />
-<meta itemprop="wordCount" content="582">
+<meta itemprop="wordCount" content="585">
 <meta itemprop="keywords" content="Hugo,Blog," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hugo: How to Add a Table of Contents to Your Post?"/>
+<meta name="twitter:title" content="Hugo: How to Add a Table of Contents (TOC) to Your Post?"/>
 <meta name="twitter:description" content="Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you."/>
 
 <!--[if lte IE 9]>
@@ -130,7 +130,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Hugo: How to Add a Table of Contents to Your Post?</h1>
+      <h1 class="post-title">Hugo: How to Add a Table of Contents (TOC) to Your Post?</h1>
 
       <div class="post-meta">
         <span class="post-time"> April 21, 2023 </span>
@@ -167,7 +167,7 @@
 </span></span></code></pre></div><p>Then only the TOC of that article won’t be shown. You may have a look at <a href="https://juliecodestack.github.io/2021/03/24/21005numpy_axis/">this post of mine</a>. The article is short and I didn’t use the headings. It’s meaningless to show a title with empty content in the sidebar, so I hide the TOC in this way.</p>
 <h3 id="2-how-to-insert-a-toc-in-the-middle-of-your-post">2. How to insert a TOC in the middle of your post?</h3>
 <p>However, some Hugo themes don’t have Table of Contents ( TOC )  settings, or you may want to insert a TOC somewhere in the middle of the post. In that case, you can use Hugo shortcodes.</p>
-<p><a href="https://gohugo.io/content-management/shortcodes/">Hugo Shortcodes Page</a>  introduced shortcodes as this:</p>
+<p><a href="https://gohugo.io/content-management/shortcodes/">Hugo Shortcodes Page</a>  introduces shortcodes as this:</p>
 <blockquote>
 <p>A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template.</p>
 </blockquote>
@@ -190,7 +190,7 @@
   </ul>
 </nav>
 <h3 id="3-set-the-range-of-headings-to-be-displayed">3. Set the range of headings to be displayed</h3>
-<p>Sometimes you may find the page doesn’t show all the headings, and you can fix it by setting:</p>
+<p>Sometimes you may find the page doesn’t show all the headings, and you can fix it by setting in <code>YourSite &gt; config.toml</code>:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">markup</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">  <span class="p">[</span><span class="nx">markup</span><span class="p">.</span><span class="nx">tableOfContents</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="nx">startLevel</span> <span class="p">=</span> <span class="mi">3</span>
@@ -206,7 +206,7 @@
 </li>
 </ol>
 <blockquote>
-<p><strong>For comments or discussions, please send me an [email](mailto:  <a href="mailto:Juliecodestack@126.com">Juliecodestack@126.com</a> ) .</strong></p>
+<p>**For comments or discussions, please send me an <a href="https://juliecodestack.github.io/about/">email</a> . **</p>
 </blockquote>
     </div>
 
@@ -217,7 +217,11 @@
           <a href="/tags/blog/">Blog</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/2023/04/25/hexo-to-hugo/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Switching from Hexo to Hugo</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/2023/04/13/build_hugo_site/">
             <span class="next-text nav-default">How to Build a Personal Website Using GitHub Pages and Hugo?</span>
             <span class="next-text nav-mobile">Next</span>

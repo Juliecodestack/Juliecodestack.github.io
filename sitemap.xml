@@ -3,21 +3,70 @@
   
   <url>
     <loc>https://juliecodestack.github.io/tags/blog/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/categories/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/tags/git/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/tags/github/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/tags/hugo/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/post/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/tags/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://juliecodestack.github.io/categories/tools/</loc>
+    <lastmod>2023-04-25T18:39:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -25,48 +74,6 @@
   <url>
     <loc>https://juliecodestack.github.io/2023/04/21/hugo-toc/</loc>
     <lastmod>2023-04-21T18:23:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/post/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/tags/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/categories/tools/</loc>
-    <lastmod>2023-04-21T18:23:29+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/tags/git/</loc>
-    <lastmod>2023-04-13T18:30:08+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://juliecodestack.github.io/tags/github/</loc>
-    <lastmod>2023-04-13T18:30:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -80,21 +87,21 @@
   
   <url>
     <loc>https://juliecodestack.github.io/2023/02/01/valuable_writing/</loc>
-    <lastmod>2023-02-01T12:16:07+08:00</lastmod>
+    <lastmod>2023-02-01T18:16:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/categories/notes/</loc>
-    <lastmod>2023-02-01T12:16:07+08:00</lastmod>
+    <lastmod>2023-02-01T18:16:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/tags/writing/</loc>
-    <lastmod>2023-02-01T12:16:07+08:00</lastmod>
+    <lastmod>2023-02-01T18:16:07+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -129,21 +136,21 @@
   
   <url>
     <loc>https://juliecodestack.github.io/2023/01/04/shell_command/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
+    <lastmod>2023-01-04T18:58:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/tags/linux/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
+    <lastmod>2023-01-04T18:58:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://juliecodestack.github.io/tags/shell-command/</loc>
-    <lastmod>2023-01-04T12:58:19+08:00</lastmod>
+    <lastmod>2023-01-04T18:58:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

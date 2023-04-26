@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Switching from Hexo to Hugo - Julie&#39;s website</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Julie" /><meta name="description" content="Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.
+" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.6a3007903727ebe821e9f3d5fbdc5588f2febea95ca70978da4695272f33edfd.css" rel="stylesheet">
+
+
+
+<meta property="og:title" content="Switching from Hexo to Hugo" />
+<meta property="og:description" content="Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-04-25T18:39:37+08:00" />
+<meta property="article:modified_time" content="2023-04-25T18:39:37+08:00" />
+
+<meta itemprop="name" content="Switching from Hexo to Hugo">
+<meta itemprop="description" content="Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you."><meta itemprop="datePublished" content="2023-04-25T18:39:37+08:00" />
+<meta itemprop="dateModified" content="2023-04-25T18:39:37+08:00" />
+<meta itemprop="wordCount" content="766">
+<meta itemprop="keywords" content="Hugo,Blog,GitHub,Git," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Switching from Hexo to Hugo"/>
+<meta name="twitter:description" content="Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Julie&#39;s website</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Julie&#39;s website</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Switching from Hexo to Hugo</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> April 25, 2023 </span>
+        
+        <div class="post-category">
+            <a href="/categories/tools/"> Tools </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-hugo-vs-hexo">1. Hugo v.s. Hexo</a></li>
+    <li><a href="#2-how-i-switched-from-hexo-to-hugo">2. How I switched from Hexo to Hugo?</a>
+      <ul>
+        <li><a href="#21-generate-the-pages-by-hugo-locally">2.1. Generate the pages by Hugo locally</a></li>
+        <li><a href="#22-push-to-github-for-the-first-time">2.2. Push to GitHub for the first time</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.</p>
+<h3 id="1-hugo-vs-hexo">1. Hugo v.s. Hexo</h3>
+<p>Both Hexo and Hugo are static site generators, so why did I choose Hugo?</p>
+<p><strong>Hugo is super fast</strong>. At first I thought it means the page load time is short, so my readers could view the pages of my site instantly, and that’s the reason I decided to switch to Hugo. Later I realized it refers to the site building speed ( &lt; 1ms per page according to <a href="https://gohugo.io/">Hugo site</a> ), which means I can build the site fast and preview the changes in real time. It’s really a benefit, especially when you have written hundreds of articles, for you can still build your site in seconds (or even in a second) .</p>
+<p>Besides, Hexo depends on Node.js. Sometimes when you install a wrong version of Node.js, it leads to problems. You don’t need to worry about that in Hugo because you don’t need to install external dependencies for it.</p>
+<p>What about Hugo’s drawbacks?</p>
+<p>From my experience, compared with Hexo, the site configuration of Hugo is a bit difficult for beginners. Hexo provides a default theme for you to begin with. While in Hugo, at first you have to pick a theme and install it. Besides, Hexo has a site configuration as well as a theme configuration. The site configuration fits all themes and saves your time when you change the theme. While Hugo has only one configuration file, and different themes have different settings, which makes beginners a little confused.</p>
+<h3 id="2-how-i-switched-from-hexo-to-hugo">2. How I switched from Hexo to Hugo?</h3>
+<p>Since I have written some posts on the Hexo site, <strong>the main question is how to switch to Hugo without changing the links of the posts</strong>. I find <a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/">this article</a> helpful, so I followed the instructions in it to make the change.</p>
+<h4 id="21-generate-the-pages-by-hugo-locally">2.1. Generate the pages by Hugo locally</h4>
+<p>First I followed the step0 and step1 in <a href="https://juliecodestack.github.io/2023/04/13/build_hugo_site/">my first tutorial</a> to build a Hugo site. Then:</p>
+<p>(1) <strong>Copy</strong> the posts from <code>MyHexoSite &gt; source &gt; _posts</code> to <code>MyHugoSite &gt; content &gt; post</code> folder.</p>
+<blockquote>
+<p>Please use <code>copy</code> , not <code>move</code> , so that if something went wrong, you can go to <code>MyHexoSite</code> folder and try it again. And I also advice you to make a backup of  <code>MyHexoSite</code> folder.</p>
+</blockquote>
+<p>(2) Change the front matter of the posts.</p>
+<p>In Hexo the the published date is formatted as <code>date:yyyy-mm-dd HH:MM:SS</code> , while in Hugo a time zone needs to be added. For example, in my articles the format is <code>date:yyyy-mm-ddTHH:MM:SS+08:00</code> .</p>
+<p>(3) Change the image links ( You may read <a href="https://juliecodestack.github.io/2023/04/13/build_hugo_site/#15-how-to-display-images">Step1.5 in my first tutorial</a> first)</p>
+<p><strong>For local images:</strong></p>
+<p>Copy all images from <code>MyHexoSite &gt; source &gt; _posts &gt; imgs</code> folder to <code>MyHugoSite &gt; static &gt; imgs</code> folder, then change the links in the markdown files.</p>
+<p>If in Hexo the link is like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">image1_title</span>](<span class="na">imgs/image1.jpg</span>)
+</span></span></code></pre></div><p>In Hugo it’s changed to:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">image1_title</span>](<span class="na">/imgs/image1.jpg</span>)
+</span></span></code></pre></div><p>If in Hexo the link is like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-md" data-lang="md"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;imgs/image1.jpg&#34;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&#34;image1_title&#34;</span> <span class="na">align</span><span class="o">=</span><span class="s">center</span> <span class="p">/&gt;</span>
+</span></span></code></pre></div><blockquote>
+<p>Here <code>align=center</code> is optional. It’s set to display the image in the center of the line.</p>
+</blockquote>
+<p>In Hugo it’s changed to:</p>
+<p><img src="/imgs/image-20230424212753828.png" alt="image-20230424212753828"></p>
+<p><strong>For web images:</strong></p>
+<p>If in Hexo the link is like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">![image2_title](image2_weblink)
+</span></span></code></pre></div><p>You can keep the links as the same.</p>
+<p>If in Hexo the link is like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">&lt;img src=&#34;image2_weblink&#34; alt=&#34;image2_title&#34; align=center /&gt;
+</span></span></code></pre></div><p>You need to remove the double quotes around <code>image2_weblink</code> and <code>image2_title</code>.</p>
+<p>(4) permanent link</p>
+<p>To be consistent with the URL of my Hexo site, I set the permanent links in the <code>config.toml</code> of the Hugo site as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="p">[</span><span class="nx">permalinks</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">post</span> <span class="p">=</span> <span class="s2">&#34;/:year/:month/:day/:filename/&#34;</span>
+</span></span></code></pre></div><blockquote>
+<p>I used the Next theme of Hexo. You may need to refer to the links of your own Hexo site before setting the <code>permalinks</code>.</p>
+</blockquote>
+<h4 id="22-push-to-github-for-the-first-time">2.2. Push to GitHub for the first time</h4>
+<p>(1) Save the links of several articles of your Hexo site. Later you can use them to check the links of your Hugo site.</p>
+<p>(2)  Follow the step2 in <a href="https://juliecodestack.github.io/2023/04/13/build_hugo_site/">my first tutorial</a>, except one thing. Because I have pushed Hexo-generated pages to GitHub before, the GitHub repository was not empty, the first time I added <code>-f</code> after <code>git push</code> as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;YourCommitMessage&#34;</span>
+</span></span><span class="line"><span class="cl">git push -f upstream master
+</span></span></code></pre></div><p>From the next time I use <code>git push upstream master</code> .</p>
+<p>(3) Clicking the links saved in step(1) and check whether the links point to the same articles as before.</p>
+<h3 id="references">References</h3>
+<ol>
+<li>Comparison of Hexo and Hugo: <a href="https://www.stackshare.io/stackups/hexo-vs-hugo">https://www.stackshare.io/stackups/hexo-vs-hugo</a></li>
+<li>Switch from Hexo to Hugo: <a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/">https://jdhao.github.io/2018/10/10/hexo_to_hugo/</a></li>
+</ol>
+<blockquote>
+<p><strong>For comments or discussions, please send me an  <a href="https://juliecodestack.github.io/about/">email</a>  .</strong></p>
+</blockquote>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/hugo/">Hugo</a>
+          <a href="/tags/blog/">Blog</a>
+          <a href="/tags/github/">GitHub</a>
+          <a href="/tags/git/">Git</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/2023/04/21/hugo-toc/">
+            <span class="next-text nav-default">Hugo: How to Add a Table of Contents (TOC) to Your Post?</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
+  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+   
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
