@@ -1,44 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Jupyter Notebook使用 - Julie&#39;s website</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://juliecodestack.github.io/images/favicon.png" />
+<title>Jupyter Notebook使用 | Julie&#39;s website</title>
+<meta name="title" content="Jupyter Notebook使用" />
+<meta name="description" content="
+注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Julie" /><meta name="description" content=" 注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
-接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。
-" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.105.0 with theme even" />
-
-
-<link rel="canonical" href="https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.6a3007903727ebe821e9f3d5fbdc5588f2febea95ca70978da4695272f33edfd.css" rel="stylesheet">
-
+接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。" />
+<meta name="keywords" content="Python,Anaconda,Jupyter Notebook," />
 
 
 <meta property="og:title" content="Jupyter Notebook使用" />
@@ -47,9 +21,23 @@
 
 接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/" /><meta property="og:image" content="https://juliecodestack.github.io/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-03-07T18:30:08+08:00" />
-<meta property="article:modified_time" content="2021-03-07T18:30:08+08:00" />
+<meta property="article:modified_time" content="2021-03-07T18:30:08+08:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://juliecodestack.github.io/images/share.png"/>
+
+<meta name="twitter:title" content="Jupyter Notebook使用"/>
+<meta name="twitter:description" content="
+注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
+
+接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。"/>
+
+
 
 <meta itemprop="name" content="Jupyter Notebook使用">
 <meta itemprop="description" content="
@@ -57,122 +45,241 @@
 
 接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。"><meta itemprop="datePublished" content="2021-03-07T18:30:08+08:00" />
 <meta itemprop="dateModified" content="2021-03-07T18:30:08+08:00" />
-<meta itemprop="wordCount" content="1528">
-<meta itemprop="keywords" content="Python,Anaconda,Jupyter Notebook," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Jupyter Notebook使用"/>
-<meta name="twitter:description" content="
-注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。
+<meta itemprop="wordCount" content="107"><meta itemprop="image" content="https://juliecodestack.github.io/images/share.png"/>
+<meta itemprop="keywords" content="Python,Anaconda,Jupyter Notebook," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
-接着上一篇文章，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。"/>
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+      
+    font-size: 17px;
+    
+  }
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+     
+    font-size: 17px;
+     
+     
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+     
+    padding: 15px;
+    white-space: pre-wrap;  
+    overflow-x: auto;
+     
+    font-size: 15px;
+     
+     
+    
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+     
+    border-left: 3px solid #999;
+    color: #222;
+    padding-left: 20px;
+     
+    font-style: normal;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777; 
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
 
 </head>
+
 <body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Julie&#39;s website</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/about">
-        <li class="mobile-menu-item">About</li>
-      </a>
-  </ul>
+  <header><a href="/" class="title">
+  <h2>Julie&#39;s website</h2>
+</a>
+<nav>
 
+<a href="/blog">Posts</a>
+
+
+<a href="/categories/">Categories</a>
+
+<a href="/tags/">Tags</a>
+
+<a href="/">About</a>
+
+<a href="https://github.com/Juliecodestack">GitHub</a>
+
+<a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
+
+
+
+</nav>
+</header>
+  <main>
+
+<h1>Jupyter Notebook使用</h1>
+<p>
+  <i>
+    <time datetime='2021-03-07' pubdate>
+      Mar 07 2021
+    </time>
+  </i>
+  &nbsp in:
   
+  
+  <a href="https://juliecodestack.github.io/categories/data-science/"> Data Science</a>
+  
+</p>
 
-
-</nav>
-
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Julie&#39;s website</a>
-</div>
-
-
-
-
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about">About</a>
-      </li>
-  </ul>
-</nav>
-
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">Jupyter Notebook使用</h1>
-
-      <div class="post-meta">
-        <span class="post-time"> March 7, 2021 </span>
-        
-        <div class="post-category">
-            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 机器学习笔记 </a>
-            </div>
-        
-      </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#基本功能">基本功能</a></li>
-        <li><a href="#快捷键">快捷键</a></li>
-        <li><a href="#运行-python-文件">运行 Python 文件</a></li>
-        <li><a href="#输入自动完成tab键">输入自动完成:【Tab】键</a></li>
-        <li><a href="#magic-语法">magic 语法</a></li>
-        <li><a href="#参考教程">参考教程</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      <blockquote>
+<content>
+  <blockquote>
 <p>注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。</p>
 </blockquote>
 <p>接着<a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/">上一篇文章</a>，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。</p>
@@ -201,9 +308,9 @@
 别急，Jupyter Notebook 非常贴心地提供了自动完成功能。</p>
 <p>1.名字自动完成：输入头几个字母，按【Tab】键，会搜索之前输入过和系统自带的变量或函数的名字，并提供结果。
 例如，先定义函数变量 l1 和 l2：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">l1=1
-</span></span><span class="line"><span class="cl">l2=3
-</span></span></code></pre></div><p>再输入<code>l</code>，按【Tab】键，会弹出如下图所示的选择框，开始的两个就是刚才定义的变量 l1, l2，接下来的 lambda, len, list 等等是系统自带的函数或者对象名。
+<pre tabindex="0"><code>l1=1
+l2=3
+</code></pre><p>再输入<code>l</code>，按【Tab】键，会弹出如下图所示的选择框，开始的两个就是刚才定义的变量 l1, l2，接下来的 lambda, len, list 等等是系统自带的函数或者对象名。
 <img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-10-31-18.png" alt="变量名的输入自动完成"></p>
 <p>2.当我们定义了一个对象(object)，比如列表型，字典型数据等，可以通过【Tab】键搜索到这个对象的所有函数和属性。
 例如，定义一个字典型数据d1:
@@ -215,9 +322,9 @@
 <img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-11-00-35.png" alt="工具包函数的输入自动完成"></p>
 <p>进一步地，在某个函数的变量定义时，输入变量名的头一个或几个字母，按【Tab】键，也会出现相应变量的列表，这在函数定义时很有帮助。比如有的函数定义的变量多，记不住，【Tab】键可以快速找到对应的变量。
 例如，定义函数：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">def func1(aaa=1,aab=2,abc=3,ccd=4):
-</span></span><span class="line"><span class="cl">    return aaa,aab,abc,ccd
-</span></span></code></pre></div><p>在括号内按【Tab】键，会有一个下拉列表，如下图所示，其中就有函数的变量 aaa, aab, abc, 这里只列举了前几个。ccd 也在列表中。
+<pre tabindex="0"><code>def func1(aaa=1,aab=2,abc=3,ccd=4):
+    return aaa,aab,abc,ccd
+</code></pre><p>在括号内按【Tab】键，会有一个下拉列表，如下图所示，其中就有函数的变量 aaa, aab, abc, 这里只列举了前几个。ccd 也在列表中。
 <img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-09-59.png" alt="函数定义中变量名的输入自动完成1"></p>
 <p>如果我们想要快速找到ccd这个变量，可以在括号内输入c，再按【Tab】键，
 <img src="/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-11-16.png" alt="函数定义中变量名的输入自动完成2"></p>
@@ -239,90 +346,39 @@
 </ul>
 <h4 id="参考教程">参考教程</h4>
 <p>Python for Data Analysis by Wes Mckinney</p>
-    </div>
+</content>
+
+
+
+<br>
+<p>Tags: 
+  
+  <a href="https://juliecodestack.github.io/tags/python/"> #Python</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/anaconda/"> #Anaconda</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/jupyter-notebook/"> #Jupyter Notebook</a>
+  &nbsp
+  
+</p>
+
+
+
+
+<p style="padding:10px;border:1.5px solid #1e90ff">
+  For comments or discussions, please send me an <a href="mailto:Juliecodestack@126.com"> email</a> .
+</p>
+<p><a href="/blog">Go to Posts Page</a></p>
+<br>
+
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
 
     
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/python/">Python</a>
-          <a href="/tags/anaconda/">Anaconda</a>
-          <a href="/tags/jupyter-notebook/">Jupyter Notebook</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/2021/03/24/21005numpy_axis/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Numpy运算中的axis参数</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/2021/02/15/21003anaconda/">
-            <span class="next-text nav-default">Python入门：安装 Python 软件，Anaconda</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
-
-  
-
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
-  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-   
-  
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  
-
-
-
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
 </body>
+
 </html>

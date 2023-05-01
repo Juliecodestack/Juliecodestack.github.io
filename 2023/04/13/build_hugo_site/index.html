@@ -1,177 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>How to Build a Personal Website Using GitHub Pages and Hugo? - Julie&#39;s website</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Julie" /><meta name="description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.
-" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.105.0 with theme even" />
-
-
-<link rel="canonical" href="https://juliecodestack.github.io/2023/04/13/build_hugo_site/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.6a3007903727ebe821e9f3d5fbdc5588f2febea95ca70978da4695272f33edfd.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://juliecodestack.github.io/images/favicon.png" />
+<title>How to Build a Personal Website Using GitHub Pages and Hugo? | Julie&#39;s website</title>
+<meta name="title" content="How to Build a Personal Website Using GitHub Pages and Hugo?" />
+<meta name="description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site." />
+<meta name="keywords" content="Hugo,Blog,GitHub,Git," />
 
 
 <meta property="og:title" content="How to Build a Personal Website Using GitHub Pages and Hugo?" />
 <meta property="og:description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/2023/04/13/build_hugo_site/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://juliecodestack.github.io/2023/04/13/build_hugo_site/" /><meta property="og:image" content="https://juliecodestack.github.io/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2023-04-13T18:30:08+08:00" />
-<meta property="article:modified_time" content="2023-04-13T18:30:08+08:00" />
+<meta property="article:modified_time" content="2023-04-13T18:30:08+08:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://juliecodestack.github.io/images/share.png"/>
+
+<meta name="twitter:title" content="How to Build a Personal Website Using GitHub Pages and Hugo?"/>
+<meta name="twitter:description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site."/>
+
+
 
 <meta itemprop="name" content="How to Build a Personal Website Using GitHub Pages and Hugo?">
 <meta itemprop="description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site."><meta itemprop="datePublished" content="2023-04-13T18:30:08+08:00" />
 <meta itemprop="dateModified" content="2023-04-13T18:30:08+08:00" />
-<meta itemprop="wordCount" content="1866">
-<meta itemprop="keywords" content="Hugo,Blog,GitHub,Git," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="How to Build a Personal Website Using GitHub Pages and Hugo?"/>
-<meta name="twitter:description" content="A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site."/>
+<meta itemprop="wordCount" content="1833"><meta itemprop="image" content="https://juliecodestack.github.io/images/share.png"/>
+<meta itemprop="keywords" content="Hugo,Blog,GitHub,Git," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+      
+    font-size: 17px;
+    
+  }
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+     
+    font-size: 17px;
+     
+     
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+     
+    padding: 15px;
+    white-space: pre-wrap;  
+    overflow-x: auto;
+     
+    font-size: 15px;
+     
+     
+    
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+     
+    border-left: 3px solid #999;
+    color: #222;
+    padding-left: 20px;
+     
+    font-style: normal;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777; 
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
 
 </head>
+
 <body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Julie&#39;s website</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/about">
-        <li class="mobile-menu-item">About</li>
-      </a>
-  </ul>
+  <header><a href="/" class="title">
+  <h2>Julie&#39;s website</h2>
+</a>
+<nav>
 
+<a href="/blog">Posts</a>
+
+
+<a href="/categories/">Categories</a>
+
+<a href="/tags/">Tags</a>
+
+<a href="/">About</a>
+
+<a href="https://github.com/Juliecodestack">GitHub</a>
+
+<a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
+
+
+
+</nav>
+</header>
+  <main>
+
+<h1>How to Build a Personal Website Using GitHub Pages and Hugo?</h1>
+<p>
+  <i>
+    <time datetime='2023-04-13' pubdate>
+      Apr 13 2023
+    </time>
+  </i>
+  &nbsp in:
   
+  
+  <a href="https://juliecodestack.github.io/categories/tools/"> Tools</a>
+  
+</p>
 
-
-</nav>
-
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Julie&#39;s website</a>
-</div>
-
-
-
-
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about">About</a>
-      </li>
-  </ul>
-</nav>
-
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">How to Build a Personal Website Using GitHub Pages and Hugo?</h1>
-
-      <div class="post-meta">
-        <span class="post-time"> April 13, 2023 </span>
-        
-        <div class="post-category">
-            <a href="/categories/tools/"> Tools </a>
-            </div>
-        
-      </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#site-building-pipeline">Site-Building Pipeline</a></li>
-    <li><a href="#step-0--preparation">Step 0 : Preparation</a></li>
-    <li><a href="#step-1--generate-pages-locally">Step 1 : Generate pages locally</a>
-      <ul>
-        <li><a href="#11-install-hugo">1.1 Install Hugo</a></li>
-        <li><a href="#12-create-a-hugo-site">1.2 Create a Hugo site</a></li>
-        <li><a href="#13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</a></li>
-        <li><a href="#14-write-posts">1.4 Write posts</a></li>
-        <li><a href="#15-how-to-display-images">1.5 How to display images?</a></li>
-      </ul>
-    </li>
-    <li><a href="#step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</a>
-      <ul>
-        <li><a href="#21-create-a-github-repository">2.1 Create a GitHub repository</a></li>
-        <li><a href="#22-build-your-site-and-push-it-to-the-repository-on-github">2.2 Build your site and push it to the repository on GitHub</a></li>
-      </ul>
-    </li>
-    <li><a href="#future-work">Future Work</a></li>
-    <li><a href="#references">References</a></li>
-  </ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      <p>A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.</p>
+<content>
+  <p>A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.</p>
 <nav id="TableOfContents">
   <ul>
     <li><a href="#site-building-pipeline">Site-Building Pipeline</a></li>
@@ -229,15 +325,15 @@
 </blockquote>
 <p>(1) Go to folder <code>C:\Users\YourUserName</code>, and create a <code>bin</code> folder in it if it doesn’t exist. The <code>bin</code> folder is the place to store the Hugo binary file.</p>
 <p>(2) Add the <code>bin</code> folder to <code>PATH</code>. In Windows Taskbar Search Box, enter <code>cmd</code> and select the Command Prompt result ( right click and choose the “Run as administrator” option ). In Command Prompt, enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">setx PATH <span class="s2">&#34;C:\Users\YourUserName\bin;%PATH%&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>setx PATH <span style="color:#e6db74">&#34;C:\Users\YourUserName\bin;%PATH%&#34;</span>
 </span></span></code></pre></div><p>Then close and reopen the Command Prompt again, enter <code>echo %PATH% </code> to check if <code>bin</code> has been successfully added to <code>PATH</code>.</p>
 <p>(3) Download <code>.zip</code> file from <a href="https://github.com/gohugoio/hugo/releases">Hugo release page on GitHub</a> . Be Sure to choose the <strong>extended version</strong>, which will be found near the bottom of the list of archives.</p>
 <p>From the <code>.zip</code> extract the binary file <code>hugo.exe</code> and move it to the <code>bin</code> folder.  After that, open Command Prompt and enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo version
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo version
 </span></span></code></pre></div><p>If Hugo is successfully installed, you will see a series of characters about information including Hugo version, operating system, build date.</p>
 <h4 id="12-create-a-hugo-site">1.2 Create a Hugo site</h4>
 <p>Supposing you use <code>FolderA</code>  to store your site files. Right click <code>FolderA</code>, and select “Git Bash Here” in the menu to open the Git Bash Command. Now enter:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site MySite
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site MySite
 </span></span></code></pre></div><p>Then a new folder named <code>MySite</code> will be created in <code>FolderA</code>, that is your Hugo site.</p>
 <h4 id="13-pick-a-theme-and-configure-the-site">1.3 Pick a theme and configure the site</h4>
 <p>Since a new site has been created, maybe you’d like to see what your Hugo site looks like, but wait a minute, you have to choose a theme first.</p>
@@ -254,23 +350,23 @@
 <p>Some themes don’t have <code>exampleSite</code>. If you’re a beginner, I don’t recommend you to use it now, because you’ll spend much more time to figure out how to set the parameters. When I wrote this article, I was using  <a href="https://github.com/spf13/hyde">Hyde</a> as the theme of <a href="https://juliecodestack.github.io/">my site</a> . I like its simple design. It doesn’t have <code>exampleSite</code> . However, I have used several themes before, so I used <code>config</code> file of the previous themes and changed some parameters to set as the Hyde Theme.</p>
 </blockquote>
 <p>Then Open Git Bash Prompt on <code>MySite</code> folder, and enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo server
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
 </span></span></code></pre></div><p>When it’s done, open the URL displayed in your terminal, and you’ll see the example site locally. If you change the parameters in <code>config.toml</code>, the page will make corresponding changes at the same time. In this way, you can configure your site.</p>
 <p>In the future, when you write a new post or make some revisions, you can still use <code>hugo server</code> to view your site locally before pushing to GitHub.</p>
 <h4 id="14-write-posts">1.4 Write posts</h4>
 <p>To create a new post, open Git Bash Command on <code>MySite</code> folder, and enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new new_post.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new new_post.md
 </span></span></code></pre></div><p>It will create a new markdown file named “new_post” in <code>MySite &gt; content</code> folder. But if you use <code>hugo server</code>, you may not see the new post. Why?</p>
 <p>(1) Depending on the theme you choose, you may need to put the <code>new_post.md</code> into <code>post</code> (or <code>posts</code> ) folder in the <code>content</code> folder to generate the web page.  In this case, you can also enter the following command to create a new post :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new post/new_post.md
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new post/new_post.md
 </span></span></code></pre></div><p>(2) Open the new post in your editor (Typora, VS Code, etc). In the header of the post , there are settings about the post (it’s also called front matter). Find <code>draft: true</code> , which means this post is a draft and you don’t want to publish it now. Change it to <code>draft: false</code> so that the post will be published on the site. Besides, the <code>title</code> in the header refers to the title of the post, and it is set to be the file name when created (for example, “new_post” here) . You can change it to whatever you want in your editor.</p>
 <h4 id="15-how-to-display-images">1.5 How to display images?</h4>
 <p>Although many tutorials didn’t mention how to insert and display images, I think for beginners it’s an important part in the building process, for you may add pictures to make your article easier to understand or look better.</p>
 <h5 id="1-for-local-images">1. For local images</h5>
 <p>In Hugo, the local images are stored in <code>MySite &gt; static</code> folder in order to be displayed. Supposing you have an image named <code>image1.jpg</code>, after putting it into the <code>static</code> folder, you can insert it in your post this way :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">image1_title</span>](<span class="na">/image1.jpg</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">image1_title</span>](<span style="color:#a6e22e">/image1.jpg</span>)
 </span></span></code></pre></div><p>Or you may put all images in one folder :  <code>MySite &gt; static &gt; imgs</code>, then insert the image in your post by :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">![<span class="nt">image1_title</span>](<span class="na">/imgs/image1.jpg</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">image1_title</span>](<span style="color:#a6e22e">/imgs/image1.jpg</span>)
 </span></span></code></pre></div><p>But the above method doesn’t display the title of the image. If you want to show the title along with the image, you can use :</p>
 <p><img src="/imgs/image-20230416211605682.png" alt="image-20230416211605682"></p>
 <p>Here please notice the space between the angle brackets ( <code>&lt;</code> and <code>&gt;</code> ) and the content.</p>
@@ -291,7 +387,7 @@
 </figure>
 
 <p>Way-3:</p>
-<img src=https://www.python.org/static/img/python-logo@2x.png alt=Python-logo />
+<!-- raw HTML omitted -->
 <h3 id="step-2--deploy-the-site-to-github">Step 2 : Deploy the site to GitHub</h3>
 <h4 id="21-create-a-github-repository">2.1 Create a GitHub repository</h4>
 <p>Log in <a href="https://github.com/">GitHub</a> and create a public repository named <code>YourGitHubName.github.io</code>, this is where you’re going to store your web pages on GitHub so that others can view your site. Here please make sure <code>YourGitHubName</code> is the same as your GitHub username.</p>
@@ -302,29 +398,26 @@
 <p><strong>Things you need to do before deploying for the first time:</strong></p>
 <p>For the first time, you need to connect <code>MySite &gt; public</code> folder to your GitHub repository. The <code>public</code> folder is the place to store your site files after they are generated by Hugo. Connect it to your GitHub repository, so that the site files will be synchronized on GitHub.</p>
 <p>Open Git Bash Command on <code>MySite</code> folder, enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> public
-</span></span><span class="line"><span class="cl">git init
-</span></span><span class="line"><span class="cl">git remote add upstream https://github.com/YourGitHubName/YourGitHubName.github.io.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git remote add upstream https://github.com/YourGitHubName/YourGitHubName.github.io.git
 </span></span></code></pre></div><p>After that, set the parameter <code>baseurl</code> in <code>config.toml</code> to be your GitHub repository above :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-toml" data-lang="toml"><span class="line"><span class="cl"><span class="nx">baseurl</span> <span class="p">=</span> <span class="s2">&#34;https://YourGitHubName.github.io/&#34;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseurl</span> = <span style="color:#e6db74">&#34;https://YourGitHubName.github.io/&#34;</span>
 </span></span></code></pre></div><p><strong>The following are the things you do every time you push your site to GitHub:</strong></p>
 <p>First generate the site files:</p>
 <p>Open Git Bash Command on <code>MySite</code> folder, enter :</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo
 </span></span></code></pre></div><p>When it’s done, Hugo will generate the site files and store it in the <code>public</code> folder.</p>
 <p>Then we’ll push these files to GitHub, continue to enter:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> public
-</span></span><span class="line"><span class="cl">git add .
-</span></span><span class="line"><span class="cl">git commit -m<span class="s2">&#34;your_commit_message&#34;</span>
-</span></span><span class="line"><span class="cl">git push upstream master
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd public
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m<span style="color:#e6db74">&#34;your_commit_message&#34;</span>
+</span></span><span style="display:flex;"><span>git push upstream master
 </span></span></code></pre></div><blockquote>
 <p>The above commands use <code>git remote add upstream...</code> and <code>git push upstream master</code>, I also used these two commands. I saw <a href="https://zhiqiyu.github.io/post/git-setup-for-hugo-blog-with-github-pages/">a tutorial</a> use <code>origin</code> instead of <code>upstream</code>, i.e. <code>git remote add origin...</code> and <code>git push origin master</code>, which also works. You may have a try.</p>
 </blockquote>
 <h3 id="future-work">Future Work</h3>
 <p>Some tutorials introduced GitHub Actions for automating the deployment, and next I’m going to learn it.</p>
-<blockquote>
-<p>Do you have a personal website? How did you build it? If you’d like to talk about your site, or give me some suggestions about my site, please send me an <a href="https://juliecodestack.github.io/about/">email</a> .</p>
-</blockquote>
 <h3 id="references">References</h3>
 <ol>
 <li>
@@ -343,91 +436,42 @@
 <p>Deploy Hugo site to GitHub : <a href="https://jdhao.github.io/2018/10/10/hexo_to_hugo/">https://jdhao.github.io/2018/10/10/hexo_to_hugo/</a></p>
 </li>
 </ol>
-    </div>
+</content>
+
+
+
+<br>
+<p>Tags: 
+  
+  <a href="https://juliecodestack.github.io/tags/hugo/"> #Hugo</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/blog/"> #Blog</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/github/"> #GitHub</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/git/"> #Git</a>
+  &nbsp
+  
+</p>
+
+
+
+
+<p style="padding:10px;border:1.5px solid #1e90ff">
+  For comments or discussions, please send me an <a href="mailto:Juliecodestack@126.com"> email</a> .
+</p>
+<p><a href="/blog">Go to Posts Page</a></p>
+<br>
+
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
 
     
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/hugo/">Hugo</a>
-          <a href="/tags/blog/">Blog</a>
-          <a href="/tags/github/">GitHub</a>
-          <a href="/tags/git/">Git</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/2023/04/21/hugo-toc/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Hugo: How to Add a Table of Contents (TOC) to Your Post?</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/2023/02/01/valuable_writing/">
-            <span class="next-text nav-default">How to Write a Popular Article?</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
-
-  
-
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
-  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-   
-  
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  
-
-
-
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
 </body>
+
 </html>

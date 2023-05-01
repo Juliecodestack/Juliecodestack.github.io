@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Anaconda on Julie&#39;s website</title>
-    <link>https://juliecodestack.github.io/tags/anaconda/</link>
-    <description>Recent content in Anaconda on Julie&#39;s website</description>
+    <title>Data Science on Julie&#39;s website</title>
+    <link>https://juliecodestack.github.io/categories/data-science/</link>
+    <description>Recent content in Data Science on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 07 Mar 2021 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 18:30:08 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Numpy运算中的axis参数</title>
+      <link>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</link>
+      <pubDate>Wed, 24 Mar 2021 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
+      <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
+和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
+感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Jupyter Notebook使用</title>
       <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>

@@ -1,165 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Python入门：安装 Python 软件，Anaconda - Julie&#39;s website</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Julie" /><meta name="description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？
-" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.105.0 with theme even" />
-
-
-<link rel="canonical" href="https://juliecodestack.github.io/2021/02/15/21003anaconda/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.6a3007903727ebe821e9f3d5fbdc5588f2febea95ca70978da4695272f33edfd.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://juliecodestack.github.io/images/favicon.png" />
+<title>Python入门：安装 Python 软件，Anaconda | Julie&#39;s website</title>
+<meta name="title" content="Python入门：安装 Python 软件，Anaconda" />
+<meta name="description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？" />
+<meta name="keywords" content="Python,Anaconda,Jupyter Notebook," />
 
 
 <meta property="og:title" content="Python入门：安装 Python 软件，Anaconda" />
 <meta property="og:description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/2021/02/15/21003anaconda/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://juliecodestack.github.io/2021/02/15/21003anaconda/" /><meta property="og:image" content="https://juliecodestack.github.io/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2021-02-15T18:30:08+08:00" />
-<meta property="article:modified_time" content="2021-02-15T18:30:08+08:00" />
+<meta property="article:modified_time" content="2021-02-15T18:30:08+08:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://juliecodestack.github.io/images/share.png"/>
+
+<meta name="twitter:title" content="Python入门：安装 Python 软件，Anaconda"/>
+<meta name="twitter:description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？"/>
+
+
 
 <meta itemprop="name" content="Python入门：安装 Python 软件，Anaconda">
 <meta itemprop="description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？"><meta itemprop="datePublished" content="2021-02-15T18:30:08+08:00" />
 <meta itemprop="dateModified" content="2021-02-15T18:30:08+08:00" />
-<meta itemprop="wordCount" content="1590">
-<meta itemprop="keywords" content="Python,Anaconda,Jupyter Notebook," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python入门：安装 Python 软件，Anaconda"/>
-<meta name="twitter:description" content="“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？"/>
+<meta itemprop="wordCount" content="177"><meta itemprop="image" content="https://juliecodestack.github.io/images/share.png"/>
+<meta itemprop="keywords" content="Python,Anaconda,Jupyter Notebook," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+      
+    font-size: 17px;
+    
+  }
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+     
+    font-size: 17px;
+     
+     
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+     
+    padding: 15px;
+    white-space: pre-wrap;  
+    overflow-x: auto;
+     
+    font-size: 15px;
+     
+     
+    
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+     
+    border-left: 3px solid #999;
+    color: #222;
+    padding-left: 20px;
+     
+    font-style: normal;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777; 
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
 
 </head>
+
 <body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Julie&#39;s website</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/about">
-        <li class="mobile-menu-item">About</li>
-      </a>
-  </ul>
+  <header><a href="/" class="title">
+  <h2>Julie&#39;s website</h2>
+</a>
+<nav>
 
+<a href="/blog">Posts</a>
+
+
+<a href="/categories/">Categories</a>
+
+<a href="/tags/">Tags</a>
+
+<a href="/">About</a>
+
+<a href="https://github.com/Juliecodestack">GitHub</a>
+
+<a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
+
+
+
+</nav>
+</header>
+  <main>
+
+<h1>Python入门：安装 Python 软件，Anaconda</h1>
+<p>
+  <i>
+    <time datetime='2021-02-15' pubdate>
+      Feb 15 2021
+    </time>
+  </i>
+  &nbsp in:
   
+  
+  <a href="https://juliecodestack.github.io/categories/data-science/"> Data Science</a>
+  
+</p>
 
-
-</nav>
-
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Julie&#39;s website</a>
-</div>
-
-
-
-
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about">About</a>
-      </li>
-  </ul>
-</nav>
-
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">Python入门：安装 Python 软件，Anaconda</h1>
-
-      <div class="post-meta">
-        <span class="post-time"> February 15, 2021 </span>
-        
-        <div class="post-category">
-            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"> 机器学习笔记 </a>
-            </div>
-        
-      </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#python安装方式">Python安装方式</a></li>
-        <li><a href="#anaconda使用">Anaconda使用</a></li>
-        <li><a href="#工具包安装">工具包安装</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
+<content>
+  <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
 <h4 id="python安装方式">Python安装方式</h4>
 <p>我在学 Python 时用过两种安装方式：</p>
 <p>第一种是安装 Python 软件(下载地址：<a href="https://www.python.org/">Python 官网</a>) + Atom 编辑器（也可以是VSCode 编辑器）。用 Atom 编辑器编写程序后，在 Python 的命令行运行该程序。如果您有过学习 C 语言的经历，那么这种 Python 软件的编程体验与之类似，都是要先调试文件、然后整体运行。</p>
@@ -180,9 +288,9 @@
 <p>怎么没有看到刚才下载的文件？而且，此时也不能打开其它文件夹，就只能查看当前命令所在的 C 盘里的用户文件夹。</p>
 <p>怎么办呢？我们需要在命令行里改变路径，转移到目标文件夹。</p>
 <p>举例来说明，比如现在要运行的.ipynb文件在 E 盘的文件夹 folderA 中，打开 Anaconda Prompt 命令行，依次输入以下命令：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">E:
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> folderA
-</span></span><span class="line"><span class="cl">jupyter notebook
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>E:
+</span></span><span style="display:flex;"><span>cd folderA
+</span></span><span style="display:flex;"><span>jupyter notebook
 </span></span></code></pre></div><p>这样，就改成了在 E 盘的文件夹 folderA 中运行 Jupyter Notebook，此时也就能找到我们要查看的文件。</p>
 <h4 id="工具包安装">工具包安装</h4>
 <p>我们运行Python程序时，可能会用到各种各样的工具包（或者说是库）。有的工具包在软件中已经安装，有的还没有安装，那么我们应该怎么安装呢？</p>
@@ -208,90 +316,39 @@
 <p>1.如何打开运行 Anaconda （GUI界面或命令行）：https://docs.anaconda.com/anaconda/user-guide/getting-started/#cli-hello</p>
 <p>2.conda 配置和更新：https://conda.io/projects/conda/en/latest/user-guide/getting-started.html</p>
 <p>3.Conda, pip, virtualenv 三种命令工具的对比：https://conda.io/projects/conda/en/latest/commands.html</p>
-    </div>
+</content>
+
+
+
+<br>
+<p>Tags: 
+  
+  <a href="https://juliecodestack.github.io/tags/python/"> #Python</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/anaconda/"> #Anaconda</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/jupyter-notebook/"> #Jupyter Notebook</a>
+  &nbsp
+  
+</p>
+
+
+
+
+<p style="padding:10px;border:1.5px solid #1e90ff">
+  For comments or discussions, please send me an <a href="mailto:Juliecodestack@126.com"> email</a> .
+</p>
+<p><a href="/blog">Go to Posts Page</a></p>
+<br>
+
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
 
     
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/python/">Python</a>
-          <a href="/tags/anaconda/">Anaconda</a>
-          <a href="/tags/jupyter-notebook/">Jupyter Notebook</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/2021/03/07/21004jupyternotebook/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Jupyter Notebook使用</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/2020/12/13/github%E5%85%A5%E9%97%A8/">
-            <span class="next-text nav-default">GitHub入门指南</span>
-            <span class="next-text nav-mobile">Next</span>
-            <i class="iconfont icon-right"></i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
-
-  
-
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
-  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-   
-  
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  
-
-
-
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
 </body>
+
 </html>

@@ -1,178 +1,273 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>GitHub入门指南 - Julie&#39;s website</title>
-  <meta name="renderer" content="webkit" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-<meta name="theme-color" content="#f8f5ec" />
-<meta name="msapplication-navbutton-color" content="#f8f5ec">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
-
-
-<meta name="author" content="Julie" /><meta name="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。
-" />
-
-
-
-
-
-
-<meta name="generator" content="Hugo 0.105.0 with theme even" />
-
-
-<link rel="canonical" href="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/" />
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-<link href="/sass/main.min.6a3007903727ebe821e9f3d5fbdc5588f2febea95ca70978da4695272f33edfd.css" rel="stylesheet">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://juliecodestack.github.io/images/favicon.png" />
+<title>GitHub入门指南 | Julie&#39;s website</title>
+<meta name="title" content="GitHub入门指南" />
+<meta name="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。" />
+<meta name="keywords" content="GitHub,Git," />
 
 
 <meta property="og:title" content="GitHub入门指南" />
 <meta property="og:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/" /><meta property="article:section" content="post" />
+<meta property="og:url" content="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/" /><meta property="og:image" content="https://juliecodestack.github.io/images/share.png"/><meta property="article:section" content="blog" />
 <meta property="article:published_time" content="2020-12-13T18:30:08+08:00" />
-<meta property="article:modified_time" content="2020-12-13T18:30:08+08:00" />
+<meta property="article:modified_time" content="2020-12-13T18:30:08+08:00" /><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://juliecodestack.github.io/images/share.png"/>
+
+<meta name="twitter:title" content="GitHub入门指南"/>
+<meta name="twitter:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"/>
+
+
 
 <meta itemprop="name" content="GitHub入门指南">
 <meta itemprop="description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"><meta itemprop="datePublished" content="2020-12-13T18:30:08+08:00" />
 <meta itemprop="dateModified" content="2020-12-13T18:30:08+08:00" />
-<meta itemprop="wordCount" content="5173">
-<meta itemprop="keywords" content="GitHub,Git,软件," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="GitHub入门指南"/>
-<meta name="twitter:description" content="我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。"/>
+<meta itemprop="wordCount" content="544"><meta itemprop="image" content="https://juliecodestack.github.io/images/share.png"/>
+<meta itemprop="keywords" content="GitHub,Git," />
+<meta name="referrer" content="no-referrer-when-downgrade" />
 
-<!--[if lte IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
-<![endif]-->
+  <style>
+  body {
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    padding: 20px;
+    max-width: 720px;
+    text-align: left;
+    background-color: #fff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: #444;
+      
+    font-size: 17px;
+    
+  }
 
-<!--[if lt IE 9]>
-  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
-<![endif]-->
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  strong,
+  b {
+    color: #222;
+  }
+
+  a {
+    color: #3273dc;
+     
+  }
+
+  .title {
+    text-decoration: none;
+    border: 0;
+  }
+
+  .title span {
+    font-weight: 400;
+  }
+
+  nav a {
+    margin-right: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input {
+    font-size: 16px;
+  }
+
+  content {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    padding: 2px 5px;
+    background-color: #f2f2f2;
+     
+    font-size: 17px;
+     
+     
+  }
+
+  pre code {
+    color: #222;
+    display: block;
+     
+    padding: 15px;
+    white-space: pre-wrap;  
+    overflow-x: auto;
+     
+    font-size: 15px;
+     
+     
+    
+  }
+
+  div.highlight pre {
+    background-color: initial;
+    color: initial;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: unset;
+  }
+
+  blockquote {
+     
+    border-left: 3px solid #999;
+    color: #222;
+    padding-left: 20px;
+     
+    font-style: normal;
+  }
+
+  footer {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .helptext {
+    color: #777;
+    font-size: small;
+  }
+
+  .errorlist {
+    color: #eba613;
+    font-size: small;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777; 
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
+  }
+
+</style>
 
 </head>
+
 <body>
-  <div id="mobile-navbar" class="mobile-navbar">
-  <div class="mobile-header-logo">
-    <a href="/" class="logo">Julie&#39;s website</a>
-  </div>
-  <div class="mobile-navbar-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</div>
-<nav id="mobile-menu" class="mobile-menu slideout-menu">
-  <ul class="mobile-menu-list">
-    <a href="/">
-        <li class="mobile-menu-item">Home</li>
-      </a><a href="/post/">
-        <li class="mobile-menu-item">Archives</li>
-      </a><a href="/categories/">
-        <li class="mobile-menu-item">Categories</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">Tags</li>
-      </a><a href="/about">
-        <li class="mobile-menu-item">About</li>
-      </a>
-  </ul>
+  <header><a href="/" class="title">
+  <h2>Julie&#39;s website</h2>
+</a>
+<nav>
 
+<a href="/blog">Posts</a>
+
+
+<a href="/categories/">Categories</a>
+
+<a href="/tags/">Tags</a>
+
+<a href="/">About</a>
+
+<a href="https://github.com/Juliecodestack">GitHub</a>
+
+<a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
+
+
+
+</nav>
+</header>
+  <main>
+
+<h1>GitHub入门指南</h1>
+<p>
+  <i>
+    <time datetime='2020-12-13' pubdate>
+      Dec 13 2020
+    </time>
+  </i>
+  &nbsp in:
   
+  
+  <a href="https://juliecodestack.github.io/categories/tools/"> Tools</a>
+  
+</p>
 
-
-</nav>
-
-  <div class="container" id="mobile-panel">
-    <header id="header" class="header">
-        <div class="logo-wrapper">
-  <a href="/" class="logo">Julie&#39;s website</a>
-</div>
-
-
-
-
-
-<nav class="site-navbar">
-  <ul id="menu" class="menu">
-    <li class="menu-item">
-        <a class="menu-item-link" href="/">Home</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">Archives</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">Categories</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">Tags</a>
-      </li><li class="menu-item">
-        <a class="menu-item-link" href="/about">About</a>
-      </li>
-  </ul>
-</nav>
-
-    </header>
-
-    <main id="main" class="main">
-      <div class="content-wrapper">
-        <div id="content" class="content">
-          <article class="post">
-    
-    <header class="post-header">
-      <h1 class="post-title">GitHub入门指南</h1>
-
-      <div class="post-meta">
-        <span class="post-time"> December 13, 2020 </span>
-        
-        <div class="post-category">
-            <a href="/categories/tools/"> Tools </a>
-            </div>
-        
-      </div>
-    </header>
-
-    <div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">Contents</h2>
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-  <ul>
-    <li><a href="#一带你浏览-github-网站看看都有些什么">一、带你浏览 GitHub 网站，看看都有些什么？</a>
-      <ul>
-        <li><a href="#1-注册账号">1. 注册账号</a></li>
-        <li><a href="#2-登录-github浏览页面">2. 登录 GitHub，浏览页面</a></li>
-      </ul>
-    </li>
-    <li><a href="#二github-是-git-软件用户的项目管理中心">二、GitHub 是 Git 软件用户的项目管理中心</a>
-      <ul>
-        <li><a href="#1-git">1. Git</a></li>
-        <li><a href="#2-git-基本命令">2. Git 基本命令</a></li>
-      </ul>
-    </li>
-    <li><a href="#三新手必备的github基本操作">三、新手必备的GitHub基本操作</a>
-      <ul>
-        <li><a href="#1-配置ssh-key">1. 配置SSH Key</a></li>
-        <li><a href="#2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</a></li>
-        <li><a href="#3-和别人一起做项目fork-和-pull-request">3. 和别人一起做项目：Fork 和 Pull request</a></li>
-      </ul>
-    </li>
-    <li><a href="#四总结">四、总结</a></li>
-  </ul>
-</nav>
-  </div>
-</div>
-    <div class="post-content">
-      <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
+<content>
+  <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
 <p>因为我也是初级水平，文中介绍的知识基于我自己的学习理解，如果有疏漏错误之处，欢迎您留言指正，谢谢！</p>
 <p>新手小白可能会对 GitHub 有以下困惑：</p>
 <p>1.GitHub 是个什么网站？</p>
@@ -280,15 +375,15 @@
 <h4 id="1-配置ssh-key">1. 配置SSH Key</h4>
 <p><strong>（1）第一次使用时，要配置一下账户。</strong></p>
 <p>在 Git Bash 客户端，输入：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
-</span></span><span class="line"><span class="cl">git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
-</span></span></code></pre></div><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
+<pre tabindex="0"><code>git config --global user.name &#34;这里输入你在GitHub的账户名&#34;
+git config --global user.email &#34;这里输入你在GitHub的注册邮箱名&#34;
+</code></pre><p><strong>（2）检查是否已经有 SSH Key了，如果没有就生成一个。</strong></p>
 <p>同样在 Git Bash 客户端，先后输入：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd ~/.ssh
-</span></span></code></pre></div><p>和</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">ls
-</span></span></code></pre></div><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">id_rsa  id_rsa.pub  known_hosts
+<pre tabindex="0"><code>cd ~/.ssh
+</code></pre><p>和</p>
+<pre tabindex="0"><code>ls
+</code></pre><p>我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>id_rsa  id_rsa.pub  known_hosts
 </span></span></code></pre></div><p>如果没有 SSH Key，就要输入以下命令行生成：</p>
 <p><code>ssh-keygen -t rsa -C &quot;这里输入你在 GitHub 的注册邮箱&quot;</code></p>
 <p>生成后再输入上面的 <code>cd ~/.ssh</code> 和 <code>ls</code> 命令，就可以看到 SSH Key 了。</p>
@@ -308,8 +403,8 @@
 <p>在 Git Bash 客户端运行命令：</p>
 <p><code>$ ssh -T git@github.com</code></p>
 <p>出现类似下面的提示，表示安装成功：</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
-</span></span></code></pre></div><h4 id="2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</h4>
+<pre tabindex="0"><code>Hi Juliecodestack! You&#39;ve successfully authenticated, but GitHub does not provide shell access.
+</code></pre><h4 id="2-我的第一个-github-项目如何新建上传仓库">2. 我的第一个 GitHub 项目：如何新建上传仓库</h4>
 <p>学了这么多基本功，我们终于要练手了，哈哈，先来建一个自己的仓库玩玩吧！</p>
 <p><strong>（1）在 GitHub 中新建仓库</strong></p>
 <p>如下图所示，点击个人主页的 Repositories 项，再点击右方的 <code>New</code> 按钮，新建一个仓库。</p>
@@ -391,86 +486,36 @@ Fork有“叉子”的意思，也就是从原仓库复制建一个我自己的�
 <p>1.<a href="https://docs.github.com/en/free-pro-team@latest/github">GitHub 帮助页面</a></p>
 <p>2.<a href="https://www.liaoxuefeng.com/wiki/896043488029600">廖雪峰老师的Git教程</a></p>
 <p>3.<a href="https://blog.csdn.net/u013778905/article/details/83501204">GitHub如何配置SSH Key</a></p>
-    </div>
+</content>
+
+
+
+<br>
+<p>Tags: 
+  
+  <a href="https://juliecodestack.github.io/tags/github/"> #GitHub</a>
+  &nbsp
+  
+  <a href="https://juliecodestack.github.io/tags/git/"> #Git</a>
+  &nbsp
+  
+</p>
+
+
+
+
+<p style="padding:10px;border:1.5px solid #1e90ff">
+  For comments or discussions, please send me an <a href="mailto:Juliecodestack@126.com"> email</a> .
+</p>
+<p><a href="/blog">Go to Posts Page</a></p>
+<br>
+
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
 
     
-<footer class="post-footer">
-      <div class="post-tags">
-          <a href="/tags/github/">GitHub</a>
-          <a href="/tags/git/">Git</a>
-          <a href="/tags/%E8%BD%AF%E4%BB%B6/">软件</a>
-          </div>
-      <nav class="post-nav">
-        <a class="prev" href="/2021/02/15/21003anaconda/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Python入门：安装 Python 软件，Anaconda</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        
-      </nav>
-    </footer>
-  </article>
-        </div>
-        
-
-  
-
-  
-
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="social-links">
-      <a href="mailto:Juliecodestack@126.com" class="iconfont icon-email" title="email"></a>
-      <a href="https://github.com/Juliecodestack" class="iconfont icon-github" title="github"></a>
-  <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
-</div>
-
-<div class="copyright">
-  <span class="power-by">
-    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
-  </span>
-  <span class="division">|</span>
-  <span class="theme-info">
-    Theme - 
-    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
-  </span>
-
-  
-   
-  
-</div>
-
-    </footer>
-
-    <div class="back-to-top" id="back-to-top">
-      <i class="iconfont icon-up"></i>
-    </div>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
-  
-
-
-
-<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
-  <script type="text/javascript">
-    window.MathJax = {
-      tex: {
-        inlineMath: [['$','$'], ['\\(','\\)']],
-        }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.5/es5/tex-mml-chtml.js" integrity="sha256-HGLuEfFcsUJGhvB8cQ8nr0gai9EucOOaIxFw7qxmd+w=" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
 </body>
+
 </html>

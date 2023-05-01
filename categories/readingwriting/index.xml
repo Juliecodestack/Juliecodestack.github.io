@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Writing on Julie&#39;s website</title>
-    <link>https://juliecodestack.github.io/tags/writing/</link>
-    <description>Recent content in Writing on Julie&#39;s website</description>
+    <title>Reading&amp;Writing on Julie&#39;s website</title>
+    <link>https://juliecodestack.github.io/categories/readingwriting/</link>
+    <description>Recent content in Reading&amp;Writing on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 01 Feb 2023 18:16:07 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Feb 2023 18:16:07 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/readingwriting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to Write a Popular Article?</title>
       <link>https://juliecodestack.github.io/2023/02/01/valuable_writing/</link>

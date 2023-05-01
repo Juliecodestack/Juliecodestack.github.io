@@ -5,7 +5,7 @@
     <link>https://juliecodestack.github.io/categories/</link>
     <description>Recent content in Categories on Julie&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-US</language>
     <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tools</title>
@@ -17,11 +17,11 @@
     </item>
     
     <item>
-      <title>Notes</title>
-      <link>https://juliecodestack.github.io/categories/notes/</link>
+      <title>Reading&amp;Writing</title>
+      <link>https://juliecodestack.github.io/categories/readingwriting/</link>
       <pubDate>Wed, 01 Feb 2023 18:16:07 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/categories/notes/</guid>
+      <guid>https://juliecodestack.github.io/categories/readingwriting/</guid>
       <description></description>
     </item>
     
@@ -35,11 +35,11 @@
     </item>
     
     <item>
-      <title>机器学习笔记</title>
-      <link>https://juliecodestack.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <title>Data Science</title>
+      <link>https://juliecodestack.github.io/categories/data-science/</link>
       <pubDate>Wed, 24 Mar 2021 18:30:08 +0800</pubDate>
       
-      <guid>https://juliecodestack.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://juliecodestack.github.io/categories/data-science/</guid>
       <description></description>
     </item>
     
