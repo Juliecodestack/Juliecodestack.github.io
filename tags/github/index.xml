@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GitHub on Julie&#39;s website</title>
+    <title>GitHub on Julie</title>
     <link>https://juliecodestack.github.io/tags/github/</link>
-    <description>Recent content in GitHub on Julie&#39;s website</description>
+    <description>Recent content in GitHub on Julie</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Switching from Hexo to Hugo</title>

@@ -1,269 +1,191 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
 <head>
-	<meta name="generator" content="Hugo 0.105.0">
-  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="shortcut icon" href="https://juliecodestack.github.io/images/favicon.png" />
-<title>About | Julie&#39;s website</title>
-<meta name="title" content="About" />
-<meta name="description" content="Hugo &#43; Bear = :heart:" />
-<meta name="keywords" content="data-science,programming,readingwriting,tools,anaconda,blog,git,github,hugo,jupyter-notebook,linux,numpy,python,shell-command,writing," />
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.105.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Julie</title>
+  <meta name="description" content="Programming &amp; Machine Learning" />
+
+  
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="https://juliecodestack.github.io/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
 
 
-<meta property="og:title" content="About" />
-<meta property="og:description" content="Hugo &#43; Bear = :heart:" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://juliecodestack.github.io/" /><meta property="og:image" content="https://juliecodestack.github.io/images/share.png"/><meta property="og:site_name" content="Hugo ʕ•ᴥ•ʔ Bear" />
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
 
-
-
-
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://juliecodestack.github.io/images/share.png"/>
-
-<meta name="twitter:title" content="About"/>
-<meta name="twitter:description" content="Hugo &#43; Bear = :heart:"/>
-
-
-
-<meta itemprop="name" content="About">
-<meta itemprop="description" content="Hugo &#43; Bear = :heart:">
-<meta name="referrer" content="no-referrer-when-downgrade" />
-
-  <link rel="alternate" type="application/rss+xml" href="https://juliecodestack.github.io/index.xml" title="Julie's website" />
-  <style>
-  body {
-    font-family: Verdana, sans-serif;
-    margin: auto;
-    padding: 20px;
-    max-width: 720px;
-    text-align: left;
-    background-color: #fff;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    line-height: 1.5;
-    color: #444;
-      
-    font-size: 17px;
-    
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  strong,
-  b {
-    color: #222;
-  }
-
-  a {
-    color: #3273dc;
-     
-  }
-
-  .title {
-    text-decoration: none;
-    border: 0;
-  }
-
-  .title span {
-    font-weight: 400;
-  }
-
-  nav a {
-    margin-right: 10px;
-  }
-
-  textarea {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  input {
-    font-size: 16px;
-  }
-
-  content {
-    line-height: 1.6;
-  }
-
-  table {
-    width: 100%;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    padding: 2px 5px;
-    background-color: #f2f2f2;
-     
-    font-size: 17px;
-     
-     
-  }
-
-  pre code {
-    color: #222;
-    display: block;
-     
-    padding: 15px;
-    white-space: pre-wrap;  
-    overflow-x: auto;
-     
-    font-size: 15px;
-     
-     
-    
-  }
-
-  div.highlight pre {
-    background-color: initial;
-    color: initial;
-  }
-
-  div.highlight code {
-    background-color: unset;
-    color: unset;
-  }
-
-  blockquote {
-     
-    border-left: 3px solid #999;
-    color: #222;
-    padding-left: 20px;
-     
-    font-style: normal;
-  }
-
-  footer {
-    padding: 25px;
-    text-align: center;
-  }
-
-  .helptext {
-    color: #777;
-    font-size: small;
-  }
-
-  .errorlist {
-    color: #eba613;
-    font-size: small;
-  }
-
-   
-  ul.blog-posts {
-    list-style-type: none;
-    padding: unset;
-  }
-
-  ul.blog-posts li {
-    display: flex;
-  }
-
-  ul.blog-posts li span {
-    flex: 0 0 130px;
-  }
-
-  ul.blog-posts li a:visited {
-    color: #8b6fcb;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: #333;
-      color: #ddd;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    strong,
-    b {
-      color: #eee;
-    }
-
-    a {
-      color: #8cc2dd;
-    }
-
-    code {
-      background-color: #777; 
-    }
-
-    pre code {
-      color: #ddd;
-    }
-
-    blockquote {
-      color: #ccc;
-    }
-
-    textarea,
-    input {
-      background-color: #252525;
-      color: #ddd;
-    }
-
-    .helptext {
-      color: #aaa;
-    }
-  }
-
-</style>
-
+  
+  <link href="https://juliecodestack.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Julie" />
+  
 </head>
 
-<body>
-  <header><a href="/" class="title">
-  <h2>Julie&#39;s website</h2>
-</a>
-<nav>
+  <body class="theme-base-0e ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="https://juliecodestack.github.io/"><h1>Julie</h1></a>
+      <p class="lead">
+       Programming &amp; Machine Learning 
+      </p>
+    </div>
 
-<a href="/blog">Posts</a>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="https://juliecodestack.github.io/">Home</a> </li>
+        <li><a href="/post"> Archive </a></li><li><a href="/page/about"> About </a></li><li><a href="">  </a></li>
+        <a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
+      </ul>
+      
+    </nav>
 
+    <p>&copy; 2023. All rights reserved. </p>
+  </div>
+</aside>
 
-<a href="/categories/">Categories</a>
-
-<a href="/tags/">Tags</a>
-
-<a href="/">About</a>
-
-<a href="https://github.com/Juliecodestack">GitHub</a>
-
-<a href="https://juliecodestack.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" > RSS </a>
-
-
-
-</nav>
-</header>
-  <main>
-<p>Hello, I’m Julie. I’m interested in Python, Programming and Machine Learning. Here I write down what I’ve learned, or how to solve the problems I met.</p>
-<p>I also like:</p>
-<ul>
-<li>reading, such as sci-fi, non-fiction, biography…</li>
-<li>listening to audiobooks.</li>
-<li>learning new things.</li>
-</ul>
-<p>Contact me:</p>
-<p>Email: <a href="mailto:Juliecodestack@126.com">Juliecodestack@126.com</a> .</p>
-
-
-  </main>
-  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
-</footer>
+    <main class="content container">
+    <div class="posts">
+<article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/">Switching from Hexo to Hugo</a>
+  </h1>
+  <time datetime="2023-04-25T18:39:37&#43;0800" class="post-date">Apr 25, 2023</time>
+  <p>Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/04/25/hexo-to-hugo/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/04/21/hugo-toc/">Hugo: How to Add a Table of Contents (TOC) to Your Post?</a>
+  </h1>
+  <time datetime="2023-04-21T18:23:29&#43;0800" class="post-date">Apr 21, 2023</time>
+  <p>Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/04/21/hugo-toc/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/04/13/build_hugo_site/">How to Build a Personal Website Using GitHub Pages and Hugo?</a>
+  </h1>
+  <time datetime="2023-04-13T18:30:08&#43;0800" class="post-date">Apr 13, 2023</time>
+  <p>A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/04/13/build_hugo_site/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/02/01/valuable_writing/">How to Write a Popular Article?</a>
+  </h1>
+  <time datetime="2023-02-01T18:16:07&#43;0800" class="post-date">Feb 1, 2023</time>
+  <p>Whenever you write something, an article, a blog post or a paper, you may have a question: “how to write it so that my readers will like it”? In his lecture “Writing Beyond the Academy”, <a href="https://news.uchicago.edu/story/how-one-scholar-shaped-writing-generations-students">Professor Larry McEnerney from The University of Chicago</a>  gave his advice.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/02/01/valuable_writing/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/01/07/bool_expression/">What’s the Return Value of a Bool Expression in Python?</a>
+  </h1>
+  <time datetime="2023-01-07T20:54:13&#43;0800" class="post-date">Jan 7, 2023</time>
+  <p>We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What’s the result of the expression <code>True and 3</code> in Python? Is it True or False, or other value? Let’s find it out.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/01/07/bool_expression/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2023/01/04/shell_command/">Beginner’s Guide to Shell Commands</a>
+  </h1>
+  <time datetime="2023-01-04T18:58:19&#43;0800" class="post-date">Jan 4, 2023</time>
+  <p>Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.</p>
+  
+  <div class="read-more-link">
+    <a href="/2023/01/04/shell_command/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/page/about/">About</a>
+  </h1>
+  <time datetime="2022-11-20T20:55:33&#43;0800" class="post-date">Nov 20, 2022</time>
+  Hello, I’m Julie. I’m interested in Python, Programming and Machine Learning. Here I write down what I’ve learned, or how to solve the problems I met.
+I also like:
+reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. Contact me:
+Email: Juliecodestack@126.com
+GitHub
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2021/03/24/21005numpy_axis/">Numpy运算中的axis参数</a>
+  </h1>
+  <time datetime="2021-03-24T18:30:08&#43;0800" class="post-date">Mar 24, 2021</time>
+  <p>最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
+<a href="https://zhuanlan.zhihu.com/p/30960190">Python · numpy · axis</a>
+和 <a href="https://zhuanlan.zhihu.com/p/31275071">Numpy:对Axis的理解</a>，
+感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。</p>
+  
+  <div class="read-more-link">
+    <a href="/2021/03/24/21005numpy_axis/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/">Jupyter Notebook使用</a>
+  </h1>
+  <time datetime="2021-03-07T18:30:08&#43;0800" class="post-date">Mar 7, 2021</time>
+  <blockquote>
+<p>注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。</p>
+</blockquote>
+<p>接着<a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/">上一篇文章</a>，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。</p>
+  
+  <div class="read-more-link">
+    <a href="/2021/03/07/21004jupyternotebook/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2021/02/15/21003anaconda/">Python入门：安装 Python 软件，Anaconda</a>
+  </h1>
+  <time datetime="2021-02-15T18:30:08&#43;0800" class="post-date">Feb 15, 2021</time>
+  <p>“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？</p>
+  
+  <div class="read-more-link">
+    <a href="/2021/02/15/21003anaconda/">Read More…</a>
+  </div>
+  
+</article><article class="post">
+  <h1 class="post-title">
+    <a href="https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/">GitHub入门指南</a>
+  </h1>
+  <time datetime="2020-12-13T18:30:08&#43;0800" class="post-date">Dec 13, 2020</time>
+  <p>我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。<strong>这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。</strong></p>
+  
+  <div class="read-more-link">
+    <a href="/2020/12/13/github%E5%85%A5%E9%97%A8/">Read More…</a>
+  </div>
+  
+</article>
+</div>
+    </main>
 
     
-</body>
-
+      
+    
+  </body>
 </html>
