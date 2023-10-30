@@ -1,0 +1,1410 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Julie</title>
+        <link>https://juliecodestack.github.io/</link>
+        <description>Programming &amp; Data Science</description>
+        <generator>Hugo 0.105.0 https://gohugo.io/</generator>
+        
+            <language>en</language>
+        
+        
+            <managingEditor>Juliecodestack@126.com (Julie)</managingEditor>
+        
+        
+            <webMaster>Juliecodestack@126.com (Julie)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Mon, 30 Oct 2023 21:25:56 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://juliecodestack.github.io/rss.xml" />
+        
+        
+            <item>
+                <title>Switching from Hexo to Hugo</title>
+                <link>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</guid>
+                <pubDate>Tue, 25 Apr 2023 18:39:37 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.&lt;/p&gt;
+&lt;h3 id=&#34;1-hugo-vs-hexo&#34;&gt;1. Hugo v.s. Hexo&lt;/h3&gt;
+&lt;p&gt;Both Hexo and Hugo are static site generators, so why did I choose Hugo?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hugo is super fast&lt;/strong&gt;. At first I thought it means the page load time is short, so my readers could view the pages of my site instantly, and that’s the reason I decided to switch to Hugo. Later I realized it refers to the site building speed ( &amp;lt; 1ms per page according to &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo site&lt;/a&gt; ), which means I can build the site fast and preview the changes in real time. It’s really a benefit, especially when you have written hundreds of articles, for you can still build your site in seconds (or even in a second) .&lt;/p&gt;
+&lt;p&gt;Besides, Hexo depends on Node.js. Sometimes when you install a wrong version of Node.js, it leads to problems. You don’t need to worry about that in Hugo because you don’t need to install external dependencies for it.&lt;/p&gt;
+&lt;p&gt;What about Hugo’s drawbacks?&lt;/p&gt;
+&lt;p&gt;From my experience, compared with Hexo, the site configuration of Hugo is a bit difficult for beginners. Hexo provides a default theme for you to begin with. While in Hugo, at first you have to pick a theme and install it. Besides, Hexo has a site configuration as well as a theme configuration. The site configuration fits all themes and saves your time when you change the theme. While Hugo has only one configuration file, and different themes have different settings, which makes beginners a little confused.&lt;/p&gt;
+&lt;h3 id=&#34;2-how-i-switched-from-hexo-to-hugo&#34;&gt;2. How I switched from Hexo to Hugo?&lt;/h3&gt;
+&lt;p&gt;Since I have written some posts on the Hexo site, &lt;strong&gt;the main question is how to switch to Hugo without changing the links of the posts&lt;/strong&gt;. I find &lt;a href=&#34;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&#34;&gt;this article&lt;/a&gt; helpful, so I followed the instructions in it to make the change.&lt;/p&gt;
+&lt;h4 id=&#34;21-generate-the-pages-by-hugo-locally&#34;&gt;2.1. Generate the pages by Hugo locally&lt;/h4&gt;
+&lt;p&gt;First I followed the step0 and step1 in &lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/&#34;&gt;my first tutorial&lt;/a&gt; to build a Hugo site. Then:&lt;/p&gt;
+&lt;p&gt;(1) &lt;strong&gt;Copy&lt;/strong&gt; the posts from &lt;code&gt;MyHexoSite &amp;gt; source &amp;gt; _posts&lt;/code&gt; to &lt;code&gt;MyHugoSite &amp;gt; content &amp;gt; post&lt;/code&gt; folder.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Please use &lt;code&gt;copy&lt;/code&gt; , not &lt;code&gt;move&lt;/code&gt; , so that if something went wrong, you can go to &lt;code&gt;MyHexoSite&lt;/code&gt; folder and try it again. And I also advice you to make a backup of  &lt;code&gt;MyHexoSite&lt;/code&gt; folder.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(2) Change the front matter of the posts.&lt;/p&gt;
+&lt;p&gt;In Hexo the the published date is formatted as &lt;code&gt;date:yyyy-mm-dd HH:MM:SS&lt;/code&gt; , while in Hugo a time zone needs to be added. For example, in my articles the format is &lt;code&gt;date:yyyy-mm-ddTHH:MM:SS+08:00&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;(3) Change the image links ( You may read &lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#15-how-to-display-images&#34;&gt;Step1.5 in my first tutorial&lt;/a&gt; first)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For local images:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Copy all images from &lt;code&gt;MyHexoSite &amp;gt; source &amp;gt; _posts &amp;gt; imgs&lt;/code&gt; folder to &lt;code&gt;MyHugoSite &amp;gt; static &amp;gt; imgs&lt;/code&gt; folder, then change the links in the markdown files.&lt;/p&gt;
+&lt;p&gt;If in Hexo the link is like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;image1_title&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;imgs/image1.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In Hugo it’s changed to:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;image1_title&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/imgs/image1.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If in Hexo the link is like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;src&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;imgs/image1.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;alt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;image1_title&amp;#34;&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;align&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;center&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;Here &lt;code&gt;align=center&lt;/code&gt; is optional. It’s set to display the image in the center of the line.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In Hugo it’s changed to:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230424212753828.png&#34; alt=&#34;image-20230424212753828&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;For web images:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If in Hexo the link is like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![image2_title](image2_weblink)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You can keep the links as the same.&lt;/p&gt;
+&lt;p&gt;If in Hexo the link is like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;lt;img src=&amp;#34;image2_weblink&amp;#34; alt=&amp;#34;image2_title&amp;#34; align=center /&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You need to remove the double quotes around &lt;code&gt;image2_weblink&lt;/code&gt; and &lt;code&gt;image2_title&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;(4) permanent link&lt;/p&gt;
+&lt;p&gt;To be consistent with the URL of my Hexo site, I set the permanent links in the &lt;code&gt;config.toml&lt;/code&gt; of the Hugo site as:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;permalinks&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nx&#34;&gt;post&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;/:year/:month/:day/:filename/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;I used the Next theme of Hexo. You may need to refer to the links of your own Hexo site before setting the &lt;code&gt;permalinks&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;22-push-to-github-for-the-first-time&#34;&gt;2.2. Push to GitHub for the first time&lt;/h4&gt;
+&lt;p&gt;(1) Save the links of several articles of your Hexo site. Later you can use them to check the links of your Hugo site.&lt;/p&gt;
+&lt;p&gt;(2)  Follow the step2 in &lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/&#34;&gt;my first tutorial&lt;/a&gt;, except one thing. Because I have pushed Hexo-generated pages to GitHub before, the GitHub repository was not empty, the first time I added &lt;code&gt;-f&lt;/code&gt; after &lt;code&gt;git push&lt;/code&gt; as follows:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;YourCommitMessage&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push -f upstream master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the next time I use &lt;code&gt;git push upstream master&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;(3) Clicking the links saved in step(1) and check whether the links point to the same articles as before.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Comparison of Hexo and Hugo: &lt;a href=&#34;https://www.stackshare.io/stackups/hexo-vs-hugo&#34;&gt;https://www.stackshare.io/stackups/hexo-vs-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Switch from Hexo to Hugo: &lt;a href=&#34;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&#34;&gt;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/tools/">Tools</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/hugo/">Hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/blog/">Blog</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/github/">GitHub</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/git/">Git</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Hugo: How to Add a Table of Contents (TOC) to Your Post?</title>
+                <link>https://juliecodestack.github.io/2023/04/21/hugo-toc/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/04/21/hugo-toc/</guid>
+                <pubDate>Fri, 21 Apr 2023 18:23:29 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you.&lt;/p&gt;
+&lt;h3 id=&#34;1-the-toc-configuration&#34;&gt;1. The TOC configuration&lt;/h3&gt;
+&lt;p&gt;First you need to see if your Hugo theme contains Table of Contents ( TOC ) settings.  Open the &lt;code&gt;config.toml&lt;/code&gt; file in your Hugo site folder ( Later we’ll call it &lt;code&gt;YourSite&lt;/code&gt; in this article ), find the parameter &lt;code&gt;tableOfContents&lt;/code&gt; ( or &lt;code&gt;toc&lt;/code&gt; ), set it to be &lt;code&gt;true&lt;/code&gt; like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;tableOfContents&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then, if your Hugo theme has a TOC configuration, a TOC will be added at the beginning of every post.&lt;/p&gt;
+&lt;p&gt;Q: What if I don’t want to show the TOC of an article?&lt;/p&gt;
+&lt;p&gt;A: Go to the front matter of that article, and set:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-md&#34; data-lang=&#34;md&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;toc: false
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then only the TOC of that article won’t be shown.&lt;/p&gt;
+&lt;h3 id=&#34;2-how-to-insert-a-toc-in-the-middle-of-your-post&#34;&gt;2. How to insert a TOC in the middle of your post?&lt;/h3&gt;
+&lt;p&gt;However, some Hugo themes don’t have Table of Contents ( TOC )  settings, or you may want to insert a TOC somewhere in the middle of the post. In that case, you can use Hugo shortcodes.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;Hugo Shortcodes Page&lt;/a&gt;  introduces shortcodes as this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A shortcode is a simple snippet inside a content file that Hugo will render using a predefined template.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;We can think of a shortcode as a function. When we call it,  Hugo will render in the way the shortcode defined.&lt;/p&gt;
+&lt;p&gt;How to use shortcodes?&lt;/p&gt;
+&lt;p&gt;Add the following line to anywhere you you want to use the shortcode in the markdown article:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230421173703982.png&#34; alt=&#34;image-20230421173703982&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Actually, if you’ve read &lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/&#34;&gt;my first tutorial&lt;/a&gt; , you may have already used shortcodes. In it the shortcode &lt;code&gt;figure&lt;/code&gt; is used to display an image and its title.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230416211605682.png&#34; alt=&#34;image-20230416211605682&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;figure&lt;/code&gt; is a built-in shortcode. There is no built-in shortcode for Table of Contents ( TOC ) , so we need to define it, which is a bit hard for beginners. Thankfully the author of Hugo theme &lt;a href=&#34;https://github.com/parsiya/Hugo-Octopress&#34;&gt;hugo-octopress&lt;/a&gt; has done it for us. You just need to download &lt;a href=&#34;https://github.com/parsiya/Hugo-Shortcodes&#34;&gt;this repository on GitHub&lt;/a&gt; . Go to &lt;code&gt;YourSite &amp;gt; layouts&lt;/code&gt; folder, create a &lt;code&gt;shortcodes&lt;/code&gt; folder in it if it doesn’t exist. Then copy the &lt;code&gt;toc.html&lt;/code&gt; from the downloaded &lt;code&gt;Hugo-Shortcodes &amp;gt; shortcodes&lt;/code&gt; folder to &lt;code&gt;YourSite &amp;gt; layouts &amp;gt; shortcodes&lt;/code&gt;  folder.&lt;/p&gt;
+&lt;p&gt;To insert TOC somewhere in your article, just write a line:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230421181940766.png&#34; alt=&#34;image-20230421181940766&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example, I add a TOC here:&lt;/p&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/21/hugo-toc/#1-the-toc-configuration&#34;&gt;1. The TOC configuration&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/21/hugo-toc/#2-how-to-insert-a-toc-in-the-middle-of-your-post&#34;&gt;2. How to insert a TOC in the middle of your post?&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/21/hugo-toc/#3-set-the-range-of-headings-to-be-displayed&#34;&gt;3. Set the range of headings to be displayed&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/21/hugo-toc/#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+&lt;h3 id=&#34;3-set-the-range-of-headings-to-be-displayed&#34;&gt;3. Set the range of headings to be displayed&lt;/h3&gt;
+&lt;p&gt;Sometimes you may find the page doesn’t show all the headings, and you can fix it by setting in &lt;code&gt;YourSite &amp;gt; config.toml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;markup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;markup&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nx&#34;&gt;tableOfContents&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;startLevel&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nx&#34;&gt;endLevel&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The &lt;code&gt;startLevel&lt;/code&gt; and &lt;code&gt;endLevel&lt;/code&gt; refer to the highest and lowest levels of the headings to be shown. For example, the above setting means that the TOC only shows headings between level 3 and level 5.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;Hugo Shortcodes Page&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The author of the &lt;a href=&#34;https://github.com/parsiya/Hugo-Octopress&#34;&gt;hugo-octopress theme&lt;/a&gt; introduced the use of shortcodes in detail and I find it helpful : &lt;a href=&#34;https://github.com/parsiya/Hugo-Octopress/blob/master/README.md#shortcodes&#34;&gt;https://github.com/parsiya/Hugo-Octopress/blob/master/README.md#shortcodes&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/tools/">Tools</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/hugo/">Hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/blog/">Blog</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>How to Build a Personal Website Using GitHub Pages and Hugo?</title>
+                <link>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/04/13/build_hugo_site/</guid>
+                <pubDate>Thu, 13 Apr 2023 18:30:08 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.&lt;/p&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#site-building-pipeline&#34;&gt;Site-Building Pipeline&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#step-0--preparation&#34;&gt;Step 0 : Preparation&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#step-1--generate-pages-locally&#34;&gt;Step 1 : Generate pages locally&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#11-install-hugo&#34;&gt;1.1 Install Hugo&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#12-create-a-hugo-site&#34;&gt;1.2 Create a Hugo site&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#13-pick-a-theme-and-configure-the-site&#34;&gt;1.3 Pick a theme and configure the site&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#14-write-posts&#34;&gt;1.4 Write posts&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#15-how-to-display-images&#34;&gt;1.5 How to display images?&lt;/a&gt;
+              &lt;ol&gt;
+                &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#1-for-local-images&#34;&gt;1. For local images&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#2-for-web-images&#34;&gt;2. For web images&lt;/a&gt;&lt;/li&gt;
+              &lt;/ol&gt;
+            &lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#step-2--deploy-the-site-to-github&#34;&gt;Step 2 : Deploy the site to GitHub&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#21-create-a-github-repository&#34;&gt;2.1 Create a GitHub repository&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#22-build-your-site-and-push-it-to-the-repository-on-github&#34;&gt;2.2 Build your site and push it to the repository on GitHub&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#future-work&#34;&gt;Future Work&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/04/13/build_hugo_site/#references&#34;&gt;References&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;h3 id=&#34;site-building-pipeline&#34;&gt;Site-Building Pipeline&lt;/h3&gt;
+&lt;p&gt;There are two kinds of sites: static sites and dynamic ones.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Static sites generate web pages locally, and put them on the server, so every user will get the same view when they click the link.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dynamic sites display different pages to different users on their requests, so it need things like databases.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As beginners, we choose the simpler one — static sites, and it’s easy to follow after you learn the pipeline.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/hugo_site_pipeline.jpg&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;   Figure1. The pipeline of building a static website   &lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;As shown in the figure above, there are two main steps in building a static website:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Generate pages locally. The popular static site generators (or frameworks) are JekyII, Hugo, Hexo, etc. Here we’ll use &lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; as an example. Many people (including me) like Hugo because it’s super fast to build a site.&lt;/li&gt;
+&lt;li&gt;Deploy the site to the server. Here we’ll use GitHub as the server to store the pages.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Not that hard, right ? Now let’s dive into the details.&lt;/p&gt;
+&lt;h3 id=&#34;step-0--preparation&#34;&gt;Step 0 : Preparation&lt;/h3&gt;
+&lt;p&gt;Install &lt;a href=&#34;http://git-scm.com/&#34;&gt;Git&lt;/a&gt; . We will use Git Command to generate website, connect to GitHub and push web pages to it.&lt;/p&gt;
+&lt;h3 id=&#34;step-1--generate-pages-locally&#34;&gt;Step 1 : Generate pages locally&lt;/h3&gt;
+&lt;h4 id=&#34;11-install-hugo&#34;&gt;1.1 Install Hugo&lt;/h4&gt;
+&lt;p&gt;Go to &lt;a href=&#34;https://gohugo.io/installation/&#34;&gt;Hugo Installation Page&lt;/a&gt; , and find the corresponding installation for the operating system you’re using.&lt;/p&gt;
+&lt;p&gt;I’m using Windows and I haven’t installed Chocolatey or Scoop, so I installed Hugo using binary files following &lt;a href=&#34;https://www.brycewray.com/posts/2022/10/how-i-install-hugo&#34;&gt;this installation tutorial&lt;/a&gt; . If you’re in the same case as mine, you may follow the steps below to install Hugo.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In the following steps, &lt;code&gt;YourUserName&lt;/code&gt; refers to the user name of your Windows-system computer. More specifically, it’s the name displayed on the screen when you login in Windows.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;(1) Go to folder &lt;code&gt;C:\Users\YourUserName&lt;/code&gt;, and create a &lt;code&gt;bin&lt;/code&gt; folder in it if it doesn’t exist. The &lt;code&gt;bin&lt;/code&gt; folder is the place to store the Hugo binary file.&lt;/p&gt;
+&lt;p&gt;(2) Add the &lt;code&gt;bin&lt;/code&gt; folder to &lt;code&gt;PATH&lt;/code&gt;. In Windows Taskbar Search Box, enter &lt;code&gt;cmd&lt;/code&gt; and select the Command Prompt result ( right click and choose the “Run as administrator” option ). In Command Prompt, enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;setx PATH &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\YourUserName\bin;%PATH%&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then close and reopen the Command Prompt again, enter &lt;code&gt;echo %PATH% &lt;/code&gt; to check if &lt;code&gt;bin&lt;/code&gt; has been successfully added to &lt;code&gt;PATH&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;(3) Download &lt;code&gt;.zip&lt;/code&gt; file from &lt;a href=&#34;https://github.com/gohugoio/hugo/releases&#34;&gt;Hugo release page on GitHub&lt;/a&gt; . Be Sure to choose the &lt;strong&gt;extended version&lt;/strong&gt;, which will be found near the bottom of the list of archives.&lt;/p&gt;
+&lt;p&gt;From the &lt;code&gt;.zip&lt;/code&gt; extract the binary file &lt;code&gt;hugo.exe&lt;/code&gt; and move it to the &lt;code&gt;bin&lt;/code&gt; folder.  After that, open Command Prompt and enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If Hugo is successfully installed, you will see a series of characters about information including Hugo version, operating system, build date.&lt;/p&gt;
+&lt;h4 id=&#34;12-create-a-hugo-site&#34;&gt;1.2 Create a Hugo site&lt;/h4&gt;
+&lt;p&gt;Supposing you use &lt;code&gt;FolderA&lt;/code&gt;  to store your site files. Right click &lt;code&gt;FolderA&lt;/code&gt;, and select “Git Bash Here” in the menu to open the Git Bash Command. Now enter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site MySite
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then a new folder named &lt;code&gt;MySite&lt;/code&gt; will be created in &lt;code&gt;FolderA&lt;/code&gt;, that is your Hugo site.&lt;/p&gt;
+&lt;h4 id=&#34;13-pick-a-theme-and-configure-the-site&#34;&gt;1.3 Pick a theme and configure the site&lt;/h4&gt;
+&lt;p&gt;Since a new site has been created, maybe you’d like to see what your Hugo site looks like, but wait a minute, you have to choose a theme first.&lt;/p&gt;
+&lt;p&gt;What is a theme?&lt;/p&gt;
+&lt;p&gt;You can regard it as the design of your website. &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;Hugo Themes&lt;/a&gt; site has many different themes. When you pick a theme, you can download it from its GitHub repository.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How to pick a theme?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Here I’d like to give you some advice to save your time on choosing themes, for I’ve spent a lot of time on Hugo themes, picking one, configuring it and then changing to another one.&lt;/p&gt;
+&lt;p&gt;(1) A theme that has an &lt;code&gt;exampleSite&lt;/code&gt; folder is easier to use. Different themes have different settings, for example, on choosing which folder to store the posts. The most important file in &lt;code&gt;exampleSite&lt;/code&gt; is the &lt;code&gt;config.toml&lt;/code&gt; ( or &lt;code&gt;config.yml&lt;/code&gt;, or &lt;code&gt;config.json&lt;/code&gt; ) file, which provides an example for your configuration, so you know which parameters to tweak to get the desired result. Without &lt;code&gt;exampleSite&lt;/code&gt;, you’ll need much more time to configure it.&lt;/p&gt;
+&lt;p&gt;(2) When previewing the theme, you need pay attention to some features that you’ll use. For example, if you write technical articles, you should check whether the theme displays Math equations and highlights code blocks well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;After I pick a theme, how to configure it?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Copy the theme folder you’ve downloaded into &lt;code&gt;MySite &amp;gt; themes&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;If the theme folder contains &lt;code&gt;exampleSite&lt;/code&gt;, you can copy the files in &lt;code&gt;exampleSite&lt;/code&gt; to &lt;code&gt;MySite&lt;/code&gt; folder. After that, copy other folders except &lt;code&gt; exampleSite&lt;/code&gt; ( especially &lt;code&gt;archetypes&lt;/code&gt;, &lt;code&gt;layouts&lt;/code&gt;, &lt;code&gt;static&lt;/code&gt; folders ) to &lt;code&gt;MySite&lt;/code&gt; folder.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some themes don’t have &lt;code&gt;exampleSite&lt;/code&gt;. If you’re a beginner, I don’t recommend you to use it now, because you’ll spend much more time to figure out how to set the parameters. When I wrote this article, I was using  &lt;a href=&#34;https://github.com/spf13/hyde&#34;&gt;Hyde&lt;/a&gt; as the theme of &lt;a href=&#34;https://juliecodestack.github.io/&#34;&gt;my site&lt;/a&gt; . I like its simple design. It doesn’t have &lt;code&gt;exampleSite&lt;/code&gt; . However, I have used several themes before, so I used &lt;code&gt;config&lt;/code&gt; file of the previous themes and changed some parameters to set as the Hyde Theme.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then Open Git Bash Prompt on &lt;code&gt;MySite&lt;/code&gt; folder, and enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When it’s done, open the URL displayed in your terminal, and you’ll see the example site locally. If you change the parameters in &lt;code&gt;config.toml&lt;/code&gt;, the page will make corresponding changes at the same time. In this way, you can configure your site.&lt;/p&gt;
+&lt;p&gt;In the future, when you write a new post or make some revisions, you can still use &lt;code&gt;hugo server&lt;/code&gt; to view your site locally before pushing to GitHub.&lt;/p&gt;
+&lt;h4 id=&#34;14-write-posts&#34;&gt;1.4 Write posts&lt;/h4&gt;
+&lt;p&gt;To create a new post, open Git Bash Command on &lt;code&gt;MySite&lt;/code&gt; folder, and enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new new_post.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It will create a new markdown file named “new_post” in &lt;code&gt;MySite &amp;gt; content&lt;/code&gt; folder. But if you use &lt;code&gt;hugo server&lt;/code&gt;, you may not see the new post. Why?&lt;/p&gt;
+&lt;p&gt;(1) Depending on the theme you choose, you may need to put the &lt;code&gt;new_post.md&lt;/code&gt; into &lt;code&gt;post&lt;/code&gt; (or &lt;code&gt;posts&lt;/code&gt; ) folder in the &lt;code&gt;content&lt;/code&gt; folder to generate the web page.  In this case, you can also enter the following command to create a new post :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new post/new_post.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(2) Open the new post in your editor (Typora, VS Code, etc). In the header of the post , there are settings about the post (it’s also called front matter). Find &lt;code&gt;draft: true&lt;/code&gt; , which means this post is a draft and you don’t want to publish it now. Change it to &lt;code&gt;draft: false&lt;/code&gt; so that the post will be published on the site. Besides, the &lt;code&gt;title&lt;/code&gt; in the header refers to the title of the post, and it is set to be the file name when created (for example, “new_post” here) . You can change it to whatever you want in your editor.&lt;/p&gt;
+&lt;h4 id=&#34;15-how-to-display-images&#34;&gt;1.5 How to display images?&lt;/h4&gt;
+&lt;p&gt;Although many tutorials didn’t mention how to insert and display images, I think for beginners it’s an important part in the building process, for you may add pictures to make your article easier to understand or look better.&lt;/p&gt;
+&lt;h5 id=&#34;1-for-local-images&#34;&gt;1. For local images&lt;/h5&gt;
+&lt;p&gt;In Hugo, the local images are stored in &lt;code&gt;MySite &amp;gt; static&lt;/code&gt; folder in order to be displayed. Supposing you have an image named &lt;code&gt;image1.jpg&lt;/code&gt;, after putting it into the &lt;code&gt;static&lt;/code&gt; folder, you can insert it in your post this way :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;image1_title&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/image1.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or you may put all images in one folder :  &lt;code&gt;MySite &amp;gt; static &amp;gt; imgs&lt;/code&gt;, then insert the image in your post by :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;image1_title&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/imgs/image1.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;But the above method doesn’t display the title of the image. If you want to show the title along with the image, you can use :&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230416211605682.png&#34; alt=&#34;image-20230416211605682&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Here please notice the space between the angle brackets ( &lt;code&gt;&amp;lt;&lt;/code&gt; and &lt;code&gt;&amp;gt;&lt;/code&gt; ) and the content.&lt;/p&gt;
+&lt;p&gt;The pipeline figure you’ve seen in “Site-Building Pipeline” Section was inserted in this way.&lt;/p&gt;
+&lt;h5 id=&#34;2-for-web-images&#34;&gt;2. For web images&lt;/h5&gt;
+&lt;p&gt;If your image is stored on the web, you can insert the image using its web link by one of the three ways below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/image-20230424210828823.png&#34; alt=&#34;image-20230424210828823&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In way-2 and way-3,  there are no double quotes around &lt;code&gt;image2_weblink&lt;/code&gt; or &lt;code&gt;image2_title&lt;/code&gt;, i.e. write &lt;code&gt;image2_weblink&lt;/code&gt;, not &lt;code&gt;“image2_weblink”&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Take the Python Logo from the &lt;a href=&#34;https://www.python.org/&#34;&gt;python.org&lt;/a&gt; as an example. Insert the image using the three ways:&lt;/p&gt;
+&lt;p&gt;Way-1:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://www.python.org/static/img/python-logo@2x.png&#34; alt=&#34;Python-logo&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Way-2:&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://www.python.org/static/img/python-logo@2x.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;Python-logo&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Way-3:&lt;/p&gt;
+&lt;img src=https://www.python.org/static/img/python-logo@2x.png alt=Python-logo /&gt;
+&lt;h3 id=&#34;step-2--deploy-the-site-to-github&#34;&gt;Step 2 : Deploy the site to GitHub&lt;/h3&gt;
+&lt;h4 id=&#34;21-create-a-github-repository&#34;&gt;2.1 Create a GitHub repository&lt;/h4&gt;
+&lt;p&gt;Log in &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt; and create a public repository named &lt;code&gt;YourGitHubName.github.io&lt;/code&gt;, this is where you’re going to store your web pages on GitHub so that others can view your site. Here please make sure &lt;code&gt;YourGitHubName&lt;/code&gt; is the same as your GitHub username.&lt;/p&gt;
+&lt;h4 id=&#34;22-build-your-site-and-push-it-to-the-repository-on-github&#34;&gt;2.2 Build your site and push it to the repository on GitHub&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I followed the steps introduced in &lt;a href=&#34;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&#34;&gt;this tutorial&lt;/a&gt; .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Things you need to do before deploying for the first time:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For the first time, you need to connect &lt;code&gt;MySite &amp;gt; public&lt;/code&gt; folder to your GitHub repository. The &lt;code&gt;public&lt;/code&gt; folder is the place to store your site files after they are generated by Hugo. Connect it to your GitHub repository, so that the site files will be synchronized on GitHub.&lt;/p&gt;
+&lt;p&gt;Open Git Bash Command on &lt;code&gt;MySite&lt;/code&gt; folder, enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git init
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git remote add upstream https://github.com/YourGitHubName/YourGitHubName.github.io.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After that, set the parameter &lt;code&gt;baseurl&lt;/code&gt; in &lt;code&gt;config.toml&lt;/code&gt; to be your GitHub repository above :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;baseurl&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://YourGitHubName.github.io/&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The following are the things you do every time you push your site to GitHub:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;First generate the site files:&lt;/p&gt;
+&lt;p&gt;Open Git Bash Command on &lt;code&gt;MySite&lt;/code&gt; folder, enter :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When it’s done, Hugo will generate the site files and store it in the &lt;code&gt;public&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Then we’ll push these files to GitHub, continue to enter:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; public
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git add .
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git commit -m&lt;span class=&#34;s2&#34;&gt;&amp;#34;your_commit_message&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git push upstream master
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;The above commands use &lt;code&gt;git remote add upstream...&lt;/code&gt; and &lt;code&gt;git push upstream master&lt;/code&gt;, I also used these two commands. I saw &lt;a href=&#34;https://zhiqiyu.github.io/post/git-setup-for-hugo-blog-with-github-pages/&#34;&gt;a tutorial&lt;/a&gt; use &lt;code&gt;origin&lt;/code&gt; instead of &lt;code&gt;upstream&lt;/code&gt;, i.e. &lt;code&gt;git remote add origin...&lt;/code&gt; and &lt;code&gt;git push origin master&lt;/code&gt;, which also works. You may have a try.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;future-work&#34;&gt;Future Work&lt;/h3&gt;
+&lt;p&gt;Some tutorials introduced GitHub Actions for automating the deployment, and next I’m going to learn it.&lt;/p&gt;
+&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://blog.hellohuigong.com/en/posts/how-to-build-personal-blog-with-github-pages-and-hugo/&#34;&gt;Hui Gong: How to build personal blog using GitHub Pages and Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://flaviocopes.com/start-blog-with-hugo/&#34;&gt;Flavio Copes: How to start a blog using Hugo&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hugo installation : &lt;a href=&#34;https://www.brycewray.com/posts/2022/10/how-i-install-hugo/&#34;&gt;https://www.brycewray.com/posts/2022/10/how-i-install-hugo/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Set the Hugo theme quickly: &lt;a href=&#34;https://www.tomasbeuzen.com/post/making-a-website-with-hugo/&#34;&gt;https://www.tomasbeuzen.com/post/making-a-website-with-hugo/&lt;/a&gt;  (I wish I had read the step 4 in it about the configuration of website earlier, it’s efficient.)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy Hugo site to GitHub : &lt;a href=&#34;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&#34;&gt;https://jdhao.github.io/2018/10/10/hexo_to_hugo/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/tools/">Tools</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/hugo/">Hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/blog/">Blog</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/github/">GitHub</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/git/">Git</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>How to Write a Popular Article?</title>
+                <link>https://juliecodestack.github.io/2023/02/01/valuable_writing/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/02/01/valuable_writing/</guid>
+                <pubDate>Wed, 01 Feb 2023 18:16:07 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;Whenever you write something, an article, a blog post or a paper, you may have a question: “how to write it so that my readers will like it”? In his lecture “Writing Beyond the Academy”, &lt;a href=&#34;https://news.uchicago.edu/story/how-one-scholar-shaped-writing-generations-students&#34;&gt;Professor Larry McEnerney from The University of Chicago&lt;/a&gt;  gave his advice.&lt;/p&gt;
+&lt;h3 id=&#34;whats-the-key-factor-of-good-writing&#34;&gt;What’s the Key Factor of Good Writing?&lt;/h3&gt;
+&lt;p&gt;What are the characteristics of good writing ?&lt;/p&gt;
+&lt;p&gt;Concise? Clear? Well-structured? Persuasive? Interesting?…&lt;/p&gt;
+&lt;p&gt;Professor McEnerney said good writing has four crucial characteristics, as shown in the following picture:&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/good_writing_4factors.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt; Figure1. Four Factors of Good Writing  &lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Among them, &lt;strong&gt;valuable is the key factor.&lt;/strong&gt;  Without value, the other three factors are meaningless, because readers don’t care it and won’t read.&lt;/p&gt;
+&lt;p&gt;This writing advice is not about text style and rules. It’s about the content. We thought that writing is to express ourselves, but Professor McEnerney has a different view. “ Your writing aims not to review your mind, nor to show what you know about the world, but to change what your readers think about the world, or how they do. ” So before writing, you should think about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Who are your specific readers?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What your readers value?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These two questions are very important. They can help us to find out what content our readers like.&lt;/p&gt;
+&lt;p&gt;Take myself as an example. I reviewed my previous articles published and found articles about the solution of a particular problem are popular. If you came across a problem in setting up a software, in debugging, probably someone else would have the same problem and your solution can help them. On the other hand, my notes on a book or a lecture are less viewed.&lt;/p&gt;
+&lt;p&gt;What is the difference between these two kinds of articles that leads to more views or less?&lt;/p&gt;
+&lt;p&gt;I figure it’s because the particular problem-solving articles have specific readers (people who have similar problems), while the note articles don’t (originally wrote for my future review). While these notes are useful to me, they’re not so valuable to my readers.&lt;/p&gt;
+&lt;h3 id=&#34;techniques&#34;&gt;Techniques&lt;/h3&gt;
+&lt;p&gt;Professor McEnerney also introduced some techniques for good writing.&lt;/p&gt;
+&lt;h4 id=&#34;1-what-is-a-good-opening&#34;&gt;1. What is a good opening?&lt;/h4&gt;
+&lt;p&gt;The following are three kinds of openings of paper:&lt;/p&gt;
+&lt;p&gt;(A) tells what the paper will be about …&lt;/p&gt;
+&lt;p&gt;(B) tells what the paper will argue that …&lt;/p&gt;
+&lt;p&gt;(C) tells you what question the paper will answer.&lt;/p&gt;
+&lt;p&gt;Which one do you think is better? Or, in which one you’d like to read the following paragraphs?&lt;/p&gt;
+&lt;p&gt;It’s (C). Do you remember how many times when you read an article opens with “In this article I’ll talk about…” and you stopped reading, because you had no interest. That’s the shortage of (A). It just tells the readers what you think about, while the readers may not care. (C) leaves room for your readers. A questions is open. Readers can think about it with you.&lt;/p&gt;
+&lt;p&gt;An even better opening is:  &lt;strong&gt;tells you what question you have the paper will answer, or what you need the paper will give.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Who will say no to a paper that can help them solve their problems?&lt;/p&gt;
+&lt;p&gt;Let’s see an example.  Here’s two kinds of opening of a lawyer’s letter to his client:&lt;/p&gt;
+&lt;p&gt;(1) “This letter is about the change of tax….”&lt;/p&gt;
+&lt;p&gt;(2) “Dear Client, you asked about the change of tax… Here’s what you need…”&lt;/p&gt;
+&lt;p&gt;If you’re the client, which one would you like to read?&lt;/p&gt;
+&lt;p&gt;Of course it’s letter (2). Just reading the beginning, you may get a feeling that letter (1) is sending to all the clients, while letter (2) is directly for you, to help you with your question.&lt;/p&gt;
+&lt;p&gt;One more thing to notice : how many this kind of notification letters do you receive every day? Did you ever read these letters carefully? That is, readers don’t trust you. They think you will waste their time. So from the beginning of your paper, you should think of your readers, what they value/need/care, and provide with it.&lt;/p&gt;
+&lt;h4 id=&#34;2-pay-attention-to-the-subjects-of-sentences&#34;&gt;2. Pay Attention to the Subjects of Sentences&lt;/h4&gt;
+&lt;p&gt;Look at the following two sentences :&lt;/p&gt;
+&lt;p&gt;(1) The dog chased the cat.&lt;/p&gt;
+&lt;p&gt;(2) The cat was chased by the dog.&lt;/p&gt;
+&lt;p&gt;Which one is more concise? The first one?&lt;/p&gt;
+&lt;p&gt;It depends. For dog-lovers, (1) is more concise, while for cat-lovers, it’s (2).&lt;/p&gt;
+&lt;p&gt;Why?&lt;/p&gt;
+&lt;p&gt;The subject is the focus of a sentence. Readers first see the subject and implicitly think about it. So you should pay attention to the subjects of your sentences. What&amp;rsquo;s the topic in the subjects? Do your readers care about them? If the answer is no, you need to adjust the structure of sentences to make the subject on reader-valuable topic.&lt;/p&gt;
+&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This great lecture will change your mind from just writing what you think about to writing what your readers value. In a word, to write well, you should get a sense of your readers and create value for them.&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/readingwriting/">Reading&amp;Writing</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/writing/">Writing</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/blog/">Blog</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>What’s the Return Value of a Bool Expression in Python?</title>
+                <link>https://juliecodestack.github.io/2023/01/07/bool_expression/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/01/07/bool_expression/</guid>
+                <pubDate>Sat, 07 Jan 2023 20:54:13 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What’s the result of the expression &lt;code&gt;True and 3&lt;/code&gt; in Python? Is it True or False, or other value? Let’s find it out.&lt;/p&gt;
+&lt;h3 id=&#34;1-boolean-value&#34;&gt;1. Boolean Value&lt;/h3&gt;
+&lt;p&gt;Here is a question I came across while I was doing &lt;a href=&#34;https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab01/&#34;&gt;a lab of Berkeley CS61A Course&lt;/a&gt; . What would Python print?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;nv&#34;&gt;positive&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;28&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; positive: 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...     print&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;positive?&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;...     positive -&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;3&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I thought that after printing “positive?” 10 times , the variable “positive” would become negative, so the program would stop. But my answer didn’t pass the test, so I ran it locally to see what happened. To my surprise, the program didn’t stop! It’s an infinite loop. Why?&lt;/p&gt;
+&lt;p&gt;Because the boolean value of a negative number is True. &lt;strong&gt;Only the boolean value of 0 is False, while the boolean value of a positive or negative number is True&lt;/strong&gt;, so &lt;code&gt;bool(-2)=True&lt;/code&gt; .&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;In Python, the boolean value of False (or 0, or ‘’, or None) is False. The boolean value of others is True.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Then how to evaluate the bool expression?&lt;/p&gt;
+&lt;h3 id=&#34;2-bool-expression&#34;&gt;2. Bool Expression&lt;/h3&gt;
+&lt;p&gt;A bool expression usually contains logic operators such as &lt;code&gt;and&lt;/code&gt;, &lt;code&gt;or&lt;/code&gt;, &lt;code&gt;not&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;1--exp1-and-exp2&#34;&gt;(1)  &lt;code&gt;&amp;lt;exp1&amp;gt; and &amp;lt;exp2&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;The result of &lt;code&gt;False and True&lt;/code&gt; is False, so for the expression &lt;code&gt;&amp;lt;exp1&amp;gt; and &amp;lt;exp2&amp;gt;&lt;/code&gt; , only when the value of the first element &lt;code&gt;&amp;lt;exp1&amp;gt;&lt;/code&gt; is True do we need to check the second element &lt;code&gt;&amp;lt;exp2&amp;gt;&lt;/code&gt; . For example, the value of &lt;code&gt;True and 0&lt;/code&gt; is 0.&lt;/p&gt;
+&lt;p&gt;That is, &lt;strong&gt;&lt;code&gt;and&lt;/code&gt; stops evaluating at the first false value.&lt;/strong&gt; For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; and &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; False and -2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;False
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If all values evaluate to be True, the last value is returned. So the value of expression &lt;code&gt;True and 3&lt;/code&gt; is 3, while the expression &lt;code&gt;3 and True&lt;/code&gt; returns True. The following is another example of &lt;code&gt;and&lt;/code&gt; between two numbers:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; and -3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-3
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; -3 and &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;From the results above, you’ll see that **the return value of  a bool expression like &lt;code&gt;&amp;lt;exp1&amp;gt; and &amp;lt;exp2&amp;gt;&lt;/code&gt; is not always True or False **. Take &lt;code&gt;True and 3&lt;/code&gt; as an example, it evaluates the boolean value of &lt;code&gt;&amp;lt;exp1&amp;gt;&lt;/code&gt; /&lt;code&gt;&amp;lt;exp2&amp;gt;&lt;/code&gt; ( &lt;code&gt;bool(3)=True&lt;/code&gt; ), but returns the actual value ( 3 ), so it’s a number.&lt;/p&gt;
+&lt;h4 id=&#34;2--exp1-or-exp2&#34;&gt;(2)  &lt;code&gt;&amp;lt;exp1&amp;gt; or &amp;lt;exp2&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;or&lt;/code&gt; expression uses an evaluating order like &lt;code&gt;and&lt;/code&gt; expression. The result of &lt;code&gt;True or False&lt;/code&gt; is True, so for the expression &lt;code&gt;&amp;lt;exp1&amp;gt; or &amp;lt;exp2&amp;gt;&lt;/code&gt; , only when the value of the first element &lt;code&gt;&amp;lt;exp1&amp;gt;&lt;/code&gt; is False do we need to check the second element &lt;code&gt;&amp;lt;exp2&amp;gt;&lt;/code&gt; .&lt;/p&gt;
+&lt;p&gt;That is, &lt;strong&gt;&lt;code&gt;or&lt;/code&gt; stops evaluating at the first true value.&lt;/strong&gt; For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; or -1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt; or -1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt;True or &lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;True
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt;0 or False or -3 or &lt;span class=&#34;m&#34;&gt;1&lt;/span&gt; / &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here the last element &lt;code&gt;1/0 &lt;/code&gt; in the last expression won’t be evaluated, otherwise it’ll produce an error.&lt;/p&gt;
+&lt;p&gt;If all values evaluate to be False, the last value is returned. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; False or &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt; or False
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;False
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;3--not-exp&#34;&gt;(3)  &lt;code&gt;not &amp;lt;exp&amp;gt;&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;Unlike &lt;code&gt;and&lt;/code&gt; and &lt;code&gt;or&lt;/code&gt; expression, &lt;code&gt;not&lt;/code&gt; expression returns the opposite boolean value of  &lt;code&gt;&amp;lt;exp&amp;gt;&lt;/code&gt;, so the result is either True or False. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;&amp;gt;&amp;gt; not &lt;span class=&#34;m&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;False
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab01/&#34;&gt;Lab 1: Variables &amp;amp; Functions, Control | CS 61A Fall 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://inst.eecs.berkeley.edu/~cs61a/fa20/disc/disc01.pdf&#34;&gt;disc01| CS 61A Fall 2020&lt;/a&gt;&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/programming/">Programming</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/python/">Python</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Beginner’s Guide to Shell Commands</title>
+                <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
+                <pubDate>Wed, 04 Jan 2023 18:58:19 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.&lt;/p&gt;
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#1-work-on-directories-or-folders-in-windows&#34;&gt;1. Work on Directories (or Folders in Windows)&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#ls--list&#34;&gt;ls : list&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#pwd--present-working-directory&#34;&gt;pwd : present working directory&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#cd--change-directory&#34;&gt;cd : change directory&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#mkdir--make-a-directory&#34;&gt;mkdir : make a directory&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#rm--r--remove&#34;&gt;rm -r : remove&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#2-work-on-files&#34;&gt;2. Work on Files&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#echo--similar-to-print&#34;&gt;echo : similar to “print”&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#cat--display&#34;&gt;cat : display&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#touch--create-a-file&#34;&gt;touch : create a file&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#mv--move&#34;&gt;mv : move&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#cp--copy&#34;&gt;cp : copy&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#rm--remove&#34;&gt;rm : remove&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#unzip&#34;&gt;unzip&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2023/01/04/shell_command/#3-miscellaneous&#34;&gt;3. Miscellaneous&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;h3 id=&#34;1-work-on-directories-or-folders-in-windows&#34;&gt;1. Work on Directories (or Folders in Windows)&lt;/h3&gt;
+&lt;h4 id=&#34;ls--list&#34;&gt;ls : list&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;ls&lt;/code&gt; : to list all the directories/files in the current directory(folder).&lt;/p&gt;
+&lt;h4 id=&#34;pwd--present-working-directory&#34;&gt;pwd : present working directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;pwd&lt;/code&gt;: to show the current file path.&lt;/p&gt;
+&lt;h4 id=&#34;cd--change-directory&#34;&gt;cd : change directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;cd folder_name&lt;/code&gt;: to change directory to the directory(folder).&lt;/p&gt;
+&lt;p&gt;For example, &lt;code&gt;cd folder1&lt;/code&gt;  changes the directory to the subfolder “folder1” in the current folder.&lt;/p&gt;
+&lt;p&gt;Three special signs for directory:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;.&lt;/code&gt; : current directory&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;..&lt;/code&gt; : parent directory, thus &lt;code&gt;cd ..&lt;/code&gt; means changing to the parent directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;~&lt;/code&gt; : home directory, thus &lt;code&gt;cd ~&lt;/code&gt; means changing to the home directory. We can also type &lt;code&gt;cd&lt;/code&gt; for the same result.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;mkdir--make-a-directory&#34;&gt;mkdir : make a directory&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;mkdir folder_name&lt;/code&gt; : to make a new directory (folder).&lt;/p&gt;
+&lt;h4 id=&#34;rm--r--remove&#34;&gt;rm -r : remove&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;rm -r folder_name &lt;/code&gt; : to remove the whole directory (folder) ( “-r” means recursively).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Warning&lt;/strong&gt;:  In UNIX, when you &lt;code&gt;rm&lt;/code&gt; a file or directory, it&amp;rsquo;s gone. There is no Recycle bin or Trash for you to &amp;ldquo;undo&amp;rdquo; &lt;code&gt;rm&lt;/code&gt;, so please think twice before you use it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;2-work-on-files&#34;&gt;2. Work on Files&lt;/h3&gt;
+&lt;h4 id=&#34;echo--similar-to-print&#34;&gt;echo : similar to “print”&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;echo content&lt;/code&gt; : to print the content on the screen.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;echo content&amp;gt;&amp;gt;filename.filetype&lt;/code&gt;: to write to the file.&lt;/p&gt;
+&lt;h4 id=&#34;cat--display&#34;&gt;cat : display&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;cat filename.filetype&lt;/code&gt; : to display the content of the file.&lt;/p&gt;
+&lt;h4 id=&#34;touch--create-a-file&#34;&gt;touch : create a file&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;touch filename.filetype&lt;/code&gt;: to create a new empty file.&lt;/p&gt;
+&lt;p&gt;The following example uses these three commands. First we use &lt;code&gt;echo&lt;/code&gt; to print “hello” on the screen :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;echo &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello!&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello!
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Then we create a new directory named “example”, and use &lt;code&gt;touch&lt;/code&gt; to create a new txt file named “ex01” in it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;mkdir example
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&amp;gt;cd example
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; touch ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;When we type &lt;code&gt;cat ex01.txt&lt;/code&gt;, the output is nothing, because “ex01.txt” is an empty file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; cat ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can use &lt;code&gt;echo&lt;/code&gt;  command to write something into “ex01.txt” :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;hello&amp;#34;&lt;/span&gt;&amp;gt;&amp;gt;ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now using &lt;code&gt;cat &lt;/code&gt; command, we’ll see the content of “ex01.txt”:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; cat ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;We can also write many times, the content will be added to the file :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Let us learn Python.&amp;#34;&lt;/span&gt;&amp;gt;&amp;gt;ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; cat ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Let us learn Python.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;mv--move&#34;&gt;mv : move&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;mv source_path dest_path&lt;/code&gt; ：to move the file/directory from the source_path to the dest_path.&lt;/p&gt;
+&lt;p&gt;There are two ways of using &lt;code&gt;mv&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;1.&lt;code&gt;mv source_file/directory dest_directory&lt;/code&gt; : to &lt;strong&gt;move&lt;/strong&gt; the source file/directory to the dest_directory&lt;/p&gt;
+&lt;p&gt;2.&lt;code&gt;mv source_file dest_file&lt;/code&gt; : to &lt;strong&gt;rename&lt;/strong&gt; the source_file,  now the file name is dest_file. If dest_file has already existed, it will be overwritten as the content of the source file.&lt;/p&gt;
+&lt;p&gt;Let’s see an example. Here we still use the “example” folder in the previous example, with “ex01.txt” inside it.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;First we create a new folder named “sub_example” as the dest_directory.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; mkdir sub_example
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex01.txt  sub_example/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The folder “sub_example” is empty now:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls sub_example
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(1) use &lt;code&gt;mv source_file/directory dest_directory&lt;/code&gt; to move a file :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; mv ex01.txt sub_example
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now the file “ex01.txt” is in the subfolder “sub_example”, not in the folder “example”:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sub_example/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; ls sub_example
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex01.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;(2) use &lt;code&gt;mv source_file dest_file&lt;/code&gt; to rename a file :&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;/example&amp;gt; &lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; sub_example
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; mv ex01.txt ex02.txt
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here the file name is changed from “ex01” to “ex02”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex02.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; cat ex02.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Let us learn Python.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;You may wonder: what will happen if the dest_file has already existed?&lt;/p&gt;
+&lt;p&gt;We create a file “ex03.txt” with the content “another txt file”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; touch ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; &lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;another txt file&amp;#34;&lt;/span&gt;&amp;gt;&amp;gt;ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; cat ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;another txt file
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;After typing &lt;code&gt;mv ex02.txt ex03.txt&lt;/code&gt;, there will be a prompt to check if you really want to overwrite dest_file “ex03.txt”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; mv ex02.txt ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mv: overwrite &lt;span class=&#34;s1&#34;&gt;&amp;#39;ex03.txt&amp;#39;&lt;/span&gt;? y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If you type “y”, “ex03.txt” will be overwritten as the  content of “ex02.txt”.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; ls
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.../sub_example&amp;gt; cat ex03.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hello
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Let us learn Python.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;cp--copy&#34;&gt;cp : copy&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;cp file/directory dest_directory&lt;/code&gt;: to copy the file/directory to the dest_directory.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;For &lt;code&gt;mv&lt;/code&gt;/ &lt;code&gt;cp&lt;/code&gt; command, if the dest_directory is the current directory,  we can write &lt;code&gt;.&lt;/code&gt;  instead.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;rm--remove&#34;&gt;rm : remove&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;rm file_name&lt;/code&gt;: to remove a single file. Here only a file is removed, so &lt;code&gt;-r&lt;/code&gt; is not needed.&lt;/p&gt;
+&lt;h4 id=&#34;unzip&#34;&gt;unzip&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;unzip file_name.zip&lt;/code&gt; : to unzip the .zip file.&lt;/p&gt;
+&lt;h3 id=&#34;3-miscellaneous&#34;&gt;3. Miscellaneous&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;man command_name&lt;/code&gt;: to display manual pages for the command.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://inst.eecs.berkeley.edu/~cs61a/fa20/lab/lab00/&#34;&gt;Lab 0: Getting Started | CS 61A Fall 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://inst.eecs.berkeley.edu/~cs61a/fa20/articles/unix.html&#34;&gt;UNIX tutorial | CS 61A Fall 2020&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.geeksforgeeks.org/touch-command-in-linux-with-examples/&#34;&gt;touch command in Linux with Examples - GeeksforGeeks&lt;/a&gt;&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/programming/">Programming</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/shell-command/">Shell Command</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/linux/">Linux</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Numpy运算中的axis参数</title>
+                <link>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
+                <pubDate>Wed, 24 Mar 2021 18:30:08 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
+和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
+感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。&lt;/p&gt;
+&lt;p&gt;举例说明更明白，那就直接上例子吧。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/numpyaxis2021-03-10-20-24-38.png&#34; alt=&#34;数组示例&#34;&gt;
+对于图中所示的数组，shape为(2,3,4)，表示这是一个三维数组，每个维度的大小分别是2，3，4，换言之，就是在相应的维度上有2/3/4个元素。以第一维维度（对应axis=0)为例，其大小为2，也就是有两个元素，即图中的两个 3x4 数组。&lt;/p&gt;
+&lt;p&gt;axis(轴)操作是依据什么规则呢？一般来说，对于N维数据，axis的数字从0到N-1，对应于数组从外到内层（看括号方向）。
+&lt;strong&gt;我的理解：换个角度，我们可以想象在多维空间进行操作。选取某根坐标轴（axis），相应得到多个切面，然后对这多个切面进行操作。&lt;/strong&gt; 我们可以在每个维度取出一个“元素”来看看（对应于空间的一个“切面”）：
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/numpyaxis2021-03-12-19-40-06.png&#34; alt=&#34;某一维的元素示例&#34;&gt;
+观察结果我们发现，某一维的元素，其大小正好是其余两维的大小。例如对于上面shape为(2,3,4)的数组b，第一维（axis=0）的元素&lt;code&gt;b[1,:,:]&lt;/code&gt;的shape为（3，4），正是其余两维的大小。第二维（axis=1）、第三维（axis=2)的情况也是如此。&lt;/p&gt;
+&lt;p&gt;现在我们来看&lt;code&gt;np.sum()&lt;/code&gt;操作，它是把某个方向上的元素相加，对应到空间中，相当于多个切面叠加到一起，合而为一。因此得到的结果的shape与元素一致。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/numpyaxis2021-03-10-20-25-11.png&#34; alt=&#34;np.sum()示例&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;np.sort()&lt;/code&gt;更有意思，它的结果也体现轴操作的特点。比如axis=0时，注意看是数组b中的[1,2,3,4]和[3,2,5,6]对应逐元素排序，[5,2,4,1]和[1,3,6,7]对应逐元素排序，[3,1,1,2]和[6,9,3,1]对应逐元素排序。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/numpyaxis2021-03-10-20-25-32.png&#34; alt=&#34;np.sort()示例&#34;&gt;&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/data-science/">Data Science</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/python/">Python</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/numpy/">NumPy</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/jupyter-notebook/">Jupyter Notebook</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Jupyter Notebook使用</title>
+                <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</guid>
+                <pubDate>Sun, 07 Mar 2021 18:30:08 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;blockquote&gt;
+&lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;接着&lt;a href=&#34;https://juliecodestack.github.io/2021/02/15/21003anaconda/&#34;&gt;上一篇文章&lt;/a&gt;，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-05-11-35-28.png&#34; alt=&#34;JupyterNotebook文件夹页面&#34;&gt;&lt;/p&gt;
+&lt;p&gt;点击图中箭头指示的【New】按钮，新建一个空白文档。&lt;/p&gt;
+&lt;h4 id=&#34;基本功能&#34;&gt;基本功能&lt;/h4&gt;
+&lt;p&gt;打开新文档，我们看到如下界面:
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-05-11-45-49.png&#34; alt=&#34;JupyterNotebook文档页面&#34;&gt;&lt;/p&gt;
+&lt;p&gt;图中标识了一些功能。其中，核心部分是编辑单元 (Cell)，Jupyter Notebook 最大的特点就是交互式编程。那么，这是什么样的交互式呢？我们在一个单元里编写一小段代码，按【Ctrl】+【Enter】键就可以运行看到效果，而不是像之前一样要把整个程序写完、调试运行。在 Jupyter Notebook 中 ，每一段单元程序都可以马上看到效果和反馈，这一特点也让很多老师都采用它来编写教材、程序示例。就我自己的学习体会而言，这样更容易练习、同时也让学习更有趣。我们在图中所示的下拉列表中可以选择单元是代码还是标记（Markdown文档），标记（md 格式）可以用于写一些代码说明。&lt;/p&gt;
+&lt;h4 id=&#34;快捷键&#34;&gt;快捷键&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;按【Ctrl】+【Enter】键：运行当前单元，编辑单元不变。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按【Shift】+【Enter】键：运行当前单元，编辑单元跳转到下一单元（如果下方没有单元，会新建一个空白单元）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按【Alt】+【Enter】键：运行当前单元，同时在下方插入一个空白单元，编辑单元变为这个新单元。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;运行-python-文件&#34;&gt;运行 Python 文件&lt;/h4&gt;
+&lt;p&gt;%run file1.py 与 Anaconda Promt 命令行中运行 python file1.py 效果相同。需要注意的是，file1.py 需在 Jupyter Notebook 或者当前命令行运行的文件夹中，如果不是，要在文件前加上文件路径。&lt;/p&gt;
+&lt;h4 id=&#34;输入自动完成tab键&#34;&gt;输入自动完成:【Tab】键&lt;/h4&gt;
+&lt;p&gt;对初学者来说，“输入就忘”真是令人头疼的一件事。因为刚学习，很多操作不太熟悉，想要输入一段代码，却想不起来关键函数，怎么办？
+别急，Jupyter Notebook 非常贴心地提供了自动完成功能。&lt;/p&gt;
+&lt;p&gt;1.名字自动完成：输入头几个字母，按【Tab】键，会搜索之前输入过和系统自带的变量或函数的名字，并提供结果。
+例如，先定义函数变量 l1 和 l2：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;l1=1
+l2=3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;再输入&lt;code&gt;l&lt;/code&gt;，按【Tab】键，会弹出如下图所示的选择框，开始的两个就是刚才定义的变量 l1, l2，接下来的 lambda, len, list 等等是系统自带的函数或者对象名。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-10-31-18.png&#34; alt=&#34;变量名的输入自动完成&#34;&gt;&lt;/p&gt;
+&lt;p&gt;2.当我们定义了一个对象(object)，比如列表型，字典型数据等，可以通过【Tab】键搜索到这个对象的所有函数和属性。
+例如，定义一个字典型数据d1:
+&lt;code&gt;d1={&#39;a&#39;:1,&#39;b&#39;:2,&#39;c&#39;:3}&lt;/code&gt;
+再输入&lt;code&gt;d1.&lt;/code&gt;（注意这里有个&lt;code&gt;.&lt;/code&gt;），按【Tab】键，会弹出如下图所示的选择框，这就是可用于字典型数据的所有操作。有时我们不确定某个函数能不能应用于当前数据类型，就可以通过这种方式查询。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-10-56-33.png&#34; alt=&#34;object函数的输入自动完成&#34;&gt;&lt;/p&gt;
+&lt;p&gt;3.系统的工具库，可以用【Tab】键搜索到某个库的所有函数。
+例如：引用 NumPy 工具包，然后输入&lt;code&gt;np.&lt;/code&gt;，按【Tab】键，如下图所示，会弹出一个选择框，里面有大量函数，这里只展示前面几个。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-11-00-35.png&#34; alt=&#34;工具包函数的输入自动完成&#34;&gt;&lt;/p&gt;
+&lt;p&gt;进一步地，在某个函数的变量定义时，输入变量名的头一个或几个字母，按【Tab】键，也会出现相应变量的列表，这在函数定义时很有帮助。比如有的函数定义的变量多，记不住，【Tab】键可以快速找到对应的变量。
+例如，定义函数：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;def func1(aaa=1,aab=2,abc=3,ccd=4):
+    return aaa,aab,abc,ccd
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;在括号内按【Tab】键，会有一个下拉列表，如下图所示，其中就有函数的变量 aaa, aab, abc, 这里只列举了前几个。ccd 也在列表中。
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-09-59.png&#34; alt=&#34;函数定义中变量名的输入自动完成1&#34;&gt;&lt;/p&gt;
+&lt;p&gt;如果我们想要快速找到ccd这个变量，可以在括号内输入c，再按【Tab】键，
+&lt;img src=&#34;https://juliecodestack.github.io/imgs/jupyternotebook%E4%BD%BF%E7%94%A82021-02-24-12-11-16.png&#34; alt=&#34;函数定义中变量名的输入自动完成2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.文件路径，比如输入路径 E:/fileA/，按【Tab】键，在列表框中，除了显示一些Python库的基本函数之外，还会显示文件夹的文件路径。如果在输入时不记得文件具体的路径，可以用这种方法快速找到。结合前面介绍的 %run 命令，可以运行文件路径下的文件。&lt;/p&gt;
+&lt;h4 id=&#34;magic-语法&#34;&gt;magic 语法&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;?函数名：显示函数说明&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;??函数名：显示函数说明和函数源代码&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;%run 文件名：（前面介绍过）在Jupyter Notebook中运行Python文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;%pwd ：显示当前运行文件夹路径&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;参考教程&#34;&gt;参考教程&lt;/h4&gt;
+&lt;p&gt;Python for Data Analysis by Wes Mckinney&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/data-science/">Data Science</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/python/">Python</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/anaconda/">Anaconda</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/jupyter-notebook/">Jupyter Notebook</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>Python入门：安装 Python 软件，Anaconda</title>
+                <link>https://juliecodestack.github.io/2021/02/15/21003anaconda/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2021/02/15/21003anaconda/</guid>
+                <pubDate>Mon, 15 Feb 2021 18:30:08 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？&lt;/p&gt;
+&lt;h4 id=&#34;python安装方式&#34;&gt;Python安装方式&lt;/h4&gt;
+&lt;p&gt;我在学 Python 时用过两种安装方式：&lt;/p&gt;
+&lt;p&gt;第一种是安装 Python 软件(下载地址：&lt;a href=&#34;https://www.python.org/&#34;&gt;Python 官网&lt;/a&gt;) + Atom 编辑器（也可以是VSCode 编辑器）。用 Atom 编辑器编写程序后，在 Python 的命令行运行该程序。如果您有过学习 C 语言的经历，那么这种 Python 软件的编程体验与之类似，都是要先调试文件、然后整体运行。&lt;/p&gt;
+&lt;p&gt;第二种是安装 Anaconda 软件(下载地址：&lt;a href=&#34;https://www.anaconda.com/products/individual&#34;&gt;Anaconda 官网&lt;/a&gt;)。在英语中，python 有“巨蟒”的意思，而 anaconda 的意思是南美洲的一种巨蟒，从名字上看，它俩就有着密切关联。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;避坑指南：我一开始没弄明白 Anaconda 和 Python 的关系，有一段时间甚至我的电脑上两个都安装了（……），因为没设置好还导致 Python 软件的命令行运行受到影响。后来我才知道，&lt;strong&gt;Anaconda 相当于是搭建了一个平台/环境，安装了 Anaconda 就相当于是安装了 Python 以及一些工具库&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看到这里你可能要问，怎么没提到编辑器，Anaconda 搭配什么编辑器呢？哈哈，前面提到，Anaconda 是一个平台，需要什么在这个台子上搭建（安装）就可以了。Anaconda内置的 Jupyter Notebook就是一个很好的交互式编辑器。&lt;/p&gt;
+&lt;h4 id=&#34;anaconda使用&#34;&gt;Anaconda使用&lt;/h4&gt;
+&lt;p&gt;安装 Anaconda 之后，我们怎么打开这个平台上的软件，比如 Python, Jupyter Notebook ?&lt;/p&gt;
+&lt;p&gt;我的电脑是 Windows 10 系统，打开电脑左下角的开始菜单（如下图中红色箭头所示），选择 Anaconda3 &amp;gt; Anaconda Prompt (Anaconda3)（或者在图中蓝色箭头所示的搜索栏中输入 Anaconda Prompt 也可以找到），打开命令行模式：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/Python%E5%AE%89%E8%A3%852021-01-25-10-30-04.png&#34; alt=&#34;Anaconda命令行打开方式&#34;&gt;&lt;/p&gt;
+&lt;p&gt;一、如果输入 &lt;code&gt;python&lt;/code&gt;，就打开了 Python 运行环境。此时就和第一种安装方式的 Python 软件命令行模式一样，既可以直接输入 Python 语句，也可以运行程序（.py后缀的文件）。再次输入exit()，退出当前环境。&lt;/p&gt;
+&lt;p&gt;二、如果输入 &lt;code&gt;jupyter notebook&lt;/code&gt;，就打开 Jupyter Notebook 运行环境。&lt;/p&gt;
+&lt;p&gt;这里有一个细节虽小但很重要，就是：&lt;strong&gt;我们在哪个文件夹上运行的 Anaconda Prompt 命令行，Jupyter Notebook 就只能在当前文件夹运行，默认初始环境是在 C 盘的用户文件夹运行。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;为什么我会提到这个呢？因为我在刚学习使用 Jupyter Notebook 时就遇到过这个问题，下载了.ipynb文件，想自己运行一下看看，结果打开 Anaconda Prompt 命令行，输入命令：
+&lt;code&gt;jupyter notebook&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;怎么没有看到刚才下载的文件？而且，此时也不能打开其它文件夹，就只能查看当前命令所在的 C 盘里的用户文件夹。&lt;/p&gt;
+&lt;p&gt;怎么办呢？我们需要在命令行里改变路径，转移到目标文件夹。&lt;/p&gt;
+&lt;p&gt;举例来说明，比如现在要运行的.ipynb文件在 E 盘的文件夹 folderA 中，打开 Anaconda Prompt 命令行，依次输入以下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;E:
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; folderA
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;jupyter notebook
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这样，就改成了在 E 盘的文件夹 folderA 中运行 Jupyter Notebook，此时也就能找到我们要查看的文件。&lt;/p&gt;
+&lt;h4 id=&#34;工具包安装&#34;&gt;工具包安装&lt;/h4&gt;
+&lt;p&gt;我们运行Python程序时，可能会用到各种各样的工具包（或者说是库）。有的工具包在软件中已经安装，有的还没有安装，那么我们应该怎么安装呢？&lt;/p&gt;
+&lt;p&gt;pip install 是常用的安装命令，在 Python 和 Anaconda 中都可以使用。而 Anaconda 中还可以使用 conda install 命令。&lt;/p&gt;
+&lt;p&gt;比如，要安装 beautifulsoup4，可以是：
+&lt;code&gt;pip install beautifulsoup4&lt;/code&gt;
+或者
+&lt;code&gt;conda install beautifulsoup4&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在 Anaconda 中，还有两个常用到的命令：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;显示当前 Anaconda 版本：&lt;code&gt;conda --version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;显示所有安装的工具包/库：&lt;code&gt;conda list&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：conda, pip, virtualenv 三种命令工具的对比：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pip 是一种安装包管理工具(package manager)；&lt;/li&gt;
+&lt;li&gt;virtualenv 是一种环境管理工具(environment manager)；&lt;/li&gt;
+&lt;li&gt;conda 这两种功能都有。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考教程：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;1.如何打开运行 Anaconda （GUI界面或命令行）：https://docs.anaconda.com/anaconda/user-guide/getting-started/#cli-hello&lt;/p&gt;
+&lt;p&gt;2.conda 配置和更新：https://conda.io/projects/conda/en/latest/user-guide/getting-started.html&lt;/p&gt;
+&lt;p&gt;3.Conda, pip, virtualenv 三种命令工具的对比：https://conda.io/projects/conda/en/latest/commands.html&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/data-science/">Data Science</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/python/">Python</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/anaconda/">Anaconda</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/jupyter-notebook/">Jupyter Notebook</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>GitHub入门指南</title>
+                <link>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</link>
+                <guid isPermaLink="true">https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</guid>
+                <pubDate>Sun, 13 Dec 2020 18:30:08 &#43;0800</pubDate>
+                
+                    <author>Juliecodestack@126.com (Julie)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;因为我也是初级水平，文中介绍的知识基于我自己的学习理解，如果有疏漏错误之处，欢迎您留言指正，谢谢！&lt;/p&gt;
+&lt;p&gt;新手小白可能会对 GitHub 有以下困惑：&lt;/p&gt;
+&lt;p&gt;1.GitHub 是个什么网站？&lt;/p&gt;
+&lt;p&gt;2.为什么一说学 GitHub，就听到人家说要学 Git？这两个有什么关联吗，是不是一回事？&lt;/p&gt;
+&lt;p&gt;3.听说 GitHub 是个开源社区，可以在上面与其他人一起切磋技术、完善代码，具体是怎么与别人交流呢？&lt;/p&gt;
+&lt;p&gt;下面，我从这几个方面进行解答。&lt;/p&gt;
+
+
+
+
+
+&lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;ol&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#一带你浏览-github-网站看看都有些什么&#34;&gt;一、带你浏览 GitHub 网站，看看都有些什么？&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#1-注册账号&#34;&gt;1. 注册账号&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#2-登录-github浏览页面&#34;&gt;2. 登录 GitHub，浏览页面&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#二github-是-git-软件用户的项目管理中心&#34;&gt;二、GitHub 是 Git 软件用户的项目管理中心&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#1-git&#34;&gt;1. Git&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#2-git-基本命令&#34;&gt;2. Git 基本命令&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#三新手必备的github基本操作&#34;&gt;三、新手必备的GitHub基本操作&lt;/a&gt;
+          &lt;ol&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#1-配置ssh-key&#34;&gt;1. 配置SSH Key&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#2-我的第一个-github-项目如何新建上传仓库&#34;&gt;2. 我的第一个 GitHub 项目：如何新建上传仓库&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#3-和别人一起做项目fork-和-pull-request&#34;&gt;3. 和别人一起做项目：Fork 和 Pull request&lt;/a&gt;&lt;/li&gt;
+          &lt;/ol&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;a href=&#34;https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/#四总结&#34;&gt;四、总结&lt;/a&gt;&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;h3 id=&#34;一带你浏览-github-网站看看都有些什么&#34;&gt;一、带你浏览 GitHub 网站，看看都有些什么？&lt;/h3&gt;
+&lt;h4 id=&#34;1-注册账号&#34;&gt;1. 注册账号&lt;/h4&gt;
+&lt;p&gt;打开 &lt;a href=&#34;https://github.com/&#34;&gt;GitHub网站&lt;/a&gt;，首页如下图所示，点击右上角&lt;code&gt;Sign up&lt;/code&gt;按钮，进入注册页面。使用电子邮件注册，设置好用户名和密码，即可生成账号。完成注册后，点击旁边的&lt;code&gt;Sign in&lt;/code&gt;按钮登录。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-13-10-46-55.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;注册/登录页面 &lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&#34;2-登录-github浏览页面&#34;&gt;2. 登录 GitHub，浏览页面&lt;/h4&gt;
+&lt;p&gt;登录进去后，我们见到的页面分成三大版块，如下图所示，从左至右依次为：自己的仓库(Repositories)、关注的人的动态、发现新的热门/有趣仓库。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-13-11-44-23.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;登录后首页示例 &lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;可能的疑问&lt;/strong&gt;：Repository? 仓库？是不是有点不好理解？&lt;/p&gt;
+&lt;p&gt;我在初学时也遇到这一困惑。&amp;ldquo;repository&amp;quot;有“仓库”的意思，我们可以理解成存放项目所需的各类文件的仓库。等熟悉了之后，你会发现 GitHub 上各种仓库都有，不是只包含程序代码，还有学习课程文档等等，难怪会叫仓库，哈哈。Repository（仓库）在 GitHub 上有重要作用，我们以后的很多操作都是在 Repository（仓库）中进行。&lt;/p&gt;
+&lt;p&gt;点击右上角的个人头像，在下拉列表中选择 &lt;code&gt;Your profile&lt;/code&gt; 项，到达个人主页。下图所示为我的个人主页。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-13-12-49-14.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;个人主页示例&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;你如果打开另一个人的主页，看到的界面风格也大致如此。我在图中简要注明了页面中的各项功能，此外：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;点击账户名下方的&lt;code&gt;Edit profile&lt;/code&gt;按钮，可以修改自己的个人信息，比如这里的一句话简介，公司、地址、联系方式等。而如果是别人的个人主页，这里我们看到的就是&lt;code&gt;Follow&lt;/code&gt;（关注）按钮。&lt;/li&gt;
+&lt;li&gt;粉丝和关注的人数右边有个星星图标，这就是传说中的 Star。我们看技术文章可能常会遇到如“程序员必看！GitHub 上 Star 数过万的项目！”，“该项目在 GitHub 上迅速收获上千 Star 数” 类似的介绍，看来 Star 数是个很重要的标识哦！那么，Star 是什么意思呢？比如，我们觉得一个仓库不错，在右上角点个 Star，就相当于是收藏+点赞了，之后还可以在自己的主页中点击星星图标查看。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-13-13-06-34.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;仓库页面-Star&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&amp;ldquo;Pinned&amp;quot;区域是自己的个人展示区，在自己的仓库中精选几个放到这里展示，让别人能很快发现你的闪光点。&lt;/li&gt;
+&lt;li&gt;活跃度表格：上面的绿色格子越多，颜色越深，说明该用户在 GitHub 上提交次数越多，是活跃用户。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二github-是-git-软件用户的项目管理中心&#34;&gt;二、GitHub 是 Git 软件用户的项目管理中心&lt;/h3&gt;
+&lt;h4 id=&#34;1-git&#34;&gt;1. Git&lt;/h4&gt;
+&lt;p&gt;GitHub 之所以得此名，与一款分布式版本控制软件 Git 是分不开的。通俗地讲，Git 软件记录了你每次修改时的文件状态。更妙的是，如果你改着改着，又觉得以前的版本更好，还可以回溯呢，也就是说，有“后悔药”可吃了！同时， Git 也是一款极佳的协作软件。打个简单的比方，我和小红、小蓝三个人一起修改一篇文章，每个人改的地方可能都不一样，那么合并修改稿就是个头疼的事。或者，我先修改、再给小红修改、最后小蓝修改？这样效率又降低了。怎么办？用 Git，我们三个人可以建立修改分支，同时进行修改工作，最后合并分支。你可能会问，如果你们三个人在同一个地方做了不同的修改，还能合并吗？放心吧，软件考虑了这种“冲突”情况，有相应的解决办法。&lt;/p&gt;
+&lt;p&gt;既然 Git 可以协作，那总要有一个地方让使用的人们存放文件、修改等信息呀，就像控制中心一样，这样，GitHub 应运而生。这里多说一句，Git 的托管中心不是只有 GitHub 哦，GitHub 是方便个人用户、开源项目建立的网站。有的企业会自己搭建服务器和云盘构建托管中心，同样也是用 Git 软件进行协作管理。&lt;/p&gt;
+&lt;p&gt;那么，怎么用 Git 软件呢？&lt;/p&gt;
+&lt;p&gt;（1）先到 &lt;a href=&#34;https://git-scm.com/&#34;&gt;Git官网&lt;/a&gt;下载安装 Git 软件。&lt;/p&gt;
+&lt;p&gt;（2）安装成功后，选定一个文件夹，在右键菜单中选择&lt;code&gt;Git Bash Here&lt;/code&gt;，会弹出一个黑色的命令行界面，输入语句，就可以在当前文件夹中运行 Git 命令。&lt;/p&gt;
+&lt;p&gt;这里推荐学习一下&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/896043488029600&#34;&gt;廖雪峰老师的Git教程&lt;/a&gt;，讲解得明白易懂，从中我们可以了解 Git 的各种操作。然后，跟着教程的讲解，自己建个新文件夹动手练练。&lt;/p&gt;
+&lt;h4 id=&#34;2-git-基本命令&#34;&gt;2. Git 基本命令&lt;/h4&gt;
+&lt;p&gt;Git 命令还是挺多的，但是&lt;strong&gt;对新手来说，我们可以先掌握几个在 GitHub 上常用的 Git 基本命令&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）提交修改：&lt;code&gt;git add&lt;/code&gt;和 &lt;code&gt;git commit&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-14-15-14-31.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;git操作示意图，图片来自Git官网&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;上面的示意图来自 Git 官网，说明了 Git 中最重要的操作 &amp;ldquo;git add&amp;rdquo; 和 &amp;ldquo;git commit&amp;rdquo; 的工作流程。 Git 软件的核心是保存修改。working directory 是工作区，就是我们的电脑上当前工作的文件夹。staging area 可以理解成暂存区或者中转站，&lt;code&gt;git add .&lt;/code&gt;（注意：这里 add 和&lt;code&gt;.&lt;/code&gt;中间有个空格）提交了修改，放在 staging area 暂存，再通过 &lt;code&gt;git commit -m&amp;quot;修改说明文字&amp;quot;&lt;/code&gt; 确定最终提交版。不要小看这个缓冲的暂存区，它为我们修改时提供了“后悔药”。这个效果就有点类似于我们平时在电脑上删除文件，文件不会直接删除，而是放到回收站中转一下。如果我们过后发现手抖误删了，还可以到回收站里把文件“还原”回去，或者确定都不需要了，就点击“清空回收站”，把这些文件都删除。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（2）与远程仓库同步：&lt;code&gt;git pull&lt;/code&gt; 和 &lt;code&gt;git push&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在多人协作的情况下，比如前面提到的我和小红、小蓝一起写文章的例子，可能每个人的修改不一致，要保持同步。而我们要从远程仓库获取更新和推送自己的修改，就要用&lt;code&gt;git pull&lt;/code&gt; 和 &lt;code&gt;git push&lt;/code&gt;。前面提到的 &lt;code&gt;git commit&lt;/code&gt; 是确定我自己最终的修改结果，&lt;code&gt;git push&lt;/code&gt; 则是将这一修改结果提交到远程（比如 GitHub上）的 repository（仓库）保存。我始终记得廖雪峰老师教程里提的要点：每天开始工作的第一件事是 &lt;code&gt;git pull&lt;/code&gt;，跟上项目最新的修改进度。结束一天工作、提交修改时，先 &lt;code&gt;git pull&lt;/code&gt; 再 &lt;code&gt;git push&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（3）下载 repository（仓库）： &lt;code&gt;git clone&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;打开一个仓库，我们会看到&lt;code&gt;Code&lt;/code&gt;按钮，点击后，下面出现 HTTPS 地址和 SSH 地址。我们只要复制了这个地址，然后在电脑上右键点击存放文件夹，打开 Git Bash 客户端，输入命令行：&lt;code&gt;git clone 复制的地址&lt;/code&gt;，就能下载这个仓库到本地电脑。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-16-20-33-57.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;下载仓库示意图&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;需要注意的是，用 HTTPS 地址需要账户验证。使用 SSH 地址只需要第一次时提交 SSH Key 到 GitHub ，后续无需每次验证，很方便，接下来就会介绍如何配置 SSH Key。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注：写这篇文章时，我也出现了一个困惑：不知道是否因为我已经用 SSH 验证了，我用&lt;code&gt;git clone HTTPS 地址&lt;/code&gt;下载时，也没有要求输入账户名和密码验证。小伙伴们请把你们实践的结果告诉我一下呀，谢谢！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;三新手必备的github基本操作&#34;&gt;三、新手必备的GitHub基本操作&lt;/h3&gt;
+&lt;h4 id=&#34;1-配置ssh-key&#34;&gt;1. 配置SSH Key&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;（1）第一次使用时，要配置一下账户。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Git Bash 客户端，输入：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git config --global user.name &amp;#34;这里输入你在GitHub的账户名&amp;#34;
+git config --global user.email &amp;#34;这里输入你在GitHub的注册邮箱名&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;（2）检查是否已经有 SSH Key了，如果没有就生成一个。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;同样在 Git Bash 客户端，先后输入：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;和&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ls
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我的账户已经生成了 SSH Key，就有了下面所示的 id_rsa 和 id_rsa.pub 。请注意，id_rsa.pub 是公钥，后面要把这个公钥上传到 GitHub 上验证。id_rsa 是你自己的私钥，要保存好。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;id_rsa  id_rsa.pub  known_hosts
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;如果没有 SSH Key，就要输入以下命令行生成：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ssh-keygen -t rsa -C &amp;quot;这里输入你在 GitHub 的注册邮箱&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;生成后再输入上面的 &lt;code&gt;cd ~/.ssh&lt;/code&gt; 和 &lt;code&gt;ls&lt;/code&gt; 命令，就可以看到 SSH Key 了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（3）复制公钥。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接着在 Git Bash 客户端，输入命令行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;cat id_rsa.pub&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样会显示公钥文件内容，我们把它复制到剪贴板。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（4）把复制的公钥添加到 GitHub 账户安装。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;登录 GitHub 账户，点击右上角个人头像的下拉菜单，如下图所示：&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-48-27.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;个人头像的菜单项&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;依次点击 Settings &amp;gt; SSH and GPG Keys，在 SSH Keys 页面右上角有个 &lt;code&gt;New SSH Key&lt;/code&gt; 按钮，点击该按钮后，粘贴上刚才复制的公钥内容。里面的 “title” 项就是为自己的 SSH Key 命个名，可根据个人喜好随意。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（5）最后，检查一下 SSH Key 是否安装成功。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在 Git Bash 客户端运行命令：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ ssh -T git@github.com&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;出现类似下面的提示，表示安装成功：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Hi Juliecodestack! You&amp;#39;ve successfully authenticated, but GitHub does not provide shell access.
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;2-我的第一个-github-项目如何新建上传仓库&#34;&gt;2. 我的第一个 GitHub 项目：如何新建上传仓库&lt;/h4&gt;
+&lt;p&gt;学了这么多基本功，我们终于要练手了，哈哈，先来建一个自己的仓库玩玩吧！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）在 GitHub 中新建仓库&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如下图所示，点击个人主页的 Repositories 项，再点击右方的 &lt;code&gt;New&lt;/code&gt; 按钮，新建一个仓库。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-18-11-51-07.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;仓库页面-新建按钮&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;我这里做了一个简单的示范，如下图所示，你可以照着我的模板填，最后点击最下方的 &lt;code&gt;Create repository&lt;/code&gt; 按钮，即可创建一个新的仓库。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-30-31.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;新建仓库填写页面&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;打开新建的仓库，如下图所示，这个仓库的 Readme 文档的内容就是刚才填入的仓库名和说明。我们点击&lt;code&gt;Code&lt;/code&gt; 按钮，复制 SSH 地址。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-34-00.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;仓库页面-testexample2020&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;（2）把仓库文件下载到电脑。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;假设我们要下载到电脑上的目标文件夹（为了描述方便，这里简称为文件夹 A），那么我们就右键点击文件夹 A ，在右键菜单中选择 “Git Bash”，在 Git Bash 客户端输入命令行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git clone SSH地址&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样，仓库就会下载到文件夹 A 中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（3）修改仓库文件，使用 Git 命令提交修改并推送至 GitHub。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;下载仓库完成之后，我们会发现文件夹 A 中有了一个新的子文件夹，比如我在前一步骤下载了仓库 testexample2020，此时文件夹 A 中就出现了一个名为&amp;quot;testexample2020&amp;quot;的新文件夹，这就是下载到本地电脑的仓库。我们打开这个新文件夹（&amp;ldquo;testexample2020&amp;rdquo;），使用 VSCode 或 Atom 编辑器（编辑器的使用方法可参考我的文章：&lt;a href=&#34;https://juliecodestack.github.io/2020/07/24/%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E5%B8%A6%E4%BD%A0%E5%85%A5%E9%97%A8markdown/&#34;&gt;一篇文章带你入门Markdown&lt;/a&gt;），在 Readme 文件里增加一行： &lt;code&gt;hello,world!&lt;/code&gt;。再新建一个 main.py文件，输入一行简单的代码: &lt;code&gt;print(&amp;quot;hello&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;修改好了之后，我们右键点击文件夹 testexample2020（注意：此时不是在母文件夹 A 上使用 Git Bash 了），打开 Git Bash 客户端，依次输入命令行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git add .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git commit -m&amp;quot;v0.1&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;git push&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这样修改就推送到了 GitHub 上的仓库中。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（4）登录 GitHub，查看一下仓库的变化。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;登录 GitHub 后我们发现，刚才做的改动都同步到了 GitHub 仓库中，如下图中标示：&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-18-12-58-52.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;仓库页面-改动后&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&#34;3-和别人一起做项目fork-和-pull-request&#34;&gt;3. 和别人一起做项目：Fork 和 Pull request&lt;/h4&gt;
+&lt;p&gt;前面提到过，GitHub 是个开源社区，我们可以参加到开源项目之中，那么，具体是怎么操作呢？&lt;/p&gt;
+&lt;p&gt;举个我自己的例子来说明一下这个过程吧。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（1）Fork 一个别人的仓库&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;我在学习 API 接口时，网上的微博 API 工具包很多是基于 Python2 写的，我在 Github 找到了一个 Python3 的版本 &lt;a href=&#34;https://github.com/olwolf/sinaweibopy3&#34;&gt;sinaweibopy3&lt;/a&gt;，如下图所示。我用了一下，觉得很好，看到作者没有写 Readme，我就想添加一个 Readme 说明文档，让别人能更快地了解这个仓库的功能和使用方法，也就是说，我想对这个仓库做一些修改。这种情况下，我就要先 Fork 一下这个仓库到我自己那儿。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-45-16.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;sinaweibopy3仓库页面&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;为什么要 Fork 呢？&lt;/strong&gt;
+Fork有“叉子”的意思，也就是从原仓库复制建一个我自己的分支（分叉），这样，我做的改动只是在我自己的分支上，不会影响到原仓库，除非我提交的 Pull request 被接受后。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Fork 之后，在我的仓库里就出现了一个相同的仓库 sinaweibopy3，如下图所示。不同之处在于，仓库名下方有个备注：&amp;ldquo;Forked from olwolf/sinaweibopy3&amp;rdquo;。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-50-50.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;Fork的仓库&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;（2）对自己 Fork 的仓库做修改&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;接下来，我就对 Fork 的 sinaweibopy3 仓库做修改，添加了一个 Readme 文档。具体方法请参考上一步 “2.我的第一个 GitHub 项目：如何新建上传仓库” 的示例，可以先 &lt;code&gt;git clone&lt;/code&gt; 下载到本地文件夹，修改后再 &lt;code&gt;git push&lt;/code&gt; 推送到 GitHub。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（3）提交 Pull request&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;如下图所示，点击 Pull request，在弹出的界面填写一些信息，告诉原仓库的作者你做了什么修改、为什么要修改等，方便作者了解你对仓库的改动，然后提交，Pull request 请求就会发送至原仓库的作者。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-17-16-56-15.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;Pull request示例&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;（4）等待原仓库的作者查看和决定是否接受修改。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;提交了 Pull request 后，我们就等待一段时间，原仓库的作者会决定是否接受修改。&lt;/p&gt;
+&lt;p&gt;这里，仓库 sinaweibopy3 的原作者 olwolf 合并了我的修改，如图所示，这样原仓库中也增加了Readme文件。同时，我也因此成为了仓库贡献者 (Contributors) 之一。&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://juliecodestack.github.io/imgs/github%e5%85%a5%e9%97%a82020-12-17-17-04-19.png&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;接受Pull request后原仓库的变化 &lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h3 id=&#34;四总结&#34;&gt;四、总结&lt;/h3&gt;
+&lt;p&gt;完成以上学习，我们基本上就入门了，接下来，你可以自己在 GitHub 上探索一下，比如搜索发现一些有趣的项目，关注一些高手大牛，加入到开源项目中，等等。最重要的是，动手练习！一旦上手实践，慢慢熟悉之后，你会发现没有开始想象的那么难，一起加油吧！&lt;/p&gt;
+&lt;p&gt;最后，推荐几个好的学习教程：&lt;/p&gt;
+&lt;p&gt;1.&lt;a href=&#34;https://docs.github.com/en/free-pro-team@latest/github&#34;&gt;GitHub 帮助页面&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2.&lt;a href=&#34;https://www.liaoxuefeng.com/wiki/896043488029600&#34;&gt;廖雪峰老师的Git教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;3.&lt;a href=&#34;https://blog.csdn.net/u013778905/article/details/83501204&#34;&gt;GitHub如何配置SSH Key&lt;/a&gt;&lt;/p&gt;</description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/categories/tools/">Tools</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/github/">GitHub</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://juliecodestack.github.io/tags/git/">Git</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
