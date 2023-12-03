@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Julie&#39;s Website</title>
+    <link>https://juliecodestack.github.io/tags/github/</link>
+    <description>Recent content in GitHub on Julie&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching from Hexo to Hugo</title>
+      <link>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</link>
+      <pubDate>Tue, 25 Apr 2023 18:39:37 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</guid>
+      <description>&lt;p&gt;Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Build a Personal Website Using GitHub Pages and Hugo?</title>
+      <link>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</link>
+      <pubDate>Thu, 13 Apr 2023 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</guid>
+      <description>&lt;p&gt;A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitHub入门指南</title>
+      <link>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 13 Dec 2020 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

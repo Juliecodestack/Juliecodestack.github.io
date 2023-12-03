@@ -1,0 +1,24 @@
+.search-result-content {
+    font-size: 1.0rem;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item--search, .menu__item--search:hover {
+  background: transparent;
+  flex: 1;
+  display: grid;
+  place-items: center right;
+  padding-right: 5px;
+}
+
+.menu__item--search input {
+  border-radius: 5px;
+}
+
+.main__search-query {
+  font-style: italic;
+  color: #e22d30;
+}

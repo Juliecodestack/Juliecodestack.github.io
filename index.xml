@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Julie&#39;s Website</title>
+    <link>https://juliecodestack.github.io/</link>
+    <description>Recent content on Julie&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Switching from Hexo to Hugo</title>
+      <link>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</link>
+      <pubDate>Tue, 25 Apr 2023 18:39:37 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</guid>
+      <description>&lt;p&gt;Several months ago I switched this site from Hexo-building to Hugo-building. Some readers asked me why the move and how to do it, so here I’d like to share my experience with you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hugo: How to Add a Table of Contents (TOC) to Your Post?</title>
+      <link>https://juliecodestack.github.io/2023/04/21/hugo-toc/</link>
+      <pubDate>Fri, 21 Apr 2023 18:23:29 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/21/hugo-toc/</guid>
+      <description>&lt;p&gt;Maybe you want to add a Table of Contents ( TOC ) to the articles on your Hugo site but don’t know how to do it, or maybe you want to insert a TOC somewhere in the middle of your post. This is the tutorial for you.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Build a Personal Website Using GitHub Pages and Hugo?</title>
+      <link>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</link>
+      <pubDate>Thu, 13 Apr 2023 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/04/13/build_hugo_site/</guid>
+      <description>&lt;p&gt;A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How to Write a Popular Article?</title>
+      <link>https://juliecodestack.github.io/2023/02/01/valuable_writing/</link>
+      <pubDate>Wed, 01 Feb 2023 18:16:07 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/02/01/valuable_writing/</guid>
+      <description>&lt;p&gt;Whenever you write something, an article, a blog post or a paper, you may have a question: “how to write it so that my readers will like it”? In his lecture “Writing Beyond the Academy”, &lt;a href=&#34;https://news.uchicago.edu/story/how-one-scholar-shaped-writing-generations-students&#34;&gt;Professor Larry McEnerney from The University of Chicago&lt;/a&gt;  gave his advice.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What’s the Return Value of a Bool Expression in Python?</title>
+      <link>https://juliecodestack.github.io/2023/01/07/bool_expression/</link>
+      <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/01/07/bool_expression/</guid>
+      <description>&lt;p&gt;We know that the boolean value of 0 is False, and the boolean value of 1 is True. What about the boolean value of a negative number, for example, -2 ? What’s the result of the expression &lt;code&gt;True and 3&lt;/code&gt; in Python? Is it True or False, or other value? Let’s find it out.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beginner’s Guide to Shell Commands</title>
+      <link>https://juliecodestack.github.io/2023/01/04/shell_command/</link>
+      <pubDate>Wed, 04 Jan 2023 18:58:19 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/01/04/shell_command/</guid>
+      <description>&lt;p&gt;Maybe you just began to use Linux, or maybe you need to run programs in Terminal/Shell, in both cases, you need a command reference or cheat sheet. Here’s what you’re looking for, a list of some basic commands with examples.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://juliecodestack.github.io/about/</link>
+      <pubDate>Sun, 20 Nov 2022 20:55:33 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/about/</guid>
+      <description>Hello, I’m Julie. I’m interested in Python, Programming and Machine Learning. Here I write down what I’ve learned, or how to solve the problems I met.
+I also like:
+reading, such as sci-fi, non-fiction, biography… listening to audiobooks. learning new things. </description>
+    </item>
+    
+    <item>
+      <title>Numpy运算中的axis参数</title>
+      <link>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</link>
+      <pubDate>Wed, 24 Mar 2021 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2021/03/24/21005numpy_axis/</guid>
+      <description>&lt;p&gt;最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/30960190&#34;&gt;Python · numpy · axis&lt;/a&gt;
+和 &lt;a href=&#34;https://zhuanlan.zhihu.com/p/31275071&#34;&gt;Numpy:对Axis的理解&lt;/a&gt;，
+感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Jupyter Notebook使用</title>
+      <link>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</link>
+      <pubDate>Sun, 07 Mar 2021 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2021/03/07/21004jupyternotebook/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;注：本文中部分内容是 Python for Data Analysis (by Wes Mckinney) 一书的学习笔记。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;接着&lt;a href=&#34;https://juliecodestack.github.io/2021/02/15/21003anaconda/&#34;&gt;上一篇文章&lt;/a&gt;，我们从 Anaconda 命令行打开 Jupyter Notebook，在浏览器中会看到类似下图的页面，下方还有文件夹或者文件的列表。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python入门：安装 Python 软件，Anaconda</title>
+      <link>https://juliecodestack.github.io/2021/02/15/21003anaconda/</link>
+      <pubDate>Mon, 15 Feb 2021 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2021/02/15/21003anaconda/</guid>
+      <description>&lt;p&gt;“工欲善其事，必先利其器”。在机器学习领域，经常使用的一个工具就是 Python 软件。Python 怎么安装和使用呢？&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>GitHub入门指南</title>
+      <link>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 13 Dec 2020 18:30:08 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2020/12/13/github%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;我去年入门 GitHub，一开始不知道从哪开始学，在网上查找了很多文章、教程学习。&lt;strong&gt;这篇文章就是以我刚学习时的小白视角写的，希望能帮助到想开始学 GitHub 又不知如何上手的学习者。&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Search Results</title>
+      <link>https://juliecodestack.github.io/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://juliecodestack.github.io/search/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
