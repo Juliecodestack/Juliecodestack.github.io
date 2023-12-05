@@ -4,18 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Numpy运算中的axis参数 - Julie&#39;s Website</title>
+	<title>How to Add a Mailto Link on Each Page in Hugo? - Julie&#39;s Website</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-		<meta property="og:title" content="Numpy运算中的axis参数" />
-<meta property="og:description" content="最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
-Python · numpy · axis
-和 Numpy:对Axis的理解，
-感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。" />
+		<meta property="og:title" content="How to Add a Mailto Link on Each Page in Hugo?" />
+<meta property="og:description" content="On this website, I put my email link at the end of each post in place of the comment system. This was inspired by Eli Bendersky&rsquo;s website.  How to make it?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://juliecodestack.github.io/2021/03/24/21005numpy_axis/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-03-24T18:30:08+08:00" />
-<meta property="article:modified_time" content="2021-03-24T18:30:08+08:00" />
+<meta property="og:url" content="https://juliecodestack.github.io/2023/12/05/add-mailto-link/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-12-05T20:06:52+08:00" />
+<meta property="article:modified_time" content="2023-12-05T20:06:52+08:00" />
 
 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,29 +77,28 @@ Python · numpy · axis
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Numpy运算中的axis参数</h1>
+			<h1 class="post__title">How to Add a Mailto Link on Each Page in Hugo?</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-03-24T18:30:08&#43;08:00">March 24, 2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/data-science/" rel="category">Data Science</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-12-05T20:06:52&#43;08:00">December 05, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/tools/" rel="category">Tools</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<p>最近在学习Numpy时，对函数设置中axis（轴）参数有些困惑，学习了这两篇文章：
-<a href="https://zhuanlan.zhihu.com/p/30960190">Python · numpy · axis</a>
-和 <a href="https://zhuanlan.zhihu.com/p/31275071">Numpy:对Axis的理解</a>，
-感觉自己弄明白了，在这里分享我的理解，欢迎交流和指正。</p>
-<p>举例说明更明白，那就直接上例子吧。
-<img src="/imgs/numpyaxis2021-03-10-20-24-38.png" alt="数组示例">
-对于图中所示的数组，shape为(2,3,4)，表示这是一个三维数组，每个维度的大小分别是2，3，4，换言之，就是在相应的维度上有2/3/4个元素。以第一维维度（对应axis=0)为例，其大小为2，也就是有两个元素，即图中的两个 3x4 数组。</p>
-<p>axis(轴)操作是依据什么规则呢？一般来说，对于N维数据，axis的数字从0到N-1，对应于数组从外到内层（看括号方向）。
-<strong>我的理解：换个角度，我们可以想象在多维空间进行操作。选取某根坐标轴（axis），相应得到多个切面，然后对这多个切面进行操作。</strong> 我们可以在每个维度取出一个“元素”来看看（对应于空间的一个“切面”）：
-<img src="/imgs/numpyaxis2021-03-12-19-40-06.png" alt="某一维的元素示例">
-观察结果我们发现，某一维的元素，其大小正好是其余两维的大小。例如对于上面shape为(2,3,4)的数组b，第一维（axis=0）的元素<code>b[1,:,:]</code>的shape为（3，4），正是其余两维的大小。第二维（axis=1）、第三维（axis=2)的情况也是如此。</p>
-<p>现在我们来看<code>np.sum()</code>操作，它是把某个方向上的元素相加，对应到空间中，相当于多个切面叠加到一起，合而为一。因此得到的结果的shape与元素一致。</p>
-<p><img src="/imgs/numpyaxis2021-03-10-20-25-11.png" alt="np.sum()示例"></p>
-<p><code>np.sort()</code>更有意思，它的结果也体现轴操作的特点。比如axis=0时，注意看是数组b中的[1,2,3,4]和[3,2,5,6]对应逐元素排序，[5,2,4,1]和[1,3,6,7]对应逐元素排序，[3,1,1,2]和[6,9,3,1]对应逐元素排序。
-<img src="/imgs/numpyaxis2021-03-10-20-25-32.png" alt="np.sort()示例"></p>
+			<p>On this website, I put my email link at the end of each post in place of the comment system. This was inspired by <a href="https://eli.thegreenplace.net/2018/turning-off-blog-comments/">Eli Bendersky&rsquo;s website</a>.  How to make it?</p>
+<p>The following are the steps:</p>
+<p>Go to <code>YourSite &gt; layouts &gt; _default &gt; single.html</code>. You’re going to add the mailto link after the <code>&lt;main&gt;...&lt;/main&gt;</code> part (corresponding to the main body of the post). Let’s start with a simple link:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:your_email@example.com&#34;</span>&gt; EmailLink &lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>Open Git Bash Command on <code>YourSite</code> folder, and enter <code>hugo server</code>  to see the pages locally. You’ll see that after each post, there is an <code>EmailLink</code>. When you click the link, the mail app will be opened and the address(<a href="mailto:your_email@example.com">your_email@example.com</a>) is already in the receiver field.</p>
+<p>If you’d like to add the subject and body to the mailto link, you may use the following script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:your_email@example.com&#34;</span><span style="color:#960050;background-color:#1e0010">?</span><span style="color:#a6e22e">subject</span><span style="color:#f92672">=</span><span style="color:#e6db74">subject&amp;body=text</span>&gt; EmailLink&lt;/<span style="color:#f92672">a</span>&gt;
+</span></span></code></pre></div><p>Or you can go to the site <a href="https://mailtolinkgenerator.com/">Mailto link generator</a> , enter the content and generate it.</p>
+<p>I want to put a sentence at the end of each post: “Thank you for reading! For comments or discussions, please send me an email.” In HTML, <code>&lt;a&gt;&lt;/a&gt;</code> contains links. <code>&lt;p&gt;&lt;/p&gt;</code> contains paragraphs(pure text) . So here’s what I finally wrote in <code>single.html</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;Thank you for reading! For comments or discussions, please send me an &lt;<span style="color:#f92672">a</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;mailto:my_email&#34;</span>&gt;&lt;<span style="color:#f92672">u</span>&gt;email✉️&lt;/<span style="color:#f92672">u</span>&gt;&lt;/<span style="color:#f92672">a</span>&gt;.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><p>Here the <code>&lt;u&gt;&lt;/u&gt;</code> underscores the mailto link for I found the link was not highlighted on the page. As for the sign of envelope✉️, I copied the Emoji from the Internet.</p>
+<p>References:</p>
+<p><a href="https://www.freecodecamp.org/news/mailto-link-how-to-make-an-html-email-link-example-code/">Mailto Link – How to Make an HTML Email Link</a></p>
+<p><a href="https://mailtolinkgenerator.com/">Mailto link generator</a></p>
 		</div>
 		<footer class="post__footer">
 			
@@ -110,13 +106,7 @@ Python · numpy · axis
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/python/" rel="tag">Python</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/numpy/" rel="tag">NumPy</a>
-		</li>
-		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/jupyter-notebook/" rel="tag">Jupyter Notebook</a>
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">Hugo</a>
 		</li>
 	</ul>
 </div>
@@ -128,15 +118,9 @@ Python · numpy · axis
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/2021/03/07/21004jupyternotebook/" rel="prev">
+		<a class="pager__link" href="/2023/04/25/hexo-to-hugo/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
-			<p class="pager__title">Jupyter Notebook使用</p>
-		</a>
-	</div>
-	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/2023/01/04/shell_command/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
-			<p class="pager__title">Beginner’s Guide to Shell Commands</p>
+			<p class="pager__title">Switching from Hexo to Hugo</p>
 		</a>
 	</div>
 </nav>

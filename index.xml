@@ -6,7 +6,16 @@
     <description>Recent content on Julie&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Apr 2023 18:39:37 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Dec 2023 20:06:52 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Add a Mailto Link on Each Page in Hugo?</title>
+      <link>https://juliecodestack.github.io/2023/12/05/add-mailto-link/</link>
+      <pubDate>Tue, 05 Dec 2023 20:06:52 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/12/05/add-mailto-link/</guid>
+      <description>&lt;p&gt;On this website, I put my email link at the end of each post in place of the comment system. This was inspired by &lt;a href=&#34;https://eli.thegreenplace.net/2018/turning-off-blog-comments/&#34;&gt;Eli Bendersky&amp;rsquo;s website&lt;/a&gt;.  How to make it?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Switching from Hexo to Hugo</title>
       <link>https://juliecodestack.github.io/2023/04/25/hexo-to-hugo/</link>
