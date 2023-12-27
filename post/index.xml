@@ -6,7 +6,25 @@
     <description>Recent content in Posts on Julie&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 20:06:52 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 20:15:23 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Which comes first, data cleaning or model training?</title>
+      <link>https://juliecodestack.github.io/2023/12/27/data-cleaning-or-training/</link>
+      <pubDate>Wed, 27 Dec 2023 20:15:23 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/12/27/data-cleaning-or-training/</guid>
+      <description>&lt;p&gt;In the past, I spent a lot of time on exploratory data analysis(EDA) and data cleaning before putting the data into the training. After that, I’d like to pick a state-of-the-art model. However, fastai course changed my idea.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Train an image classification model using fastai</title>
+      <link>https://juliecodestack.github.io/2023/12/26/train-first-image-model-using-fastai/</link>
+      <pubDate>Tue, 26 Dec 2023 20:14:46 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/2023/12/26/train-first-image-model-using-fastai/</guid>
+      <description>&lt;p&gt;Can you believe it? On &lt;a href=&#34;https://course.fast.ai/Lessons/lesson1.html&#34;&gt;the very &lt;strong&gt;first class&lt;/strong&gt; &lt;/a&gt;of fast.ai course: Practical Deep Learning for Coders 2022, you will use deep learning to do image classification. Amazing! How to do it?&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How to Add a Mailto Link on Each Page in Hugo?</title>
       <link>https://juliecodestack.github.io/2023/12/05/add-mailto-link/</link>

@@ -6,7 +6,34 @@
     <description>Recent content in Tags on Julie&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 20:06:52 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 20:15:23 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deep Learning</title>
+      <link>https://juliecodestack.github.io/tags/deep-learning/</link>
+      <pubDate>Wed, 27 Dec 2023 20:15:23 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fastai</title>
+      <link>https://juliecodestack.github.io/tags/fastai/</link>
+      <pubDate>Wed, 27 Dec 2023 20:15:23 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/fastai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Vision</title>
+      <link>https://juliecodestack.github.io/tags/computer-vision/</link>
+      <pubDate>Tue, 26 Dec 2023 20:14:46 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/tags/computer-vision/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://juliecodestack.github.io/tags/hugo/</link>

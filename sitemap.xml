@@ -3,21 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://juliecodestack.github.io/categories/</loc>
-    <lastmod>2023-12-05T20:06:52+08:00</lastmod>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/deep-learning/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/fastai/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/categories/machine-learning/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/post/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/2023/12/27/data-cleaning-or-training/</loc>
+    <lastmod>2023-12-27T20:15:23+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/tags/computer-vision/</loc>
+    <lastmod>2023-12-26T20:14:46+08:00</lastmod>
+  </url><url>
+    <loc>https://juliecodestack.github.io/2023/12/26/train-first-image-model-using-fastai/</loc>
+    <lastmod>2023-12-26T20:14:46+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/2023/12/05/add-mailto-link/</loc>
     <lastmod>2023-12-05T20:06:52+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/tags/hugo/</loc>
-    <lastmod>2023-12-05T20:06:52+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/</loc>
-    <lastmod>2023-12-05T20:06:52+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/post/</loc>
-    <lastmod>2023-12-05T20:06:52+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/tags/</loc>
     <lastmod>2023-12-05T20:06:52+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/categories/tools/</loc>
@@ -70,9 +88,6 @@
   </url><url>
     <loc>https://juliecodestack.github.io/about/</loc>
     <lastmod>2022-11-20T20:55:33+08:00</lastmod>
-  </url><url>
-    <loc>https://juliecodestack.github.io/categories/data-science/</loc>
-    <lastmod>2021-03-24T18:30:08+08:00</lastmod>
   </url><url>
     <loc>https://juliecodestack.github.io/tags/jupyter-notebook/</loc>
     <lastmod>2021-03-24T18:30:08+08:00</lastmod>

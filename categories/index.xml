@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Julie&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Dec 2023 20:06:52 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Dec 2023 20:15:23 +0800</lastBuildDate><atom:link href="https://juliecodestack.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Machine Learning</title>
+      <link>https://juliecodestack.github.io/categories/machine-learning/</link>
+      <pubDate>Wed, 27 Dec 2023 20:15:23 +0800</pubDate>
+      
+      <guid>https://juliecodestack.github.io/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Tools</title>
       <link>https://juliecodestack.github.io/categories/tools/</link>
@@ -31,15 +40,6 @@
       <pubDate>Sat, 07 Jan 2023 20:54:13 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Science</title>
-      <link>https://juliecodestack.github.io/categories/data-science/</link>
-      <pubDate>Wed, 24 Mar 2021 18:30:08 +0800</pubDate>
-      
-      <guid>https://juliecodestack.github.io/categories/data-science/</guid>
       <description></description>
     </item>
     
