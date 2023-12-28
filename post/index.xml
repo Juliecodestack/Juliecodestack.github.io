@@ -13,7 +13,7 @@
       <pubDate>Wed, 27 Dec 2023 20:15:23 +0800</pubDate>
       
       <guid>https://juliecodestack.github.io/2023/12/27/data-cleaning-or-training/</guid>
-      <description>&lt;p&gt;In the past, I spent a lot of time on exploratory data analysis(EDA) and data cleaning before putting the data into the training. After that, I’d like to pick a state-of-the-art model. However, fastai course changed my idea.&lt;/p&gt;</description>
+      <description>&lt;p&gt;In the past, I spent a lot of time on exploratory data analysis(EDA) and data cleaning before putting data into training. After that, I’d like to pick a state-of-the-art model. However, fastai course changed my idea.&lt;/p&gt;</description>
     </item>
     
     <item>

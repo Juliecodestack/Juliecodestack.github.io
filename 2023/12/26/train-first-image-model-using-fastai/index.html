@@ -151,7 +151,7 @@
 </span></span><span style="display:flex;"><span>                splitter<span style="color:#f92672">=</span>RandomSplitter(valid_pct<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>,seed<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>),
 </span></span><span style="display:flex;"><span>                item_tfms<span style="color:#f92672">=</span>Resize(<span style="color:#ae81ff">192</span>)
 </span></span><span style="display:flex;"><span>               )<span style="color:#f92672">.</span>dataloaders(path)
-</span></span></code></pre></div><p>If you look at the fastai example code, you may notice that it uses <code>dls=ImageDataLoaders.from_name_func()</code> to define dataloaders. It’s a factory method to define the dataloaders for some datasets. When I first learned it, I got a little confused and didn’t know which function to use, so my advice is to learn <code>DataBlock</code>, as it can be used for all kinds of datasets and saves your time.</p>
+</span></span></code></pre></div><p>If you look at the fastai example code, you may notice that it uses <code>dls=ImageDataLoaders.from_name_func()</code> to define <code>dataloaders</code>. It’s a factory method for some datasets. When I first learned it, I got a little confused and didn’t know which function to use, so my advice is to learn <code>DataBlock</code>, as it can be used for all kinds of datasets and saves your time.</p>
 <p>For more details, you may read <a href="https://docs.fast.ai/tutorial.datablock.html">fastai - Data block tutorial</a>.</p>
 		</div>
 		<footer class="post__footer">
