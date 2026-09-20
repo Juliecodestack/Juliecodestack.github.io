@@ -1,0 +1,102 @@
+baseurl = "https://juliecodestack.github.io/"
+title = "Julie's Website"
+locale = "en-us"
+theme = "PaperMod"
+
+[pagination]
+  pagerSize = 6 # Number of posts per page
+
+[permalinks]
+  post = "/:year/:month/:day/:filename/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true # Render raw HTML embedded in markdown content
+  [markup.tableOfContents]
+    endLevel = 4
+    startLevel = 3
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[Params]
+  env = "production"
+  description = "AI, Machine Learning, Programming"
+  author = "Julie"
+  keywords = ["AI", "Machine Learning", "Programming"]
+
+  defaultTheme = "auto" # light / dark / auto
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = true
+  ShowWordCount = false
+  comments = false
+  rss = true
+
+  mainSections = ["post", "docs"]
+  dateformat = "2006-01-02"
+
+  [Params.label]
+    text = "Julie's Website"
+    icon = "favicon.ico"
+    iconHeight = 30
+
+  # Home page: profile card style (alternative to [Params.profileMode])
+  [Params.homeInfoParams]
+    Title = "Hi, I'm Julie"
+    Content = "Writing about AI, Machine Learning and Programming"
+
+  [[Params.socialIcons]]
+    name = "github"
+    url = "https://github.com/juliecodestack"
+
+  [[Params.socialIcons]]
+    name = "rss"
+    url = "https://juliecodestack.github.io/index.xml"
+
+  [[Params.socialIcons]]
+    name = "email"
+    url = "mailto:juliecodestack@126.com"
+
+
+
+  [Params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    manifest = "/site.webmanifest"
+
+[[menu.main]]
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
+  name = "Archive"
+  weight = 20
+  identifier = "archives"
+  url = "/archives/"
+
+[[menu.main]]
+  name = "Tags"
+  weight = 30
+  identifier = "tags"
+  url = "/tags/"
+
+[[menu.main]]
+  name = "Search"
+  weight = 40
+  identifier = "search"
+  url = "/search/"
+
+[[menu.main]]
+  name = "About"
+  weight = 50
+  identifier = "about"
+  url = "/about/"
