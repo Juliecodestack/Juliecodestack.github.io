@@ -1,7 +1,7 @@
 ---
 title: "Now that AI writes code, what should we actually learn?"
 description: "If AI writes most of the code, what should we actually learn — and how?"
-date: "2026-9-12T8:16:46+08:00"
+date: "2026-09-12T08:16:46+08:00"
 tags:
   - AI
   - programming
@@ -53,11 +53,11 @@ Some might argue that basics like syntax are the foundation of coding. If you do
 
 Don't get me wrong—syntax and other basics are very important; we need to master them. But instead of typing the same lines of code over and over to memorize them, we can now learn them by using them in a project. This approach is more effective.
 
-**Start with a project you are interested in. Let AI build the first version. **
+Start with a project you are interested in. Let AI build the first version. 
 
-**Then read it as a design: map the modules, trace the data, check the interfaces, and ask what trade-offs it makes. **
+Then read it as a design: map the modules, trace the data, check the interfaces, and ask what trade-offs it makes. 
 
-**Finally, rewrite the core part yourself—the part where the real design decisions live—so you use the fundamentals without writing boilerplate again and again.**
+Finally, rewrite the core part yourself—the part where the real design decisions live—so you use the fundamentals without writing boilerplate again and again.
 
 I had a similar experience before the AI era. When I was learning list comprehensions in Python, I typed out the examples, but I didn't use them in my own code. Some time later, I forgot how to use them. 
 
@@ -77,9 +77,7 @@ We regain control not by writing every line of code ourselves, but by understand
 
 
 
-What are your thoughts on AI coding? I'd love to hear them — feel free to leave a comment below.
-
-Special thanks to Pascal. Our conversations inspired this post.
+> Special thanks to [Pascal CESCATO](https://dev.to/pascal_cescato_692b7a8a20) . Our conversations inspired this post.
 
 
 
