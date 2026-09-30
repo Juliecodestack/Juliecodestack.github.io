@@ -1,7 +1,6 @@
 ---
 title: "Now that AI writes code, what should we actually learn?"
-description: "If AI writes most of the code, what should we actually learn — and how?"
-date: "2026-09-12T08:16:46+08:00"
+date: "2026-09-12T08:16:31+08:00"
 tags:
   - AI
   - programming
