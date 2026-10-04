@@ -39,7 +39,7 @@ The AI came back with two decisions I needed to make:
 
 Instead of just picking whatever it recommended, I asked it to explain the trade-offs first. Then I chose the "same repository and new branch" option, so that I wouldn't have to switch between repositories later. I chose to track the theme as a Git submodule. With a submodule, the theme is referenced from its own repository, so you can update it easily later. The vendored approach removes the theme's `.git` directory and commits the files directly. It looks simpler, but you have to update manually.
 
-Then the AI added the Git submodule, a `.gitignore` file, and the workflow file to my local project. After that, it tried to push to GitHub but failed with the error:  `GitHub is unreachable from the current network` .  
+Once those decisions were made, the AI agent laid out a clear, step-by-step plan and started implementing it. It added the Git submodule, a `.gitignore` file, and the workflow file to my local project. After that, the AI agent tried to push to GitHub but failed with the error:  `GitHub is unreachable from the current network` .  
 
 So I asked the AI to list what I needed to do manually. Four clear steps. I followed them.
 
@@ -47,13 +47,13 @@ Two things went wrong, and both turned out to be instructive.
 
 First, Git Credential Manager kept asking for authentication. I checked my SSH connection — it was fine. I asked the AI why it thought the connection failed. It realized it had tried HTTPS, whereas I usually used SSH. It then gave me the correct SSH-based command, and the push worked.
 
-Second, the first deployment failed with:
+Second, the first deployment failed with the error:
 
 ```bash
 building succeeded, deploying failed. Branch 'main' is not allowed to deploy to github-pages due to environment protection rules.
 ```
 
-I pasted the error message to the AI. It explained that GitHub Pages was still configured to deploy from `master` branch, while my repository now uses the `main` branch. I followed its instructions to change the branch settings, and the next build succeeded.
+I pasted the error message to the AI. It explained that GitHub Pages was still configured to deploy from the `master` branch, while my repository now uses the `main` branch. I followed its instructions to change the branch settings, and the next build succeeded.
 
 ## What made the difference?
 
@@ -63,9 +63,9 @@ So what changed between the first attempt and the second one? It wasn't that Git
 
 **Second, it lowered the mental barrier.** In the past, I thought "this is too complex, I need to learn all of this first." With AI by my side, I knew I could start and ask when I got stuck. Although I still didn't know enough, I had the confidence to work on it and get it done.
 
-**This flipped my learning order.** I used to think that the right sequence was: learn the theory thoroughly, then practice. Now I think it is: **do first, learn along the way**. 
+**This flipped my learning order.** I used to think that the right sequence was: learn the theory thoroughly, then practice. Now I think it is: **do first, learn along the way**. AI can be a great one-on-one tutor, explaining things to you and guiding you through the process. 
 
-AI can be a great one-on-one tutor, explaining things to you and guiding you through the process. This time, I didn't look for any tutorials to read. Instead, I asked the AI to tell me what to do at each step. When I didn't understand why to do it, I would pause and asked the AI to explain it. In the end, I got GitHub Actions configured and I learned more through practice than by just reading tutorials.
+This time, I didn't look for any tutorials to read. Instead, I asked the AI to tell me what to do at each step. When I didn't understand why to do it, I would pause and asked the AI to explain it. In the end, I got GitHub Actions configured and I learned more through practice than by just reading tutorials.
 
 ## Do I understand it now?
 

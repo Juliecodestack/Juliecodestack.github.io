@@ -1,12 +1,14 @@
 ---
 title: "How to schedule posts for future publication?"
-date: "2026-10-04T07:00:00+08:00"
+date: "2026-10-04T18:30:00+08:00"
 tags:
   - GitHub
   - Hugo
 ---
 
-Sometimes you may write several posts in one sitting when you have ideas, but you may not want to publish them all at once. Instead, you'd like to publish them one at a time on future dates. You can automate this with GitHub Actions. Here's how.
+Sometimes you may write several posts in one sitting when you have ideas, but you may not want to publish them all at once. Instead, you'd like to publish them one at a time on future dates. 
+
+You can automate this with GitHub Actions. Here's how.
 
 
 
