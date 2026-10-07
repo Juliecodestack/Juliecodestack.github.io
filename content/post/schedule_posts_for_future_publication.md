@@ -1,5 +1,5 @@
 ---
-title: "How to schedule posts for future publication?"
+title: "How to schedule future-dated posts with Github Actions"
 date: "2026-10-04T18:30:00+08:00"
 tags:
   - GitHub
@@ -43,7 +43,7 @@ git commit -m"add daily schedule build for future posts"
 git push
 ```
 
-> Note: Scheduled workflows run from the default branch, and GitHub may delay scheduled runs during periods of high load.
+> Note: Scheduled workflows run from the default branch, and **GitHub may delay scheduled runs during periods of high load**.
 
 
 
