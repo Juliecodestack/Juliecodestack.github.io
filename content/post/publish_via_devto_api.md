@@ -7,7 +7,7 @@ tags:
   - HTTP
 ---
 
-Every time I copied a post into the dev.to editor, added tags and cleaned up the formatting, I'd wonder whether there was a way to automate it. If you have the same question, this article is for you.
+I write on dev.to ([Julie - DEV Community](https://dev.to/julies1)). Every time I copied a post into the dev.to editor, added tags and cleaned up the formatting, I'd wonder whether there was a way to automate it. If you have the same question, this article is for you.
 
 The answer: the dev.to API.
 
@@ -105,7 +105,7 @@ response = requests.post(
 )
 
 if response.status_code == 201:
-    print("Published:", response.json()["url"])
+    print("Draft created:", response.json()["url"])
 else:
     print("Failed:", response.status_code, response.text)
 ```

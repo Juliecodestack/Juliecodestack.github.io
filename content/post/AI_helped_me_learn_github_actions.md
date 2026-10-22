@@ -1,5 +1,5 @@
 ---
-title: "I tried to learn GitHub Actions twice: I failed the first time, but AI helped me succeed the second time"
+title: "GitHub Actions tutorials failed me. AI got me through."
 date: "2026-09-30T08:16:31+08:00"
 tags:
   - AI

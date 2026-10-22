@@ -55,6 +55,10 @@ theme = "PaperMod"
     url = "https://github.com/juliecodestack"
 
   [[Params.socialIcons]]
+    name = "dev"
+    url = "https://dev.to/julies1"
+
+  [[Params.socialIcons]]
     name = "rss"
     url = "https://juliecodestack.github.io/index.xml"
 
