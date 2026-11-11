@@ -12,9 +12,9 @@ In this post, I'll give you a map of SQL: the four core operations, the keywords
 
 ## What SQL actually is
 
-SQL is not a database. I used to think it was, because of the names of database management systems like SQLite and MySQL.
+**SQL is not a database.** I used to think it was, because of the names of database management systems like SQLite and MySQL.
 
-SQL stands for Structured Query Language. It's the language we use to talk to a relational database. Though it's called a language, it's much simpler than general-purpose programming languages like Python, JavaScript, or C. A programming language tells the computer *how* to do a task; SQL tells the database *what* you want. That's why we call it declarative.
+SQL stands for **Structured Query Language**. It's the language we use to talk to a relational database. Though it's called a language, it's much simpler than general-purpose programming languages like Python, JavaScript, or C. A programming language tells the computer *how* to do a task; SQL tells the database *what* you want. That's why we call it declarative.
 
 If you're coming from Excel, a database is like a workbook, and each table is like a sheet. Data lives in rows and columns: a row describes one thing, like an order, while a column holds one attribute of that thing, such as a product name or price.
 
@@ -216,20 +216,20 @@ The template:
 
 ```sql
 INSERT INTO mytable
-    (column, another_column, ...)
+    (column_name, another_column_name, ...)
 VALUES
     (value1, another_value1, ...),
     (value2, another_value2, ...);
 ```
 
-If you provide a value for every column, **in table order**, the column list `(column, another_column, ...)` can be omitted. See the `INSERT` statements at the top for examples.
+If you provide a value for every column, **in table order**, the column list `(column_name, another_column_name, ...)` can be omitted. See the `INSERT` statements at the top for examples.
 
 **2. Update row values: `UPDATE`**
 
 ```sql
 UPDATE mytable
-SET column = value,
-    another_column = another_value
+SET column_name = value,
+    another_column_name = another_value
 WHERE condition;
 ```
 
@@ -265,8 +265,8 @@ The template:
 
 ```sql
 CREATE TABLE IF NOT EXISTS mytable(
-    column         DataType TableConstraint DEFAULT default_value,
-    another_column DataType TableConstraint DEFAULT default_value
+    column_name         DataType TableConstraint DEFAULT default_value,
+    another_column_name DataType TableConstraint DEFAULT default_value
 );
 ```
 
@@ -276,7 +276,7 @@ See the `CREATE TABLE` statements at the top for examples.
 
 `ALTER` changes the table's structure—its columns—not the data inside it. (To change data, use `UPDATE`.)
 
-To add a column:
+(1) To add a column:
 
 ```sql
 ALTER TABLE mytable
@@ -290,21 +290,21 @@ ALTER TABLE students
 ADD COLUMN age INTEGER;
 ```
 
-To delete a column:
+(2) To delete a column:
 
 ```sql
 ALTER TABLE mytable
 DROP COLUMN column_name;
 ```
 
-To rename a column:
+(3) To rename a column:
 
 ```sql
 ALTER TABLE mytable
 RENAME COLUMN column_name TO new_column_name;
 ```
 
-To rename a table:
+(4) To rename a table:
 
 ```sql
 ALTER TABLE mytable
@@ -327,4 +327,4 @@ DROP TABLE IF EXISTS mytable;
 
 That's the whole map: **C**reate, **R**ead, **U**pdate, **D**elete. Four verbs cover most of what you'll do with a database day to day.
 
-The fastest way to make it stick is to run each query yourself. Start with the examples in this post, then move to [SQLBolt](https://sqlbolt.com/). When you're comfortable, import a CSV you actually care about and try the same statements on it. Once you've practiced `JOIN`, `GROUP BY` and aggregate functions on real data, you'll see why people call SQL magic. 
+The fastest way to make it stick is to run each query yourself. Start with the examples in this post, then move to [SQLBolt](https://sqlbolt.com/). When you're comfortable, import a CSV you actually care about and try the same statements on it. Once you've practiced joins, `GROUP BY` and aggregate functions on real data, you'll see why people call SQL magic. 

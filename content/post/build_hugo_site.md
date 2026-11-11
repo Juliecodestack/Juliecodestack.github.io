@@ -1,5 +1,5 @@
 ---
-title: "How to build a personal website using GitHub pages and Hugo?"
+title: "How to build a personal website using GitHub Pages and Hugo"
 date: 2023-04-13T18:30:08+08:00
 draft: false
 tags:
@@ -9,7 +9,6 @@ tags:
 - Git 
 categories:
 - Tools
-
 ---
 
 A personal website is a good place to display your work, either your projects or your technical notes. Then how to build one? In this article I’ll introduce the simplest way to build a site. 

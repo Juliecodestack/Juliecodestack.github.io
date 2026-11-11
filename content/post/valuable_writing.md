@@ -1,5 +1,5 @@
 ---
-title: "How to write a popular article?"
+title: "How to write a popular article"
 date: 2023-02-01T18:16:07+08:00
 draft: false
 tags:

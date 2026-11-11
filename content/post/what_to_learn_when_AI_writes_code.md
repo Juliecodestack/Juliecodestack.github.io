@@ -1,5 +1,5 @@
 ---
-title: "AI writes code now — so what should we actually learn?"
+title: "AI writes code now—so what should we actually learn?"
 date: "2026-09-12T08:16:31+08:00"
 tags:
   - AI

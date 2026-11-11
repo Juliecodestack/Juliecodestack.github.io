@@ -1,5 +1,5 @@
 ---
-title: "Hugo: How to add a table of contents (TOC) to your post?"
+title: "Hugo: How to add a table of contents (TOC) to your post"
 date: 2023-04-21T18:23:29+08:00
 draft: false
 tags:

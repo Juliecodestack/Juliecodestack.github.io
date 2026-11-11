@@ -1,5 +1,5 @@
 ---
-title: "How to train an image classification model using fastai?"
+title: "How to train an image classification model using fastai"
 description: ""
 date: "2023-12-26T20:14:46+08:00"
 thumbnail: ""

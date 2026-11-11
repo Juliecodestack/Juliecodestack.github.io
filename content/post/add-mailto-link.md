@@ -1,5 +1,5 @@
 ---
-title: "How to add a Mailto link on each page in Hugo?"
+title: "How to add a mailto link on each page in Hugo"
 description: ""
 date: "2023-12-05T20:06:52+08:00"
 thumbnail: ""
